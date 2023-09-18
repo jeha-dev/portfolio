@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("http://www.394web.com/img/pr__shadow_2.png");
+  background-image: url("../img/pr__shadow_2.png");
   animation: rhythm ease-in 8s infinite;
 }
 
@@ -183,7 +183,7 @@
   padding:4px;
   font-size:1rem;
   color:#515151;
-  font-family:'Malgun Gothic';
+  
   text-align: left;
   letter-spacing: 0.03em;
 }
@@ -303,13 +303,13 @@
 }
 
 .personal_info > li:nth-child(2):before {
-  background:url("http://www.394web.com/img/icon/pf_name_20.png") no-repeat center top;
+  background:url("../img/icon/pf_name_20.png") no-repeat center top;
 }
 .personal_info > li:nth-child(3):before {
-  background:url("http://www.394web.com/img/icon/pf_mail_20.png") no-repeat center top;
+  background:url("../img/icon/pf_mail_20.png") no-repeat center top;
 }
 .personal_info > li:nth-child(4):before {
-  background:url("http://www.394web.com/img/icon/pf_call_23.png") no-repeat center top;
+  background:url("../img/icon/pf_call_23.png") no-repeat center top;
 }
 
 
