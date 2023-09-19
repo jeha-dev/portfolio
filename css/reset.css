@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/**
+ * --------------------------------
+ * reset CSS
+ * creator : leejeha
+ * --------------------------------
+*/
+
+/* 웹폰트 - NotoSans */
+@font-face{
+    font-family:"NotoSansKR";
+    font-style:normal;
+    font-weight:200;
+    src:url("../font/NotoSansKR-DemiLight.eot");
+    src:url("../font/NotoSansKR-DemiLight.eot?#iefix") format("embedded-opentype"),
+        url("../font/NotoSansKR-DemiLight.woff2") format("woff2"),
+        url("../font/NotoSansKR-DemiLight.woff") format("woff");
+}
+@font-face{
+    font-family:"NotoSansKR";
+    font-style:normal;
+    font-weight:400;
+    src:url("../font/NotoSansKR-Regular.eot");
+    src:url("../font/NotoSansKR-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../font/NotoSansKR-Regular.woff2") format("woff2"),
+        url("../font/NotoSansKR-Regular.woff") format("woff");
+}
+@font-face{
+    font-family:"NotoSansKR";
+    font-style:normal;
+    font-weight:500;
+    src:url("../font/NotoSansKR-Medium.eot");
+    src:url("../font/NotoSansKR-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../font/NotoSansKR-Medium.woff2") format("woff2"),
+        url("../font/NotoSansKR-Medium.woff") format("woff");
+}
+@font-face{
+    font-family:"NotoSansKR";
+    font-style:normal;
+    font-weight:600;
+    src:url("../font/NotoSansKR-Bold.eot");
+    src:url("../font/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../font/NotoSansKR-Bold.woff2") format("woff2"),
+        url("../font/NotoSansKR-Bold.woff") format("woff");
+}
+/* 웹폰트 - Roboto */
+@font-face{
+    font-family:"Roboto";
+    font-style:normal;
+    font-weight:400;
+    src:url("../font/Roboto-Regular.eot");
+    src:url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../font/Roboto-Regular.woff2") format("woff2"),
+        url("../font/Roboto-Regular.woff") format("woff");
+}
+@font-face{
+    font-family:"Roboto";
+    font-style:normal;
+    font-weight:500;
+    src:url("../font/Roboto-Medium.eot");
+    src:url("../font/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../font/Roboto-Medium.woff2") format("woff2"),
+        url("../font/Roboto-Medium.woff") format("woff");
+}
+@font-face{
+    font-family:"Roboto";
+    font-style:normal;
+    font-weight:900;
+    src:url("../font/Roboto-Black.eot");
+    src:url("../font/Roboto-Black.eot?#iefix") format("embedded-opentype"),
+        url("../font/Roboto-Black.woff2") format("woff2"),
+        url("../font/Roboto-Black.woff") format("woff");
+}
+/* 웹폰트 - Raleway */
+@font-face{
+    font-family: 'Raleway', sans-serif;
+    font-style:normal;
+    font-weight:400;
+    src:url("../font/Raleway-Regular.eot");
+    src:url("../font/Raleway-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../font/Raleway-Regular.woff") format("woff");
+}
+@font-face{
+    font-family: 'Raleway', sans-serif;
+    font-style:normal;
+    font-weight:500;
+    src:url("../font/Raleway-Medium.eot");
+    src:url("../font/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../font/Raleway-Medium.woff") format("woff");
+}
+@font-face{
+    font-family: 'Raleway', sans-serif;
+    font-style:normal;
+    font-weight:700;
+    src:url("../font/Raleway-Black.eot");
+    src:url("../font/Raleway-Black.eot?#iefix") format("embedded-opentype"),
+        url("../font/Raleway-Black.woff") format("woff");
+}
+
+
+html,body,div,p,iframe,frameset, h1,h2,h3,h4,h5,h6, strong,span,b,em,var,label,legend, ul,ol,li,dl,dt,dd,
+table,thead,tbody,tfoot,tr,th,td,caption, form,fieldset,input,textarea, sub,sup,img,a,del,button,pre,
+header,footer,section,article,aside,figure,figcaption{padding:0;margin:0;}
+/* 목록 스타일 리셋 */
+ul, ol, li{list-style:none;}
+/* 태그 리셋 */
+button{background:transparent;cursor:pointer;}
+img{vertical-align:top;}
+img,button,fieldset,table{border:0;}
+em, address, del{font-style:normal;}
+label,a{display:inline-block;}
+strong, em{font-weight:600;}
+/* form */
+input,select,label,button,textarea{border-radius:0;-webkit-border-radius:0;background-color:transparent;color:#111;font-size:14px;line-height:normal;font-family:"NotoSansKR", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";vertical-align:middle;}
+/* table */
+table{width:100%;border-collapse:collapse;border-spacing:0;}
+th, td{word-break:keep-all;word-wrap:break-word;}
+/* alink */
+a{border:0;color:#444;text-decoration:none;}
+a:hover{text-decoration:none;}
+a.on{height:auto;text-indent:inherit;background-image:none;}
+*, *:before, *:after{box-sizing:border-box;}
+*:focus{outline:0;}
+/* body, html */
+html,body{height:100%;}
+body{background:#FCFCFC;color:#444;line-height:normal;font-family:"NotoSansKR", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";font-size:10px;-webkit-word-break:keep-all;-moz-word-break:keep-all;word-break:keep-all;word-wrap:break-word;}
+/* 대체텍스트 and 숨김처리 */
+caption, legend, .hidden, .hide{position:absolute !important;top:0 !important;left:0 !important;padding:0 !important;border:0 !important;overflow:hidden !important;width:0 !important;height:0 !important;line-height:0 !important;}
