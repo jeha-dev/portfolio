@@ -1,24 +1,33 @@
-/* 첫번째 섹션 배경 */
-.prologue .main__bg{
+@charset "utf-8";
+
+/**
+ * --------------------------------
+ * reset CSS
+ * creator : leejeha
+ * --------------------------------
+*/
+
+/* symbolic */
+.symbolic .main_bg{
   width:100%;
   height:100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/pr__shadow_2.png");
+  background-image: url("./../img/pr__shadow_2.png");
   animation: rhythm ease-in 8s infinite;
 }
 
-/* 배경색 바뀜 */
+/* animation - rhythm : background change */
 @keyframes rhythm {
-  0% {background-color:rgb(100, 96, 109);}
-  25% {background-color:#e9912d;}
-  50% {background-color:#7a9cec;}
-  75% {background-color:#2ae772;}
-  100% {background-color:rgb(100, 96, 109);}
+  0% {background-color:#0c18729e;}
+  25% {background-color:#FFB265;}
+  50% {background-color:#1EC89A;}
+  75% {background-color:#ec7ad9;}
+  100% {background-color:#0c18729e;}
 }
 
-/* 심볼 상자 */
+/* symbolic recta */
 .recta {
   width:460px;
   height:160px;
@@ -27,13 +36,12 @@
   align-items:center;
   transition: all 0.5s ease;
 }
-
 .recta .rec_side {
   display:block;
   position: absolute;
   animation: crecendo ease 4s infinite;
 }
-/* 심볼상자 애니메이션 */
+/* symbolic animation - crecendo */
 @keyframes crecendo {
   0% {
     transform:scale(0);
@@ -74,7 +82,6 @@
   right:0;
   background:#fff;
 }
-
 .side_for {
   width:3px;
   height:100%;
@@ -82,19 +89,16 @@
   left:0;
   background:rgb(235, 234, 234);
 }
-
-
-.recta .prologue_name {
+.recta .logo_name {
   font-style:italic;
-  font-size:4em;
+  font-size:4rem;
   font-weight:bold;
   color:rgba(240, 240, 240, 0.95);
   transition: color 1s;
   opacity: 0;
-  animation:sheffect 3s ease-in infinite;
+  animation:shadoweffect 3s ease-in infinite;
 }
-
-@keyframes sheffect {
+@keyframes shadoweffect {
   0% {
     opacity: .4;
   }
@@ -105,23 +109,19 @@
     opacity:.3;
   }
 }
-
-.recta:hover .prologue_name {
+.recta:hover .logo_name {
   color:rgba(255, 255, 255,1);
 }
 
-
-
-
 /* section */
-.content1 {
+.list-work {
   background:rgba(240, 240, 240, 0.95);
   box-sizing: border-box;
   padding:100px 120px;
   transition:all .5s ease-in;
 }
-.content1 h3 {
-  font-size:3em;
+.list-work h3 {
+  font-size:5rem;
   margin:50px 0;
   letter-spacing: 0.02em;
   text-align: center;
@@ -139,7 +139,6 @@
   align-items: top;
   box-sizing: border-box;
   padding:10px 0;
-  /* background:red; */
   margin-bottom:180px;
 }
 
@@ -149,59 +148,77 @@
 }
 
 
-.mockup__images {
+.mockup_images {
   /* 대표이미지 */
   width:55%;
   overflow: hidden;
 }
-.mockup__images img{
+.mockup_images img{
   width:100%;
   max-width:100%;
 }
 
-.mockup__details {
+.mockup_details {
   /* 상세설명 */
   width:40%;
-  /* background:turquoise; */
   position: relative;
   transform:translateY(2vh);
 }
 
 
-.work__name {
-  font-size:2.5rem;
-  color:#414141;
+.work_name {
+  display:inline-block;
+  margin-bottom:12px;
+  color:#555;
+}
+.work_name span {
+  display:inline-block;
+  vertical-align:bottom;
+}
+.work_num {
+  margin-right:20px;
+  color:#999;
+  font-size:4rem;
+  font-weight:400;
+}
+.work_name .txt_main{
+  font-size:3.4rem;
+  font-weight:500;
   letter-spacing: 0.03em;
 }
-.work__num {
-  font-size:3rem;
-  font-weight:normal;
-  color:#717171;
+.work_name .txt_sub{
+  margin-left:5px;
+  margin-bottom: 6px;
+  color:#999;
+  font-size:1.4rem;
+  font-weight:400;
 }
-
 .detail {
   padding:4px;
-  font-size:1rem;
   color:#515151;
-  
+  font-size:1.4rem;
   text-align: left;
   letter-spacing: 0.03em;
 }
-
-
 .pp_container {
-  /* 내용 기술 */
   margin:30px 0 20px;
+  font-size:1.5rem;
   letter-spacing: 0.02em;
   line-height: 2.0;
 }
-.proposal {
-  font-weight: bold;
+.txt-title {
+  font-size:1.8rem;
+  font-weight: 600;
   line-height:3.0;
 }
+.pp_container span{
+  display:inline-block;
+  margin-top:10px;
+}
+
 
 /* 버튼 */
-.portflo__btns {
+.portflo_btns {
   width:100%;
   position: absolute;
   bottom:3vh;
@@ -210,23 +227,24 @@
   padding:8px 0;
   text-align: center;
 }
-.portflo__btns a{
+.portflo_btns a{
   display: inline-block;
   width:48%;
-  height:4em;
+  height:50px;
   margin:0 0px 8px;
-  background:#414141;
+  background:#555;
   color:#fff;
+  font-size:1.8rem;
   border-radius: 8px;
   text-align: center;
-  line-height:4em;
+  line-height:48px;
 } 
 
 
 
 /* profile */
-.content2 {
-  background:#515151;
+.profile {
+  background:#555;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -235,7 +253,7 @@
   padding:60px 120px 0px;
   transition:all .5s ease-in;
 }
-.con2__container {
+.profile_container {
   width:100%;
   border-radius: 30px;
   box-sizing: border-box;
@@ -244,12 +262,12 @@
 }
 .heading {
   letter-spacing: 0.03em;
-  font-size:1.5em;
+  font-size:1.5rem;
   padding:1em 0;
 }
 .col_light {
   color:#616161;
-  font-size:0.9em;
+  font-size:0.9rem;
 }
 
 
@@ -269,7 +287,7 @@
 .profile_ttl {
   display: block;
   padding:12px 0;
-  font-size:1.2em;
+  font-size:1.2rem;
 }
 
 .profile_image {
@@ -320,7 +338,7 @@
   padding:0 20px;
 }
 .skill_info {
-  font-size:0.9em;
+  font-size:0.9rem;
 }
 
 .skill_info > li {
@@ -384,7 +402,7 @@
   margin-bottom:10px;
 }
 .working_date {
-  font-size:1.2em;
+  font-size:1.2rem;
   color:#515151;
 }
 .exp_dt {
@@ -397,12 +415,12 @@
 @media screen and (min-width:1506px) and (max-width:1700px) {
 
   .pp_container {
-    font-size:0.95em;
+    font-size:0.95rem;
     letter-spacing: -0.01em;
     line-height: 1.5;
   }
 
-  .content2 {
+  .profile {
     box-sizing: border-box;
     padding:60px 120px 10px;
     transition:all .5s ease-in;
@@ -416,7 +434,7 @@
     height:200px;
     text-align: center;
     line-height:1.5;
-    font-size:1.2em;
+    font-size:1.2rem;
     box-sizing: border-box;
     padding:60px 20px;
     letter-spacing: -0.07em;
@@ -425,36 +443,36 @@
     letter-spacing: -0.01em;
   }
 
-/* content1 */
-  .content1{
+/* list-work */
+  .list-work{
     padding:80px 65px 100px;
     transition:all .5s ease-in;
   }
 
   .work_container {
     box-sizing: border-box;
-    padding:80px 0;
+    padding:80px 20px;
     border-radius: 30px;
   }
   .work_box {
     margin-bottom:120px;
   }
-  .mockup__images {
+  .mockup_images {
     /* 대표이미지 */
     width:50%;
     overflow: hidden;
   }
-  .mockup__details {
+  .mockup_details {
     /* 상세설명 */
     width:45%;
     /* background:turquoise; */
     position: relative;
     transform:translateY(1vh);
   }
-  .work__name {
+  .work_name {
     font-size:2rem;
   }
-  .work__num {
+  .work_num {
     font-size:2.2rem;
   }
   .pp_container {
@@ -465,20 +483,21 @@
   }
 
   /* 버튼 */
-  .portflo__btns {
+  .portflo_btns {
     position: absolute;
     bottom:2vh;
     right:0;
   }
-  .portflo__btns a{
+  .portflo_btns a{
     display: inline-block;
     width:48%;
-    height:3em;
-    line-height:3em;
+    height:40px;
+    font-size:1.4rem;
+    line-height:38px;
   } 
 
-  /* content2 */
-  .content2 {
+  /* profile */
+  .profile {
     box-sizing: border-box;
     padding:60px 50px 5px;
     transition:all .5s ease-in;
@@ -493,7 +512,7 @@
     height:200px;
     text-align: center;
     line-height:1.5;
-    font-size:1.2em;
+    font-size:1.2rem;
     box-sizing: border-box;
     padding:60px 10px;
     letter-spacing: -0.07em;
@@ -513,15 +532,15 @@
     transition: all .5s ease;
   }
 
-  /* content1 */
-  .content1 {
+  /* list-work */
+  .list-work {
     box-sizing: border-box;
     padding:60px 40px 120px;
     transition:all .5s ease-in;
   }
 
-  .content1 h3 {
-    font-size:3em;
+  .list-work h3 {
+    font-size:3rem;
     margin:30px 0;
   }
 
@@ -534,13 +553,13 @@
   .work_box {
     margin-bottom:80px;
   }
-  .mockup__images {
+  .mockup_images {
     /* 대표이미지 */
     width:50%;
     margin:0 8px;
     overflow: hidden;
   }
-  .mockup__details {
+  .mockup_details {
     /* 상세설명 */
     width:42%;
     /* background:turquoise; */
@@ -549,10 +568,10 @@
     padding-right:5px;
   }
 
-  .work__name {
+  .work_name {
     font-size:2rem;
   }
-  .work__num {
+  .work_num {
     font-size:2.2rem;
   }
   .pp_container {
@@ -563,30 +582,31 @@
     font-size:0.9rem;
   }
   /* 버튼 */
-  .portflo__btns {
+  .portflo_btns {
     position: absolute;
     bottom:-2vh;
     right:0;
   }
-  .portflo__btns a{
+  .portflo_btns a{
     display: inline-block;
     width:48%;
-    height:3em;
-    line-height:3em;
+    height:40px;
+    font-size:1.4rem;
+    line-height:38px;
   } 
 
 
-  /* content2 */
-  .content2 {
+  /* profile */
+  .profile {
     box-sizing: border-box;
     padding:60px 50px 0;
   }
   .row3 p {
-    font-size:0.85em;
+    font-size:0.8rem;
     letter-spacing: -0.03em;
   }
   .working_date {
-    font-size:1.2em;
+    font-size:1.2rem;
   }
 
 }
@@ -600,7 +620,7 @@
     height:50px;
     left:0;
     transition:all 0.4s ease;
-    background:rgba(2,2,2,0.3);
+    background:rgba(1,1,1,16%);
   }
   .logo {
     width:160px;
@@ -616,7 +636,7 @@
   /* 햄버거 버튼 */
   .menu_icon {
     position: absolute;
-    top:9px;
+    top:12px;
     right:20px;
   }
   .menu_icon.active {
@@ -635,69 +655,69 @@
     display: none;
   }
 
-  /*main_prologue */
+  /* content symbolic */
   .recta {
     width:360px;
     height:120px;
     transition: all 0.5s ease;
   }
-  .recta .prologue_name {
-    font-size:3em;
+  .recta .logo_name {
+    font-size:3rem;
   }
 
 
-/* content1 */
-  .content1 {
+/* list-work */
+  .list-work {
     height:auto;
     padding:80px 30px 80px;
     transition:all .5s ease-in;
   }
-  .content1 h3 {
-    font-size:2.8em;
+  .list-work h3 {
+    font-size:2.8rem;
   }
   .work_container > li:last-child .work_box {
     margin-bottom:80px;
   }
 
-  .mockup__images {
+  .mockup_images {
     /* 대표이미지 */
     width:100%;
     overflow: hidden;
   }
-  .mockup__details {
+  .mockup_details {
     /* 상세설명 */
     width:100%;
     position: relative;
   }
-  .portflo__btns {
+  .portflo_btns {
     position: absolute;
     bottom:-10vh;
     right:0;
   }
-  .portflo__btns a {
+  .portflo_btns a {
     width:49%;
   }
 
-  /* content2 */
-  .content2 {
+  /* profile */
+  .profile {
     height:auto;
     padding:90px 30px 20px;
     transition:all .5s ease-in;
   }
 
-  .con2__container {
+  .profile_container {
     width:100%;
     box-sizing: border-box;
     padding:20px 10px;
   }
   .heading  {
-    font-size:2.2em;
+    font-size:2.2rem;
     text-align: center;
   }
   
   .col_light {
     color:#616161;
-    font-size:0.9em;
+    font-size:0.9rem;
   }
 
   .info_list {
@@ -712,7 +732,7 @@
     padding:10px 17px;
   }
   .profile_ttl {
-    font-size:1.8em;
+    font-size:1.8rem;
     opacity: 0.85;
   }
   .personal_info > li {
@@ -720,7 +740,7 @@
     padding:8px 0;
     /* border-bottom:1px solid gold; */
     line-height: 1;
-    font-size:1.2em;
+    font-size:1.2rem;
   }
 
   .profile_image {
@@ -738,16 +758,16 @@
   }
 
   .skill_info {
-    font-size:1.2em;
+    font-size:1.2rem;
   }  
 
   .row3 p {
-    font-size:1.1em;
+    font-size:1.1rem;
     letter-spacing: -0.03em;
-    color:#515151;
+    color:#555;
   }
   .working_date {
-    font-size:1.4em;
+    font-size:1.4rem;
   }
 
 }
@@ -805,25 +825,25 @@
   
 
 
-  /*main_prologue */
+  /* content symbolic */
   .recta {
     width:220px;
     height:80px;
     transition: all 0.5s ease;
   }
-  .recta .prologue_name {
-    font-size:2em;
+  .recta .logo_name {
+    font-size:2rem;
   }
 
-/* content1 */
-  .content1 {
+/* list-work */
+  .list-work {
     height:auto;
     padding:60px 20px 80px;
     transition:all .5s ease-in;
   }
-  .content1 h3 {
+  .list-work h3 {
     margin:0 0 20px;
-    font-size:2em;
+    font-size:2rem;
   }
 
   .work_container {
@@ -837,69 +857,67 @@
     margin-bottom:100px;
   }
 
-  .mockup__images {
+  .mockup_images {
     /* 대표이미지 */
     width:100%;
     overflow: hidden;
   }
-  .mockup__details {
+  .mockup_details {
     /* 상세설명 */
     width:100%;
     position: relative;
   }
-  .portflo__btns {
+  .portflo_btns {
     position: absolute;
     bottom:-20vh;
     right:0;
   }
-  .portflo__btns a {
+  .portflo_btns a {
     width:49%;
   }
 
-  .work__name {
-    font-size:1.8em;
+  .work_name {
+    font-size:1.8rem;
   }
-  .work__num {
-    font-size:1.5em;
+  .work_num {
+    font-size:1.5rem;
   }
 
-  .portflo__btns {
+  .portflo_btns {
     position: absolute;
     bottom:-14vh;
     right:0;
     padding:0;
   }
-  .portflo__btns a{
+  .portflo_btns a{
     display: inline-block;
     width:100%;
-    height:2.5em;
-    line-height:2.5em;
     margin:0 0 5px;
     border-radius: 6px;
   } 
 
 
-  /* content2 */
-  .content2 {
+  /* profile */
+  .profile {
     height:auto;
     padding:90px 20px 20px;
     transition:all .5s ease-in;
   }
 
-  .con2__container {
+  .profile_container {
     width:100%;
     box-sizing: border-box;
     padding:20px 15px;
     border-radius: 20px;
   }
   .heading  {
-    font-size:2em;
+    font-size:2rem;
     text-align: center;
   }
   
   .col_light {
     color:#616161;
-    font-size:0.9em;
+    font-size:0.9rem;
   }
 
   .info_list {
@@ -911,7 +929,7 @@
     width:100%;
   }
   .profile_ttl {
-    font-size:1.8em;
+    font-size:1.8rem;
     opacity: 0.85;
   }
   .personal_info > li {
@@ -919,7 +937,7 @@
     padding:8px 0;
     /* border-bottom:1px solid gold; */
     line-height: 1;
-    font-size:1.2em;
+    font-size:1.2rem;
   }
 
   .profile_image {
@@ -937,16 +955,16 @@
   }
 
   .skill_info {
-    font-size:1.2em;
+    font-size:1.2rem;
   }  
 
   .row3 p {
-    font-size:0.9em;
+    font-size:0.9rem;
     letter-spacing: -0.07em;
     color:#515151;
-  }
+  }q
   .working_date {
-    font-size:1.2em;
+    font-size:1.2rem;
   }
 }
 

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /**
  * --------------------------------
@@ -7,55 +7,32 @@
  * --------------------------------
 */
 
-/* 공통 */
+/* class */
+.psRel {position:relative;}
+.mgtop {margin-top:40px;}
+.lht {line-height:1.5;}
+.shadow {box-shadow: 0 4px 6px rgba(0, 0, 0, .20);}
+.shadow_white {box-shadow: 2px 3px 9px rgba(255, 255, 255, .5);}
+.shadow_gray {box-shadow: 8px 6px 16px rgba(202, 202, 202, 0.3);}
+.shadow_deep {box-shadow: 8px 6px 16px rgba(41, 41, 41, 0.75);}
+
+/* font */
+.roboto{font-family: 'Roboto', sans-serif;}
+.rale {font-family: 'Raleway', sans-serif;}
+
+/* layout */
 .wrapper {width:1800px; margin:0 auto;}
-
-.shadow {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .20);
-}
-.shadow_white {
-  box-shadow: 2px 3px 9px rgba(255, 255, 255, .5);
-}
-.shadow_gray {
-  box-shadow: 8px 6px 16px rgba(202, 202, 202, 0.3);
-}
-.shadow_deep {
-  box-shadow: 8px 6px 16px rgba(41, 41, 41, 0.75);
-}
-.lht {
-  line-height:1.5;
-}
-.mgtop {
-  margin-top:40px;
-}
-
-/*폰트 logo font */
-.rale {font-family: 'Raleway', sans-serif; font-weight:bold;}
-.src_sans {font-family: 'Source Sans Pro', sans-serif;}
-
-.psRel {
-  position: relative;
-}
-
-/* 섹션 공통 */
-.comn_size {
-  width:100vw;
-  height:100vh;
-  overflow:hidden;
-  background-position:center bottom;
-  background-attachment:fixed; 
-  overflow:hidden;
-}
+.comn_size {width:100%;height:100vh;background-position:center bottom;background-attachment:fixed;overflow:hidden;}
 
 
 /* 햄버거 버튼 */
 .menu_icon {
   height:24px;
   position: absolute;
-  top:12px;
+  top:16px;
   right:20px;
   background:transparent;
-  transition:all 0.2s;
+  transition:all 1s;
 }
 .menu_icon.active {
   position: fixed;
@@ -76,15 +53,10 @@
   display:block;
   width:100%;
   height:3px;
-  background:#414141;
+  background:#fff;
   position:absolute;
   top:0;
   transition: all 0.4s ease;
-}
-.allmenu.active:before,
-.allmenu.active:after,
-.allmenu.active .hamBtn{
-  background:#fff;
 }
 
 .allmenu:after {
@@ -92,7 +64,7 @@
   display:block;
   width:100%;
   height:3px;
-  background:#414141;
+  background:#fff;
   position:absolute;
   bottom:0;
   transition: all 0.4s ease;
@@ -102,12 +74,13 @@
   display:block;
   width:100%;
   height:3px;
-  background:#414141;
+  background:#fff;
   transition: all 0.4s ease;
 }
 
-/* 우측lnb menu_bg */
-.menu_bg {
+/* lnb */
+.lnb {
+  /* menu_bg */
   width:100vw;
   height:100vh;
   position: fixed;
@@ -124,34 +97,39 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: all 1s ease;
+  transition: all 0.8s ease;
 }
-.menu_bg.show {
+.lnb.show {
   right:0vw;
 }
 
-.lnb_container {
-  width:100%;
+/* list_box : inner */
+.list_box {
+  padding:30px 50px;
 }
 
-.lnb_list {
-  height:100px;
-  line-height:100px;
-  margin-bottom:3px;
-  margin:0 auto;
+/* lnb title */
+.list_title {
+  display:block;
+  font-size:3rem;
+  font-weight:500;
+  margin-bottom:40px;
+}
+/* list에 대한 스타일// */
+.list_menu li {
   position: relative;
-
+  height:100px;
+  margin:0 auto 3px;
+  line-height:100px;
   transform: translateY(1.5vw);
   opacity: 0;
   transition: transform .5s, opacity .5s;
 }
-
-.lnb_list.active {
+.list_menu li.active {
   transform: translateY(0vw);
   opacity: 1;
 }
-
-.lnb_list a {
+.list_menu li a {
   display: block;
   font-size:2rem;
   background:transparent;
@@ -161,18 +139,14 @@
   position: relative;
   z-index:11;
 }
-
-.lnb_list a:hover,
-.lnb_list a.on {
+.list_menu li a:hover,
+.list_menu li a.on {
   color:#fff;
 }
+/* //list에 대한 스타일 */
 
-.sidenav_ttl {
-  font-size:3rem;
-  padding-bottom:40px;
-}
-
-.closeBtn {
+/* 닫기버튼// */
+.lnb .btn_close {
   background:transparent;
   width:1.8em;
   height:1.4em;
@@ -182,55 +156,15 @@
   right:40px;
   cursor: pointer;
 }
-.closeBtn.active {
+.lnb .btn_close.active {
   position: absolute;
   top:50%;
   transform: translateY(-50%);
 }
-.closeBtn > img {
+.btn_close > img {
   width:100%;
 }
-/* 인디케이터(페이저) */
-/* .indicator {
-  display: none;
-  width: 95px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-} */
 
-/* .indicator ul {
-  width: 60px;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50px;
-}
-
-.indicator ul .current_section {
-  width: 130px;
-  color: #414141;
-  transform: rotate(-90deg);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  margin-top: 20px;
-  position: absolute;
-  top: -110px;
-  left: -35px;
-  opacity: 0.5;
-}
-
-.indicator .current_list {
-  width: 18px;
-  height: 2px;
-  background: #414141;
-  margin-left: 20px;
-  margin-bottom: 30px;
-  border-radius: 50px;
-  margin-top: 9px;
-  transition: all 0.3s;
-  opacity: 0.5;
-} */
 
 /* 헤더 header */
 .header_container {
@@ -241,11 +175,12 @@
   box-sizing: border-box;
 }
 .main_header {
+  display: none;
   position: absolute;
   width:100%;
   height:60px;
+  background-color:rgba(1,1,1,16%);
   transition:all 0.4s ease;
-  display: none;
 }
 .logo {
   display: none;
@@ -257,15 +192,36 @@
 }
 
 .logo a {
-  font-size:1.6rem;
-  color:#414141;
+  font-size:2.4rem;
+  color:#fff;
   font-style: italic;
   z-index:2;
   transition:color .3s;
 }
-.logo.active a {color:#fff;}
 
-/* 팝업 */
+/* footer */
+.footer {
+  display:none;
+  width:100%;
+  height:auto;
+  box-sizing: border-box;
+  padding:0 20px 20px;
+  background:#555;
+  text-align: center;
+  color:#f9f9f9;
+  font-size:.8em;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+.footer span {
+  opacity: .6;
+  transition:opacity .5s ease-in;
+}
+.footer span.reach {
+  opacity: 1;
+}
+
+/* popup */
 .popup {
   width:30vw;
   height:200px;
@@ -273,7 +229,7 @@
   line-height:1.5;
   background:#f0f0f0;
   border: 1px solid #d1d1d1;
-  color:#414141;
+  color:#2e2e2e;
   font-size:1.2rem;
   position: fixed;
   bottom:0;
@@ -298,28 +254,6 @@
   transition: all .5s ease;
 }
 .close_pop:hover {
-  background:#515151;
+  background:#555;
   color:#f9f9f9;
-}
-
-/* footer */
-.footer {
-  display:none;
-  width:100%;
-  height:auto;
-  box-sizing: border-box;
-  padding:0 20px 20px;
-  background:#515151;
-  text-align: center;
-  color:#f9f9f9;
-  font-size:.8em;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-}
-.footer span {
-  opacity: .6;
-  transition:opacity .5s ease-in;
-}
-.footer span.reach {
-  opacity: 1;
 }

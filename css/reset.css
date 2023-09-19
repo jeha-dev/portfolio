@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /**
  * --------------------------------
@@ -51,7 +51,6 @@
     font-weight:400;
     src:url("../font/Roboto-Regular.eot");
     src:url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../font/Roboto-Regular.woff2") format("woff2"),
         url("../font/Roboto-Regular.woff") format("woff");
 }
 @font-face{
@@ -60,7 +59,6 @@
     font-weight:500;
     src:url("../font/Roboto-Medium.eot");
     src:url("../font/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
-        url("../font/Roboto-Medium.woff2") format("woff2"),
         url("../font/Roboto-Medium.woff") format("woff");
 }
 @font-face{
@@ -69,7 +67,6 @@
     font-weight:900;
     src:url("../font/Roboto-Black.eot");
     src:url("../font/Roboto-Black.eot?#iefix") format("embedded-opentype"),
-        url("../font/Roboto-Black.woff2") format("woff2"),
         url("../font/Roboto-Black.woff") format("woff");
 }
 /* 웹폰트 - Raleway */
@@ -123,7 +120,8 @@ a.on{height:auto;text-indent:inherit;background-image:none;}
 *, *:before, *:after{box-sizing:border-box;}
 *:focus{outline:0;}
 /* body, html */
+html{font-size:10px;}
 html,body{height:100%;}
-body{background:#FCFCFC;color:#444;line-height:normal;font-family:"NotoSansKR", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";font-size:10px;-webkit-word-break:keep-all;-moz-word-break:keep-all;word-break:keep-all;word-wrap:break-word;}
+body{background:#FCFCFC;color:#444;line-height:normal;font-family:"NotoSansKR", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";-webkit-word-break:keep-all;-moz-word-break:keep-all;word-break:keep-all;word-wrap:break-word;}
 /* 대체텍스트 and 숨김처리 */
 caption, legend, .hidden, .hide{position:absolute !important;top:0 !important;left:0 !important;padding:0 !important;border:0 !important;overflow:hidden !important;width:0 !important;height:0 !important;line-height:0 !important;}
