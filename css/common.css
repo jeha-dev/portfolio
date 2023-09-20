@@ -179,7 +179,7 @@
   position: absolute;
   width:100%;
   height:60px;
-  background-color:rgba(1,1,1,16%);
+  background-color:rgba(1,1,1,60%);
   transition:all 0.4s ease;
 }
 .logo {
@@ -194,7 +194,6 @@
 .logo a {
   font-size:2.4rem;
   color:#fff;
-  font-style: italic;
   z-index:2;
   transition:color .3s;
 }
