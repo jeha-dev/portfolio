@@ -23,22 +23,24 @@
     <!-- header_container// -->
     <section class="header_container">
       <header class="main_header">
-        <h1 class="logo psRel">
-          <a href="/" class="rale">LEE JEHA</a>
-        </h1>
-        <nav>
-          <ul class="rale">
-            <li>
-              <a href="javascript:;">INTRO</a>
-            </li>
-            <li>
-              <a href="javascript:;">PORTFOLIO</a>
-            </li>
-            <li>
-              <a href="javascript:;">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="flexbox">
+          <h1 class="logo psRel">
+            <a href="/" class="rale">LEE JEHA</a>
+          </h1>
+          <nav class="navlink">
+            <ul class="rale">
+              <li>
+                <a href="#con1">INTRO</a>
+              </li>
+              <li>
+                <a href="#con2">PORTFOLIO</a>
+              </li>
+              <li>
+                <a href="#con3">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <!-- menu button// -->
         <div class="menu_icon">
           <button class="allmenu">
@@ -97,103 +99,73 @@
         <h3 class="rale">WORK</h3>
         <ul class="work_container shadow_gray">
           <li>
-            <ul class="work_box psRel">
-              <li class="mockup_images shadow"><img src="img/con1/con1_popeyes.jpg" alt="파파이스"></li>
-              <li class="mockup_details">
-                <p class="work_name rale">
-                  <!-- <span class="work_num rale">01</span> -->
-                  <span class="txt_main">POPEYES</span>
-                  <span class="txt_sub">web</span>
-                </p>
-                <p class="detail">HTML &#47; CSS &#47; Javascript &#47; jQuery</p>
-                <p class="pp_container">
-                  <!-- <strong class="txt-title">기획의도</strong> -->
-                  <span>
-                    임시 텍스트. 되도록 한국어만 입력하도록 한다.
-                    임시 텍스트. 되도록 한국어만 입력하도록 한다.
-                    임시 텍스트. 되도록 한국어만 입력하도록 한다.임시 텍스트. 
-                    되도록 한국어만 입력하도록 한다.임시 텍스트. 
-                    되도록 한국어만 입력하도록 한다.
-                  </span>
-                </p>
-                <p class="portflo_btns">
-                  <a href="https://drive.google.com/file/d/1pSzppzoBQluAmQboxo2Y2gg_vLlh3OPl/view?usp=sharing" target="_blank">시안</a>
-                  <a href="http://www.394web.com/popeyes/index.html" target="_blank">방문하기</a>
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul class="work_box psRel">
-              <li class="mockup_images shadow"><img src="img/con1/con1_sidiz.jpg" alt="시디즈"></li>
-              <li class="mockup_details">
-                <p class="work_name rale"><span class="work_num rale">02</span> &nbsp;SIDIZ</p>
-                <p class="detail roboto">HTML &#47; CSS&#47; Javascript &#47; jQuery</p>
-                <p class="detail pp_container">
-                  <span class="txt-title">기획의도</span><br>
-                  가구 브랜드 SIDIZ의 PC홈페이지를 제작했습니다. 제품의 특성에 맞추어 사이트 전반적으로
-                  크고 시원한 인상을 줄 수 있도록 디자인하였고, 다양한 상품을 메인페이지에서 접할 수 있도록 레이아웃을 구성하였습니다.
-                </p>
-                <p class="portflo_btns">
-                  <a href="https://drive.google.com/file/d/1rvGBAtmyxUZkJ4ZHyj9pFKAGNdj-GPcH/view?usp=sharing" target="_blank">시안</a>
-                  <a href="http://www.394web.com/sidiz/index.html" target="_blank">방문하기</a>
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul class="work_box psRel">
-              <li class="mockup_images shadow"><img src="img/con1/con1_inter.jpg" alt="인터투어"></li>
-              <li class="mockup_details">
-                <p class="work_name rale"><span class="work_num rale">03</span> &nbsp;Inter Tour</p>
-                <p class="detail roboto">HTML &#47; CSS &#47; Javascript</p>
-                <p class="detail pp_container">
-                  <span class="txt-title">기획의도</span><br>
-                  클론코딩. 제작당시 인터투어의 경쟁사 중 하나였던 하나투어의 색을 인터투어에 
-                  입히면 어떤 느낌이 들까?라는 호기심에 하나투어의 디자인을 참고하여 클론코딩하였습니다.
-                  추가적으로 인터투어는 여행이 주제인 사이트이기 때문에 고객의 편의를 위해
-                  메인 사이트로 이동하는 버튼을 추가하였습니다.
-                </p>
-                <p class="portflo_btns">
-                  <a href="http://www.394web.com/intertour/index.html" target="_blank">방문하기</a>
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul class="work_box psRel">
-              <li class="mockup_images shadow"><img src="img/con1/con1_jehaweb.jpg" alt="제하웹"></li>
-              <li class="mockup_details">
-                <p class="work_name rale"><span class="work_num rale">04</span> &nbsp;Jeha Web</p>
-                <p class="detail roboto">HTML &#47; CSS &#47; jQuery</p>
-                <p class="detail pp_container">
-                  <span class="txt-title">기획의도</span><br>
-                  포트폴리오 웹사이트를 보다 더 다양한 기기에서 자연스럽게 보실 수 있도록 반응형으로 제작하였습니다.
-                </p>
-                <p class="portflo_btns">
-                  <a href="/" target="_blank">방문하기</a>
-                </p>
-              </li>
-            </ul>
-          </li>
+            <div class="thumb_box">
+              <img src="../portfolio/img/con1/port_enders.png" alt="담깅">
+            </div>
+            <strong class="thumb_title">[해커톤] 새싹톤 - 플로깅 프로젝트 구축</strong>
+            <p class="desc">React 환경 : 마크업 (Mobile)</p>
+            <div class="port_link">
+              <a href="https://www.leejams.github.io/TechnomadFront/">홈페이지 방문</a>
+            </div>
+            <div class="pop_desc">
 
+            </div>
+          </li>
           <li>
-            <ul class="work_box psRel">
-              <li class="mockup_images shadow"><img src="img/con1/con1_now.jpg" alt="나우엠알오"></li>
-              <li class="mockup_details">
-                <p class="work_name rale"><span class="work_num rale">05</span> &nbsp;NOWMRO</p>
-                <p class="detail roboto">HTML &#47; CSS &#47; jQuery</p>
-                <p class="detail roboto">PC Web</p>
-                <p class="detail pp_container">
-                  <span class="txt-title">기획의도</span><br>
-                  (주)가자안전센터 쇼핑몰에서 퍼블리셔로 근무하며 안전용품 사이트인 나우세이프티 PC웹 사이트를 제작하였습니다. 
-                  기존 사이트(가자안전센터)와 비슷한 디자인을 원하는 고객의 요구에 따라, 메이크샵 스킨디자인에 입각하여 구현하였습니다.
-                </p>
-                <p class="portflo_btns">
-                  <a href="https://www.nowmro.com/" target="_blank">방문하기</a>
-                </p>
-              </li>
-            </ul>
+            <div class="thumb_box">
+              <img src="../portfolio/img/con1/port_enders.png" alt="이젠클라우드">
+            </div>
+            <strong class="thumb_title">이젠클라우드 자사 솔루션 구축</strong>
+            <p class="desc">JAVA 환경 : 기획 / 마크업 (Responsive)</p>
+            <div class="port_link">
+              <a href="http://dev-mo.ezencloud.co.kr/common/main/index.do">홈페이지 방문</a>
+            </div>
+            <div class="pop_desc">
+              
+            </div>
+          </li>
+          <li>
+            <div class="thumb_box">
+              <img src="../portfolio/img/con1/port_mylab.png" alt="마이랩">
+            </div>
+            <strong class="thumb_title">한국암웨이 마이랩 솔루션 프로젝트 유지보수</strong>
+            <p class="desc">Vue 환경 : 마크업 (Responsive)</p>
+            <div class="port_link">
+              <a href="https://www.mylab.amway.co.kr/intro/solution">홈페이지 방문</a>
+            </div>
+            <div class="pop_desc">
+              
+            </div>
+          </li>
+          <li>
+            <div class="thumb_box">
+              <img src="../portfolio/img/con1/port_ums.png" alt="광주은행">
+            </div>
+            <strong class="thumb_title">광주은행 UMS 어드민 서비스 개선 및 구축</strong>
+            <p class="desc">JAVA환경 : </p>마크업 (Web)</p>
+            <div class="pop_desc">
+              
+            </div>
+          </li>
+          <li>
+            <div class="thumb_box">
+              <img src="../portfolio/img/con1/port_ums.png" alt="광주은행">
+            </div>
+            <strong class="thumb_title">광주은행 이메일 템플릿 및 첨부파일 테이블 코딩</strong>
+            <p class="desc">html / javascript</p>
+            <div class="pop_desc">
+              
+            </div>
+          </li>
+          <li>
+            <div class="thumb_box">
+              <img src="../portfolio/img/con1/port_enders.png" alt="엔더스">
+            </div>
+            <strong class="thumb_title">엔더스 자사 홈페이지 구축</strong>
+            <p class="desc">Vue 환경 : 마크업 (Responsive)</p>
+            <div class="pop_desc">
+              
+            </div>
           </li>
         </ul><!-- work_container end -->
       </section>

@@ -6,7 +6,7 @@
  * creator : leejeha
  * --------------------------------
 */
-
+body {background-color:rgba(240, 240, 240, 0.95);}
 /* class */
 .psRel {position:relative;}
 .mgtop {margin-top:40px;}
@@ -179,8 +179,17 @@
   position: absolute;
   width:100%;
   height:60px;
+  padding-right:68px;
   background-color:rgba(1,1,1,60%);
   transition:all 0.4s ease;
+}
+.flexbox {
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
 }
 .logo {
   display: none;
@@ -190,12 +199,31 @@
   line-height: 60px;
   padding-left: 20px;
 }
-
 .logo a {
   font-size:2.4rem;
   color:#fff;
   z-index:2;
   transition:color .3s;
+}
+.navlink ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items:center;
+  width:100%;
+  padding:0 8px;
+}
+.navlink ul li{
+  margin-left:20px;
+}
+.navlink ul li:first-child{
+  margin-left:0;
+}
+
+.navlink a {
+  color:#fff;
+  font-size:1.6rem;
+  font-weight:500;
 }
 
 /* footer */
