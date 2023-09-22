@@ -11,6 +11,8 @@ var fn = (function() {
 		common : function(){
 			fn.lnb();
 			fn.scrollHeader();
+      fn.popupOpen();
+      fn.popupClose();
 		},
 
     // lnb
@@ -149,15 +151,17 @@ var fn = (function() {
     },
 
 		//popupOpen
-		popupOpen : function(obj){
-			$(obj).addClass("open");
-			$("body").addClass("ov-hidden");
+		popupOpen : function(){
+      $(document).on("click", ".work_container > li",function(){
+        $(this).find(".poplayer").addClass("open");
+      });
 		},
 
 		//popupClose
-		popupClose : function(obj){
-			$(obj).removeClass("open");
-			$("body").removeClass("ov-hidden");
+		popupClose : function(){
+      $(document).on("click", ".work_container .poplayer .btn_popclose",function(){
+        $(this).closest(".poplayer").removeClass("open");
+      });
 		},
 	}
 })();

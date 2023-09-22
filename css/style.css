@@ -152,9 +152,26 @@
 }
 
 /* section - listWork */
-
-
-
+.list-work{width:100%;}
+.work_container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  width:1200px;
+  max-width:1200px;
+  margin:0 auto;
+  background-color:#fff;
+}
+.work_container li{
+  width:32%;
+  margin-left:1%;
+}
+.thumb_box img{
+  width:100%;
+  max-width:100%;
+}
 
 /* profile */
 .profile {
@@ -183,27 +200,21 @@
   color:#616161;
   font-size:0.9rem;
 }
-
-
-
 .info_list {
   display: flex;
   justify-content: space-between;
   align-items:flex-start;
 }
-
 .info_list > li{
   width:35vw;
   box-sizing: border-box;
   padding:10px 17px;
 }
-
 .profile_ttl {
   display: block;
   padding:12px 0;
   font-size:1.2rem;
 }
-
 .profile_image {
   width:100%;
   overflow: hidden;
@@ -216,8 +227,6 @@
   width:100%;
   max-width: 100%;
 }
-
-
 .personal_info > li {
   position: relative;
   padding:8px 0;
@@ -233,7 +242,6 @@
   margin-right:8px;
   margin-bottom:-3px;
 }
-
 .personal_info > li:nth-child(2):before {
   background:url("../img/icon/pf_name_20.png") no-repeat center top;
 }
@@ -243,8 +251,6 @@
 .personal_info > li:nth-child(4):before {
   background:url("../img/icon/pf_call_23.png") no-repeat center top;
 }
-
-
 
 /* skills */
 .row2 {
