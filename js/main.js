@@ -152,15 +152,16 @@ var fn = (function() {
 
 		//popupOpen
 		popupOpen : function(){
-      $(document).on("click", ".work_container > li",function(){
-        $(this).find(".poplayer").addClass("open");
+      $(document).on("click", ".work_container .thumb_box", function(){
+        $(this).closest(".thumb_wrap").siblings(".poplayer").addClass("open");
       });
 		},
 
 		//popupClose
 		popupClose : function(){
-      $(document).on("click", ".work_container .poplayer .btn_popclose",function(){
-        $(this).closest(".poplayer").removeClass("open");
+      $(".work_container .poplayer .btn_popclose").on("click", function(){
+        $(this).parent().removeClass("open");
+        // console.log($(this).parent());
       });
 		},
 	}

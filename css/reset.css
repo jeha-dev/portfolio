@@ -12,6 +12,15 @@
 @font-face{
     font-family: 'Pretendard';
     font-style:normal;
+    font-weight:300;
+    src:url("../font/Pretendard-Light.eot");
+    src:url("../font/Pretendard-Light.eot?#iefix") format("embedded-opentype"),
+        url("../font/Pretendard-Light.woff2") format("woff2"),
+        url("../font/Pretendard-Light.woff") format("woff");
+}
+@font-face{
+    font-family: 'Pretendard';
+    font-style:normal;
     font-weight:400;
     src:url("../font/Pretendard-Regular.eot");
     src:url("../font/Pretendard-Regular.eot?#iefix") format("embedded-opentype"),
