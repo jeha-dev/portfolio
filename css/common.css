@@ -6,24 +6,58 @@
  * creator : leejeha
  * --------------------------------
 */
-body {background-color:rgba(240, 240, 240, 0.95);}
+
 /* class */
-.psRel {position:relative;}
 .mgtop {margin-top:40px;}
 .lht {line-height:1.5;}
 .shadow {box-shadow: 0 4px 6px rgba(0, 0, 0, .20);}
 .shadow_white {box-shadow: 2px 3px 9px rgba(255, 255, 255, .5);}
 .shadow_gray {box-shadow: 8px 6px 16px rgba(202, 202, 202, 0.3);}
-.shadow_deep {box-shadow: 8px 6px 16px rgba(41, 41, 41, 0.75);}
 
 /* font */
 .roboto{font-family: 'Roboto', sans-serif;}
 .rale {font-family: 'Raleway', sans-serif;}
 
-/* layout */
-.wrapper {width:1800px; margin:0 auto;}
-.comn_size {width:100%;height:100vh;background-position:center bottom;background-attachment:fixed;overflow:hidden;}
+/* button */
+/* .btn_link{
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:4rem;
+  line-height:40px;
+  padding:0 12px;
+  background-color:#777;
+  color:#fff;
+  border:0.1rem solid #777;
+  font-size:1.4rem;
+  font-weight:500;
+  border-radius:30px;
+  z-index:9;
+} */
+.btn_link{
+  margin-top:12px;
+  width:10rem;
+  height:3rem;
+  line-height:30px;
+  background-color:#f1f1f1;
+  color:#777;
+  font-size:1.4rem;
+  text-align:center;
+}
 
+
+/* layout */
+.wrapper {
+  width:1800px;
+  margin:0 auto;
+}
+.comn_size {
+  width:100%;
+  height:100vh;
+  background-position:center bottom;
+  background-attachment:fixed;
+  overflow:hidden;
+}
 
 /* 햄버거 버튼 */
 .menu_icon {
@@ -193,6 +227,7 @@ body {background-color:rgba(240, 240, 240, 0.95);}
 }
 .logo {
   display: none;
+  position:relative;
   width:160px;
   height:60px;
   overflow: hidden;
