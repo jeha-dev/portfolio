@@ -181,22 +181,12 @@
 .work_container li{
   width:32%;
   margin-left:1%;
-  padding-top:30px;
+  padding-top:40px;
   color:#333;
 }
-.thumb_wrap{
-  position:relative;
-}
-.thumb_box {
+
+.work_container .thumb_wrap > .thumb_box {
   margin-bottom:12px;
-  border-top-left-radius:12px;
-  border-top-right-radius:12px;
-  overflow:hidden;
-}
-.thumb_box img{
-  width:100%;
-  max-width:100%;
-  cursor: pointer;
 }
 .thumb_title {
   font-size:2rem;
@@ -207,8 +197,6 @@
   font-size:1.5rem;
   font-weight:400;
 }
-
-
 
 /* profile */
 .profile {
