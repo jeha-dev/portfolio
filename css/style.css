@@ -186,7 +186,14 @@
 }
 
 .work_container .thumb_wrap > .thumb_box {
+  height:245px;
   margin-bottom:12px;
+  border:0.3rem solid #f1f1f1;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+.work_container .thumb_wrap > .thumb_box:hover{
+  border:0.3rem solid #333;
 }
 .thumb_title {
   font-size:2rem;
