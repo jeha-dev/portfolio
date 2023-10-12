@@ -118,7 +118,7 @@ a{border:0;color:#444;text-decoration:none;}
 a:hover{text-decoration:none;}
 a.on{height:auto;text-indent:inherit;background-image:none;}
 *, *:before, *:after{box-sizing:border-box;}
-*:focus{outline:0;}
+/* *:focus{outline:;} */
 /* body, html */
 html{font-size:10px;}
 html,body{height:100%;}
