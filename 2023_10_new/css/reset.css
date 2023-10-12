@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/**
+ * --------------------------------
+ * reset CSS
+ * creator : leejeha
+ * --------------------------------
+*/
+
+/* 웹폰트 - NotoSans */
+
+@font-face{
+    font-family: 'Pretendard';
+    font-style:normal;
+    font-weight:300;
+    src:url("../font/Pretendard-Light.eot");
+    src:url("../font/Pretendard-Light.eot?#iefix") format("embedded-opentype"),
+        url("../font/Pretendard-Light.woff2") format("woff2"),
+        url("../font/Pretendard-Light.woff") format("woff");
+}
+@font-face{
+    font-family: 'Pretendard';
+    font-style:normal;
+    font-weight:400;
+    src:url("../font/Pretendard-Regular.eot");
+    src:url("../font/Pretendard-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../font/Pretendard-Regular.woff2") format("woff2"),
+        url("../font/Pretendard-Regular.woff") format("woff");
+}
+@font-face{
+    font-family: 'Pretendard';
+    font-style:normal;
+    font-weight:600;
+    src:url("../font/Pretendard-SemiBold.eot");
+    src:url("../font/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../font/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face{
+    font-family: 'Pretendard';
+    font-style:normal;
+    font-weight:800;
+    src:url("../font/Pretendard-ExtraBold.eot");
+    src:url("../font/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("../font/Pretendard-ExtraBold.woff2") format("woff2"),
+        url("../font/Pretendard-ExtraBold.woff") format("woff");
+}
+/* 웹폰트 - Syne */
+@font-face{
+    font-family: 'Syne', sans-serif;
+    font-style:normal;
+    font-weight:400;
+    src:url("../font/Syne-Regular.eot");
+    src:url("../font/Syne-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../font/Syne-Regular.woff") format("woff");
+}
+@font-face{
+    font-family: 'Syne', sans-serif;
+    font-style:normal;
+    font-weight:500;
+    src:url("../font/Syne-Medium.eot");
+    src:url("../font/Syne-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../font/Syne-Medium.woff") format("woff");
+}
+@font-face{
+    font-family: 'Syne', sans-serif;
+    font-style:normal;
+    font-weight:700;
+    src:url("../font/Syne-Black.eot");
+    src:url("../font/Syne-Black.eot?#iefix") format("embedded-opentype"),
+        url("../font/Syne-Black.woff") format("woff");
+}
+
+
+html,body,div,p,iframe,frameset, h1,h2,h3,h4,h5,h6, strong,span,b,em,var,label,legend, ul,ol,li,dl,dt,dd,
+table,thead,tbody,tfoot,tr,th,td,caption, form,fieldset,input,textarea, sub,sup,img,a,del,button,pre,
+header,footer,section,article,aside,figure,figcaption{padding:0;margin:0;}
+/* 목록 스타일 리셋 */
+ul, ol, li{list-style:none;}
+/* 태그 리셋 */
+button{background:transparent;cursor:pointer;}
+img{vertical-align:top;}
+img,button,fieldset,table{border:0;}
+em, address, del{font-style:normal;}
+label,a{display:inline-block;}
+strong, em{font-weight:600;}
+/* form */
+input,select,label,button,textarea{border-radius:0;-webkit-border-radius:0;background-color:transparent;color:#111;font-size:14px;line-height:normal;font-family:"NotoSansKR", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";vertical-align:middle;}
+/* table */
+table{width:100%;border-collapse:collapse;border-spacing:0;}
+th, td{word-break:keep-all;word-wrap:break-word;}
+/* alink */
+a{border:0;color:#444;text-decoration:none;}
+a:hover{text-decoration:none;}
+a.on{height:auto;text-indent:inherit;background-image:none;}
+*, *:before, *:after{box-sizing:border-box;}
+/* *:focus{outline:;} */
+/* body, html */
+html{font-size:10px;}
+html,body{height:100%;}
+body{line-height:normal;font-weight:400;font-family:"Pretendard", Malgungothic, "맑은고딕", Dotum, "돋움";-webkit-word-break:keep-all;-moz-word-break:keep-all;word-break:keep-all;word-wrap:break-word;}
+/* 대체텍스트 and 숨김처리 */
+caption, legend, .hidden, .hide{position:absolute !important;top:0 !important;left:0 !important;padding:0 !important;border:0 !important;overflow:hidden !important;width:0 !important;height:0 !important;line-height:0 !important;}
