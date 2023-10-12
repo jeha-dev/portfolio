@@ -92,7 +92,7 @@
   width:100%;
   min-width:1302px;
   margin:0 auto;
-  background-color:rgb(250, 245, 231);
+  background:url('../img/bg_fix.jpg') center / cover;
   color:#3e3e3e;
 }
 .comn_size {
