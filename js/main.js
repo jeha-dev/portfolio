@@ -17,7 +17,7 @@ var fn = (function() {
     //스크롤 시 헤더
     scrollHeader : function(){
       //메뉴 버튼을 클릭했을 때
-      let $itrOffsetTop = $('#symbolic').offset().top;
+      // let $itrOffsetTop = $('#symbolic').offset().top;
       let $workOffsetTop = $('#listWork').offset().top;
       let $profileOffsetTop = $('#profile').offset().top;
       let $logo = $('.logo');
@@ -82,13 +82,13 @@ var fn = (function() {
 	}
 })();
 
-$(document).ready(function(){
-});
 
+// $(document).ready(function(){
+// });
 
 $(window).on("load", function(){
 	fn.common();
   // $(".menu_icon").addClass("active");
-  $(".closeBtn").addClass("active");
+  // $(".closeBtn").addClass("active");
 });
 
