@@ -2,7 +2,7 @@
 
 /**
  * --------------------------------
- * reset CSS
+ * common CSS
  * creator : leejeha
  * --------------------------------
 */
@@ -100,59 +100,6 @@
   background-position:center bottom;
   background-attachment:fixed;
   overflow:hidden;
-}
-
-/* 햄버거 버튼 */
-.menu_icon {
-  height:24px;
-  position: absolute;
-  top:16px;
-  right:20px;
-  background:transparent;
-  transition:all 1s;
-}
-.menu_icon.active {
-  position: fixed;
-  top:50%;
-  margin-top:-12px;
-}
-
-.allmenu {
-  width:28px;
-  height:22px;
-  position: relative;
-  background:transparent;
-  cursor: pointer;
-}
-
-.allmenu:before {
-  content:'';
-  display:block;
-  width:100%;
-  height:3px;
-  background:#fff;
-  position:absolute;
-  top:0;
-  transition: all 0.4s ease;
-}
-
-.allmenu:after {
-  content:'';
-  display:block;
-  width:100%;
-  height:3px;
-  background:#fff;
-  position:absolute;
-  bottom:0;
-  transition: all 0.4s ease;
-}
-
-.hamBtn {
-  display:block;
-  width:100%;
-  height:3px;
-  background:#fff;
-  transition: all 0.4s ease;
 }
 
 /* lnb */
