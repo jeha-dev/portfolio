@@ -15,8 +15,7 @@
 .shadow_gray {box-shadow: 8px 6px 16px rgba(202, 202, 202, 0.3);}
 
 /* font */
-.roboto{font-family: 'Roboto', sans-serif;}
-.rale {font-family: 'Raleway', sans-serif;}
+.syne{font-family: 'Syne', sans-serif;}
 
 /* button */
 /* .btn_link{
@@ -267,25 +266,19 @@
 
 /* footer */
 .footer {
-  display:none;
   width:100%;
   height:auto;
-  box-sizing: border-box;
-  padding:0 20px 20px;
-  background:#555;
-  text-align: center;
-  color:#f9f9f9;
-  font-size:.8em;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
+  padding:0 20px 30px;
+  font-size:1.4rem;
 }
-.footer span {
-  opacity: .6;
-  transition:opacity .5s ease-in;
+.footer p,
+.footer .link-wrap a{
+  font-size:1.4rem;
 }
-.footer span.reach {
-  opacity: 1;
+.footer .link-wrap a{
+  margin-left:40px;
 }
+
 
 /* popup poplayer */
 .poplayer {
