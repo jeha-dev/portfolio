@@ -23,7 +23,8 @@
 .wrapper{
   word-break: keep-all;
 }
-.section-wrap {
+.section-wrap,
+section {
   position:relative;
 }
 /* header */

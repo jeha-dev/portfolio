@@ -7,6 +7,70 @@
  * --------------------------------
 */
 /* main Animation - wave  */
+.intro {
+  width:100%;
+  height:100vh;
+  max-height:100%;
+  background:radial-gradient(ellipse at top, rgb(250, 234, 221) 0%, rgb(255, 217, 184) 15%, #fff 100%);
+  overflow: hidden;
+}
+.list_work:before {
+  content:'';
+  position:absolute;
+  top:0;
+  width:100%;
+  height:92rem;
+  background: linear-gradient( rgb(194,231,254,1), rgb(232, 246, 255) 20%, #fff 60%);
+}
+.intro .ani-base {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:2%;
+  background: rgba(194,231,254,1);
+  z-index:1;
+}
+.ani-base .ani-wave{
+  position:absolute;
+  top:-280px;
+  opacity:0.2;
+  width:764.8rem;
+  height:29.2rem;
+  background:url('../img/bg_wave.svg') repeat-x;
+  z-index:0;
+  animation: rolling 7.2s cubic-bezier(0.36, 0.45, 0.63, 0.53)  infinite;
+  transform: translate3d(0, 0, 0); 
+}
+.ani-base .ani-wave:nth-child(2){
+  top:-260px;
+  opacity:1;
+  z-index:1;
+  animation: rolling 7.2s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+  swelling 7.2s ease -1.25s infinite;
+  ;
+}
+/* 좌우 이동 */
+@keyframes rolling{
+  0% {
+    margin-left:0;
+  }
+  100% {
+    margin-left:-1614px;
+  }
+}
+/* 수직운동 */
+@keyframes swelling {
+  0% {
+    transform:translate3d(0,-8%,0);
+  }
+  50% {
+    transform:translate3d(0,3%,0);
+  }
+  100% {
+    transform:translate3d(0,-8%,0);
+  }
+}
 
 
 
