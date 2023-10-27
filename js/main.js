@@ -67,8 +67,8 @@ var fn = (function() {
 
 		//popupOpen
 		popupOpen : function(){
-      $(document).on("click", ".work_container .thumb_box", function(){
-        $(this).closest(".thumb_wrap").siblings(".poplayer").addClass("open");
+      $(document).on("click", ".work_container .thumb-box", function(){
+        $(this).closest(".thumb-wrap").siblings(".poplayer").addClass("open");
       });
 		},
 

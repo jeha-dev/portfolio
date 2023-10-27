@@ -95,15 +95,15 @@ section {
 
 
 /* thumbnail */
-.thumb_wrap{
+.thumb-wrap{
   position:relative;
 }
-.thumb_box{
+.thumb-box{
   border-top-left-radius:5px;
   border-top-right-radius:5px;
   overflow:hidden;
 }
-.thumb_box img{
+.thumb-box img{
   width:100%;
   max-width:100%;
   cursor: pointer;
@@ -149,7 +149,7 @@ section {
 .poplayer .popcont::-webkit-scrollbar-track {
   background-color:#fff;
 }
-.pop_desc .thumb_box{
+.pop_desc .thumb-box{
   display:flex;
   justify-content:center;
   align-items:center;
