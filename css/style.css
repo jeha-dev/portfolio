@@ -197,6 +197,45 @@
   right:0;
 }
 
+/* contact */
+.contact {
+  max-width:128rem;
+  margin:0 auto;
+  padding-top:360px;
+  text-align:center;
+}
+.contact-title {
+  margin-bottom:34px;
+  font-size:4rem;
+  font-weight:600;
+}
+.contact-title-desc {
+  margin-bottom:88px;
+  color:#555;
+  font-size:2.4rem;
+  line-height:30px;
+}
+.form-area {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.form-area ul {
+  margin-bottom:30px;
+}
+.form-area ul.row{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+}
+.form-area .row li {
+  width:calc(50% - 50px);
+}
+.form-area .btn {
+  margin:40px auto;
+}
+
 /* pop animation examples */
 /* .pop-outin {
   animation: 2s anim-popoutin ease infinite;

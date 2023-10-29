@@ -19,7 +19,7 @@
 /* font */
 .syne{font-family: 'Syne', sans-serif;}
 
-/* layout > wrapper, section-wrap, header, footer, sidebars, lnb*/
+/* layout > wrapper, section-wrap, header, footer, sidebars, lnb, .content, .section-bg */
 .wrapper{
   word-break: keep-all;
 }
@@ -68,11 +68,11 @@ section {
   margin-left:40px;
   text-decoration:underline;
 }
-
-/* module > .content, buttons, thumbnail, .section-bg, listproject, popup */
+/* content */
 .content > *:not(".section-bg"){
   z-index:10;
 }
+/* section-bg */
 .section-bg {
   visibility:hidden;
   height:0;
@@ -99,6 +99,8 @@ section {
   color:#f3f3f3;
   font-size:8rem;
 }
+
+/* module > button, form, thumbnail, listproject, popup */
 /* button */
 .btn {
   position:relative;
@@ -114,12 +116,37 @@ section {
   border:0.1rem solid #ccc;
 }
 .btn.big {
-  max-width:24rem;
+  width:24rem;
   height:5.2rem;
   line-height:52px;
   background:rgba(256,256,256, 30%);
   font-size:1.8rem;
 }
+/* form */
+/* form */
+input, select, textarea {
+  background:transparent;
+  border:none;
+}
+textarea {
+  width:100%;
+  height:120px;
+  padding:10px;
+  border-bottom:0.3rem solid #3e3e3e;
+  resize:none;
+  overflow-y:auto;
+}
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
+  width:100%;
+  height:40px;
+  padding:0 10px;
+  vertical-align:middle;
+  border-bottom:0.3rem solid #3e3e3e;
+}
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder {
+  color:#999;
+}
+
 
 /* thumbnail */
 .thumb-box{
