@@ -148,6 +148,11 @@
 }
 
 /* profile */
+.profile {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
 .profile-wrap {
   display:flex;
   flex-direction:row;
@@ -165,7 +170,7 @@
 .profile-txt-box {
   position:relative;
   width:calc(100% - 552px);
-  padding-top:90px;
+  padding-top:80px;
   padding-left:11%;
 }
 .profile-txt-box:before {
@@ -178,7 +183,6 @@
   height:19.4rem;
   background:url('./../img/bg_quote.svg') no-repeat center;
 }
-
 .profile-txt-box p{
   margin-bottom:40px;
   font-size:2.4rem;
@@ -186,6 +190,11 @@
 }
 .profile-txt-box p:last-child{
   margin-bottom:0;
+}
+.profile .btn{
+  position:absolute;
+  bottom:0;
+  right:0;
 }
 
 /* pop animation examples */

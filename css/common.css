@@ -58,7 +58,7 @@ section {
 /* footer */
 .footer {
   width:100%;
-  padding:0 20px 30px;
+  padding:30px 20px;
 }
 .footer p,
 .footer .link-wrap a{
@@ -69,8 +69,11 @@ section {
   text-decoration:underline;
 }
 
-/* module > buttons, thumbnail, .article-bg, listproject, popup */
-.article-bg {
+/* module > .content, buttons, thumbnail, .section-bg, listproject, popup */
+.content > *:not(".section-bg"){
+  z-index:10;
+}
+.section-bg {
   visibility:hidden;
   height:0;
   position:fixed;
@@ -80,19 +83,19 @@ section {
   width:100%;
   z-index:2;
 }
-.article-bg.active{
+.section-bg.active{
   visibility:visible;
   height:100vh;
 }
-.article-bg strong{
+.section-bg strong{
   display:block;
   text-align:center;
 }
-.article-title{
+.section-title{
   color:#e1e1e1;
   font-size:2.4rem;
 }
-.article-title-desc{
+.section-title-desc{
   color:#f3f3f3;
   font-size:8rem;
 }
