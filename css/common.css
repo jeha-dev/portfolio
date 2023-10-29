@@ -93,14 +93,10 @@ section {
   font-size:1.8rem;
 }
 
-
 /* thumbnail */
-.thumb-wrap{
-  position:relative;
-}
+
 .thumb-box{
-  border-top-left-radius:5px;
-  border-top-right-radius:5px;
+  border-radius:30px;
   overflow:hidden;
 }
 .thumb-box img{
