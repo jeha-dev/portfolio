@@ -90,6 +90,7 @@
   padding:0 40px;
 }
 
+/* project */
 .project{
   display:flex;
   justify-content:center;
@@ -109,7 +110,6 @@
   max-width:128rem;
   padding-top:260px;
 }
-
 .list-project{
   position:relative;
   flex-wrap:wrap;
@@ -147,6 +147,46 @@
   margin-top:18px;
 }
 
+/* profile */
+.profile-wrap {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:flex-start;
+  position:relative;
+  max-width:147rem;
+  margin:0 auto;
+  padding-top:260px;
+} 
+.profile-wrap .image-box{
+  border-radius:30px;
+}
+.profile-txt-box {
+  position:relative;
+  width:calc(100% - 552px);
+  padding-top:90px;
+  padding-left:11%;
+}
+.profile-txt-box:before {
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:65px;
+  width:29rem;
+  height:19.4rem;
+  background:url('./../img/bg_quote.svg') no-repeat center;
+}
+
+.profile-txt-box p{
+  margin-bottom:40px;
+  font-size:2.4rem;
+  line-height:35px;
+}
+.profile-txt-box p:last-child{
+  margin-bottom:0;
+}
 
 /* pop animation examples */
 /* .pop-outin {
