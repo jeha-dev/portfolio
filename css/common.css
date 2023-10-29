@@ -69,17 +69,42 @@ section {
   text-decoration:underline;
 }
 
-/* module > buttons, thumbnail, listproject, popup */
-
+/* module > buttons, thumbnail, .article-bg, listproject, popup */
+.article-bg {
+  visibility:hidden;
+  height:0;
+  position:fixed;
+  top:200px;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  z-index:2;
+}
+.article-bg.active{
+  visibility:visible;
+  height:100vh;
+}
+.article-bg strong{
+  display:block;
+  text-align:center;
+}
+.article-title{
+  color:#e1e1e1;
+  font-size:2.4rem;
+}
+.article-title-desc{
+  color:#f3f3f3;
+  font-size:8rem;
+}
 /* button */
 .btn {
   position:relative;
-  height:4.2rem;
-  line-height:42px;
-  padding:0 18px;
+  height:3.8rem;
+  line-height:38px;
+  padding:0 12px;
   background:#fff;
   color:#555;
-  font-size:1.5rem;
+  font-size:1.4rem;
   font-weight:400;
   text-align:center;
   vertical-align:middle;
@@ -94,9 +119,10 @@ section {
 }
 
 /* thumbnail */
-
 .thumb-box{
+  background-color:#fff;
   border-radius:30px;
+  border:0.1rem solid #e1e1e1;
   overflow:hidden;
 }
 .thumb-box img{
