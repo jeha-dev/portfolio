@@ -59,6 +59,7 @@ section {
 .footer {
   width:100%;
   padding:30px 20px;
+  background-color:transparent;
 }
 .footer p,
 .footer .link-wrap a{
@@ -70,7 +71,7 @@ section {
 }
 /* content */
 .content > *:not(".section-bg"){
-  z-index:10;
+  z-index:1;
 }
 /* section-bg */
 .section-bg {
@@ -81,7 +82,8 @@ section {
   display:flex;
   flex-direction:column;
   width:100%;
-  z-index:2;
+  opacity:0.5;
+  z-index:0;
 }
 .section-bg.active{
   visibility:visible;

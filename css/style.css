@@ -152,6 +152,8 @@
   display:flex;
   flex-direction:column;
   justify-content:center;
+  padding-bottom:250px;
+  background:linear-gradient( #fcfefc 0%, #fff 100%);
 }
 .profile-wrap {
   display:flex;
@@ -163,7 +165,44 @@
   max-width:147rem;
   margin:0 auto;
   padding-top:260px;
-} 
+  transition:transform 3s;
+}
+.profile-wrap:before,
+.profile-wrap:after{
+  content:'';
+  display:block;
+  position:absolute;
+  border-top-left-radius:46%;
+  border-top-right-radius:40%;
+  border-bottom-left-radius:46%;
+  border-bottom-right-radius:45%;
+  z-index:0;
+}
+.profile-wrap:before{
+  width:60rem;
+  height:60rem;
+  left:-20%;
+  bottom:-45%;
+  background-color:#f8f9fe;
+  animation: waves 6s cubic-bezier(0.3,0.45,0.54,0.42) infinite;
+}
+.profile-wrap:after{
+  width:70rem;
+  height:70rem;
+  left:-30%;
+  bottom:-65%;
+  background-color:#d6e6ea63;
+  /* background-color:#eafdf9; */
+  animation: waves 7s cubic-bezier(0.24,0.45,0.68,0.38) infinite;
+}
+@keyframes waves{
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
 .profile-wrap .image-box{
   border-radius:30px;
 }
@@ -199,11 +238,15 @@
 
 /* contact */
 .contact {
-  max-width:128rem;
+  position:relative;
+  min-width:128rem;
+  max-width:100%;
   margin:0 auto;
-  padding-top:360px;
+  padding-top:100px;
   text-align:center;
+  overflow:hidden;
 }
+
 .contact-title {
   margin-bottom:34px;
   font-size:4rem;
@@ -219,6 +262,8 @@
   display:flex;
   flex-direction:column;
   justify-content:center;
+  max-width:128rem;
+  margin:0 auto;
 }
 .form-area ul {
   margin-bottom:30px;
@@ -277,221 +322,7 @@ perspective 1000px
   opacity 0
   transform translate3d(-25px, -20px, -800px) */
 
-@media screen and (min-width:1240px) and (max-width:1505px) {
-  /* 팝업 */
-  .popup {
-    width:40vw;
-    height:200px;
-    text-align: center;
-    line-height:1.5;
-    font-size:1.2rem;
-    box-sizing: border-box;
-    padding:60px 20px;
-    letter-spacing: -0.07em;
-  }
-  .pop_en {
-    letter-spacing: -0.01em;
-  }
-
-/* list_work */
-  .list_work{
-    padding:80px 65px 100px;
-    transition:all .5s ease-in;
-  }
-
-  .work_container {
-    box-sizing: border-box;
-    padding:80px 20px 0;
-    border-radius: 30px;
-  }
-  .work_box {
-    margin-bottom:120px;
-  }
-  .mockup_images {
-    /* 대표이미지 */
-    width:50%;
-    overflow: hidden;
-  }
-  .mockup_details {
-    /* 상세설명 */
-    width:45%;
-    /* background:turquoise; */
-    position: relative;
-    transform:translateY(1vh);
-  }
-  .work_name {
-    font-size:2rem;
-  }
-  .work_num {
-    font-size:2.2rem;
-  }
-  .pp_container {
-    /* 내용 기술 */
-    margin:30px 0 20px;
-    letter-spacing: -0.03em;
-    line-height: 1.2;
-  }
-
-  /* 버튼 */
-  .portflo_btns {
-    position: absolute;
-    bottom:2vh;
-    right:0;
-  }
-  .portflo_btns a{
-    display: inline-block;
-    width:48%;
-    height:40px;
-    font-size:1.4rem;
-    line-height:38px;
-  } 
-
-  /* profile */
-  .profile {
-    box-sizing: border-box;
-    padding:60px 50px 5px;
-    transition:all .5s ease-in;
-  }
-
-}
-
-@media screen and (min-width:1080px) and (max-width:1239px) {
-  /* 팝업 popup */
-  .popup {
-    width:45vw;
-    height:200px;
-    text-align: center;
-    line-height:1.5;
-    font-size:1.2rem;
-    box-sizing: border-box;
-    padding:60px 10px;
-    letter-spacing: -0.07em;
-  }
-  .pop_en {
-    letter-spacing: -0.01em;
-  }
-
-  .close_pop {
-    background: transparent;
-    border:1px solid #999;
-    color:#888;
-    padding:10px 30px;
-    position: absolute;
-    bottom:30px;
-    right:30px;
-    transition: all .5s ease;
-  }
-
-  /* list_work */
-  .list_work {
-    box-sizing: border-box;
-    padding:60px 40px 120px;
-    transition:all .5s ease-in;
-  }
-
-  .list_work h3 {
-    font-size:3rem;
-    margin:30px 0;
-  }
-
-  .work_container {
-    box-sizing: border-box;
-    padding:60px 0;
-    border-radius: 30px;
-  }
-
-  .work_box {
-    margin-bottom:80px;
-  }
-  .mockup_images {
-    /* 대표이미지 */
-    width:50%;
-    margin:0 8px;
-    overflow: hidden;
-  }
-  .mockup_details {
-    /* 상세설명 */
-    width:42%;
-    /* background:turquoise; */
-    position: relative;
-    transform:translateY(-0.5vh);
-    padding-right:5px;
-  }
-
-  .work_name {
-    font-size:2rem;
-  }
-  .work_num {
-    font-size:2.2rem;
-  }
-  .pp_container {
-    /* 내용 기술 */
-    margin:15px 0 18px;
-    letter-spacing: -0.02em;
-    line-height: 1.5;
-    font-size:0.9rem;
-  }
-  /* 버튼 */
-  .portflo_btns {
-    position: absolute;
-    bottom:-2vh;
-    right:0;
-  }
-  .portflo_btns a{
-    display: inline-block;
-    width:48%;
-    height:40px;
-    font-size:1.4rem;
-    line-height:38px;
-  } 
-
-
-}
-
-@media screen and (min-width:600px) and (max-width:1079px) {
-
-
-  /* 팝업 popup */
-  .popup {
-    transition: all .5s ease-in;
-    display: none;
-  }
-
-/* list_work */
-  .list_work {
-    height:auto;
-    padding:80px 30px 80px;
-    transition:all .5s ease-in;
-  }
-  .list_work h3 {
-    font-size:2.8rem;
-  }
-  .work_container > li:last-child .work_box {
-    margin-bottom:80px;
-  }
-
-  .mockup_images {
-    /* 대표이미지 */
-    width:100%;
-    overflow: hidden;
-  }
-  .mockup_details {
-    /* 상세설명 */
-    width:100%;
-    position: relative;
-  }
-  .portflo_btns {
-    position: absolute;
-    bottom:-10vh;
-    right:0;
-  }
-  .portflo_btns a {
-    width:49%;
-  }
-
-}
-
-/* @media screen and (max-width:599px) {} */
+@media screen and (min-width:1240px) and (max-width:1505px) {}
 
 
 
