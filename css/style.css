@@ -219,14 +219,6 @@
   /* background-color:#eafdf9; */
   animation: waves 7s cubic-bezier(0.24,0.45,0.68,0.38) infinite;
 }
-@keyframes waves{
-  from {
-    transform:rotate(0deg);
-  }
-  to {
-    transform:rotate(360deg);
-  }
-}
 .profile-wrap .image-box{
   border-radius:30px;
 }
@@ -273,6 +265,22 @@
   overflow:hidden;
   z-index:0;
 }
+.contact:before{
+  content:'';
+  display:block;
+  position:absolute;
+  right:-10%;
+  bottom:-10%;
+  width:40rem;
+  height:40rem;
+  background-color:rgba(232, 214, 214, 0.5);
+  border-top-left-radius:38%;
+  border-top-right-radius:40%;
+  border-bottom-left-radius:46%;
+  border-bottom-right-radius:35%;
+  z-index:1;
+  animation: waves 6s cubic-bezier(0.3,0.45,0.54,0.42) infinite;
+}
 .contact-title {
   margin-bottom:34px;
   font-size:4rem;
@@ -305,6 +313,15 @@
 }
 .form-area .btn {
   margin:40px auto;
+}
+
+@keyframes waves{
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
 }
 
 /* pop animation examples */

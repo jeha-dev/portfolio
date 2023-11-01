@@ -87,7 +87,7 @@ section {
 }
 .section-bg.active{
   visibility:visible;
-  opacity:0.5;
+  opacity:0.3;
   top:250px;
 }
 .section-bg strong{
@@ -100,7 +100,7 @@ section {
 }
 .section-title-desc{
   color:rgba(0, 0, 0, .11);
-  font-size:6rem;
+  font-size:6.4rem;
 }
 
 /* module > button, form, thumbnail, listproject, popup */
