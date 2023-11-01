@@ -3,7 +3,7 @@
 * main JS
 * --------------------------------
 */
-var fn = (function() {
+let fn = (function() {
 	"use strict";
 
 	return {
@@ -14,36 +14,49 @@ var fn = (function() {
       fn.popupClose();
 		},
 
-    // scroll animation common
+    // scroll animation
     scrollAnimation : function(){
 
+      bgAniEvent();
       aniEvent();
       $(document).scroll(function(){
-        var scrTop = $(window).scrollTop();
-        var headerHt = $(".header_container").height();
+        let scrTop = $(window).scrollTop();
+        let headerHt = $(".header_container").height();
 
         if( scrTop > headerHt){
+          bgAniEvent();
           aniEvent();
         }
       });
+
+      function bgAniEvent(){
+        $(".content").each(function(){
+          let scrTop = $(window).scrollTop();
+          let secOffTop = $(this).offset().top;
+
+          if(scrTop >= secOffTop - 280){
+            $(this).find(".section-bg").addClass("active");
+          }else if(scrTop < secOffTop + 650){
+            $(this).find(".section-bg").removeClass("active");
+          }
+
+          if(scrTop > secOffTop + 600){
+            $(this).find(".section-bg").removeClass("active");
+          }
+        });
+      }
+
       function aniEvent(){
         $(".box-ani").each(function(){
-          var winTop = $(window).scrollTop() + $(window).height();
-          var elOffTop = $(this).offset().top;
+          let winHt = $(window).height();
+          let winTop =  $(window).scrollTop() + winHt;
+          let elOffTop = $(this).offset().top;
 
-          if(winTop > elOffTop + 200){
+          if(winTop > elOffTop + 300){
             $(this).addClass("aniload");
           }
         });
-
       }
-
-      // refresh : animation이 적용된 요소들를 초기화 하겠습니다.
-      removeAniEvent();
-      function removeAniEvent(){
-        $(".box-ani").removeClass("aniload");
-      }
-
     },
 
 		//popupOpen

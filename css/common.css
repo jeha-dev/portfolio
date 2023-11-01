@@ -76,30 +76,31 @@ section {
 /* section-bg */
 .section-bg {
   visibility:hidden;
-  height:0;
   position:fixed;
-  top:200px;
+  top:300px;
   display:flex;
   flex-direction:column;
   width:100%;
-  opacity:0.35;
-  z-index:-1;
+  opacity:0;
+  transition:all 0.4s;
+  z-index:0;
 }
 .section-bg.active{
   visibility:visible;
-  height:100vh;
+  opacity:0.5;
+  top:250px;
 }
 .section-bg strong{
   display:block;
   text-align:center;
 }
 .section-title{
-  color:#e1e1e1;
-  font-size:2.4rem;
+  color:rgba(0, 0, 0, .18);
+  font-size:2.2rem;
 }
 .section-title-desc{
-  color:#f3f3f3;
-  font-size:8rem;
+  color:rgba(0, 0, 0, .11);
+  font-size:6rem;
 }
 
 /* module > button, form, thumbnail, listproject, popup */
