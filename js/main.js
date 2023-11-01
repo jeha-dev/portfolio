@@ -9,60 +9,41 @@ var fn = (function() {
 	return {
 		//공통
 		common : function(){
-			fn.scrollHeader();
+			fn.scrollAnimation();
       fn.popupOpen();
       fn.popupClose();
 		},
 
-    //스크롤 시 헤더
-    scrollHeader : function(){
-      //메뉴 버튼을 클릭했을 때
-      // let $itrOffsetTop = $('#symbolic').offset().top;
-      let $workOffsetTop = $('#listWork').offset().top;
-      let $profileOffsetTop = $('#profile').offset().top;
-      let $logo = $('.logo');
+    // scroll animation common
+    scrollAnimation : function(){
 
-      $(window).on("scroll",function(){
+      aniEvent();
+      $(document).scroll(function(){
+        var scrTop = $(window).scrollTop();
+        var headerHt = $(".header_container").height();
 
-        let $scroll = $(window).scrollTop();
-        // let $windowHeight2 = $(window).height();
-        let $windowHt = ($(window).height())*0.4;
-        // console.log($windowHt);
-      
-        if( $scroll > $itrOffsetTop - $windowHt ) {
-          $(".main_header").hide();
-          $logo.hide();
-          
-          // $(".menu_icon").addClass("active");
-          $('.footer').hide();
-          $(".list_menu li").find("a").removeClass("on");
-          $(".list_menu li").eq(0).find("a").addClass("on");
-        }else {
-          $logo.show();
-          // $(".menu_icon").removeClass("active");
-        }
-
-        if( $scroll > $workOffsetTop - $windowHt ) {
-          $(".main_header").show();
-          $logo.show();
-          // $(".menu_icon").removeClass("active");
-
-          $(".list_menu li").find("a").removeClass("on");
-          $(".list_menu li").eq(1).find("a").addClass("on");
-        }
-
-        if( $scroll >= $profileOffsetTop - $windowHt ) {
-
-          $(".list_menu li").find("a").removeClass("on");
-          $(".list_menu li").eq(2).find("a").addClass("on");
-
-          $('.footer').show();
-
-          $(".sk90").addClass("show");
-          $(".sk80").addClass("show");
-          $(".sk70").addClass("show");
+        if( scrTop > headerHt){
+          aniEvent();
         }
       });
+      function aniEvent(){
+        $(".box-ani").each(function(){
+          var winTop = $(window).scrollTop() + $(window).height();
+          var elOffTop = $(this).offset().top;
+
+          if(winTop > elOffTop + 200){
+            $(this).addClass("aniload");
+          }
+        });
+
+      }
+
+      // refresh : animation이 적용된 요소들를 초기화 하겠습니다.
+      removeAniEvent();
+      function removeAniEvent(){
+        $(".box-ani").removeClass("aniload");
+      }
+
     },
 
 		//popupOpen
