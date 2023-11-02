@@ -292,6 +292,10 @@
   font-size:2rem;
   line-height:30px;
 }
+.contact .text-email {
+  margin:0px auto 18px;
+  font-size:8rem;
+}
 .form-area {
   display:flex;
   flex-direction:column;
