@@ -17,19 +17,41 @@ let fn = (function() {
     // scroll animation
     scrollAnimation : function(){
 
-      bgAniEvent();
+      secbgAniEvent();
       aniEvent();
+
       $(document).scroll(function(){
         let scrTop = $(window).scrollTop();
         let headerHt = $(".header_container").height();
+        let col2 = $(".details .details-module");
+        let btnHome = $(".btn.home");
+        let clientHt = $(document).innerHeight();
+        let winHt = $(window).height();
+        let somewhere = clientHt - winHt;
+        // console.log(scrTop);
 
         if( scrTop > headerHt){
-          bgAniEvent();
+          secbgAniEvent();
           aniEvent();
+          btnHome.addClass("active");
         }
+
+        if(scrTop == 0 || scrTop == somewhere){
+          btnHome.removeClass("active");
+        }
+
+
+        let deIntroHt = $('.details-intro').height();
+        if(scrTop > col2.offset().top -100 && scrTop < deIntroHt){
+          $(".details-module-mobile").addClass("fixed");
+          console.log("응");
+        }else if(scrTop < col2.offset().top || scrTop > deIntroHt - 500){
+          $(".details-module-mobile").removeClass("fixed");
+        }
+
       });
 
-      function bgAniEvent(){
+      function secbgAniEvent(){
         $(".content").each(function(){
           let scrTop = $(window).scrollTop();
           let secOffTop = $(this).offset().top;
@@ -45,7 +67,6 @@ let fn = (function() {
           }
         });
       }
-
       function aniEvent(){
         $(".box-ani").each(function(){
           let winHt = $(window).height();
@@ -57,6 +78,7 @@ let fn = (function() {
           }
         });
       }
+
     },
 
 		//popupOpen
