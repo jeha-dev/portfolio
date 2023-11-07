@@ -43,16 +43,16 @@ let fn = (function() {
         // details-intro 
         let deIntroHt = $('.details-intro').height();
         if(scrTop < (deIntroHt / 3)*2){
-          $(".details-module-mobile").removeClass("absolute");
-          $(".details-module-mobile").addClass("fixed");
+          $(".details-desc").removeClass("absolute");
+          $(".details-desc").addClass("fixed");
         }else {
-          $(".details-module-mobile").addClass("absolute");
+          $(".details-desc").addClass("absolute");
         }
         if(scrTop < deIntroHt){
-          $(".details-module-mobile").addClass("fixed");
+          $(".details-desc").addClass("fixed");
         }
         if(scrTop == 0){
-          $(".details-module-mobile").removeClass("fixed");
+          $(".details-desc").removeClass("fixed");
         }
       });
 
@@ -72,7 +72,7 @@ let fn = (function() {
           }
         });
       }
-      
+
       function aniEvent(){
         $(".box-ani").each(function(){
           let winHt = $(window).height();
