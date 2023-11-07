@@ -291,11 +291,11 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   flex-wrap:wrap;
 }
 .row .project-image{
-  width:42%;
+  width:40.4%;
 }
 .row .project-image:nth-of-type(2){
-  width: 73rem;
-  margin-left:8%;
+  width: 57.14%;
+  margin-left:24px;
 }
 .details-content {
   padding-top:200px;
