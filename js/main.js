@@ -23,32 +23,37 @@ let fn = (function() {
       $(document).scroll(function(){
         let scrTop = $(window).scrollTop();
         let headerHt = $(".header_container").height();
-        let col2 = $(".details .details-module");
         let btnHome = $(".btn.home");
         let clientHt = $(document).innerHeight();
         let winHt = $(window).height();
-        let somewhere = clientHt - winHt;
-        // console.log(scrTop);
-
+        let scrBottom = clientHt - winHt;
+        
+        // scroll event common
         if( scrTop > headerHt){
           secbgAniEvent();
           aniEvent();
           btnHome.addClass("active");
         }
 
-        if(scrTop == 0 || scrTop == somewhere){
+        // btnHome remove
+        if(scrTop == 0 || scrTop == scrBottom){
           btnHome.removeClass("active");
         }
-
-
+        
+        // details-intro 
         let deIntroHt = $('.details-intro').height();
-        if(scrTop > col2.offset().top -100 && scrTop < deIntroHt){
+        if(scrTop < (deIntroHt / 3)*2){
+          $(".details-module-mobile").removeClass("absolute");
           $(".details-module-mobile").addClass("fixed");
-          console.log("응");
-        }else if(scrTop < col2.offset().top || scrTop > deIntroHt - 500){
+        }else {
+          $(".details-module-mobile").addClass("absolute");
+        }
+        if(scrTop < deIntroHt){
+          $(".details-module-mobile").addClass("fixed");
+        }
+        if(scrTop == 0){
           $(".details-module-mobile").removeClass("fixed");
         }
-
       });
 
       function secbgAniEvent(){
@@ -67,6 +72,7 @@ let fn = (function() {
           }
         });
       }
+      
       function aniEvent(){
         $(".box-ani").each(function(){
           let winHt = $(window).height();
@@ -78,7 +84,6 @@ let fn = (function() {
           }
         });
       }
-
     },
 
 		//popupOpen
