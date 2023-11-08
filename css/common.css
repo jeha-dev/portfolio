@@ -195,6 +195,11 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   width:100%;
   max-width:100%;
   cursor: pointer;
+  transform:scale(1);
+  transition:transform 0.3s;
+}
+.thumb-box a:hover img,.thumb-box a:focus img{
+  transform:scale(1.1);
 }
 
 /* details-module */
