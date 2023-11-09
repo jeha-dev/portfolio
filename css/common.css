@@ -153,6 +153,17 @@ module : button, form, thumbnail, listproject, details-module, popup
   bottom:-10%;
 }
 
+/* text-link */
+.text-link {
+  position:absolute;
+  bottom:-60px;
+  left:0;
+  text-align:left;
+  color:#ff8800;
+  font-size:1.8rem;
+  text-decoration:underline;
+}
+
 /* form */
 input, select, textarea {
   background:transparent;
