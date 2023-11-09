@@ -159,8 +159,9 @@ module : button, form, thumbnail, listproject, details-module, popup
   bottom:-60px;
   left:0;
   text-align:left;
-  color:#ff8800;
-  font-size:1.8rem;
+  color:rgb(249, 152, 78);
+  font-size:1.6rem;
+  font-weight:600;
   text-decoration:underline;
 }
 
@@ -278,13 +279,13 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 }
 
 .details .article-title{
-  margin-bottom:12px;
+  margin-bottom:6px;
   color:#999;
   font-size:2rem;
   font-weight:400;
 }
 .details .project-title{
-  margin-bottom:22px;
+  margin-bottom:18px;
   font-size:6rem;
   font-weight:700;
 }
@@ -299,14 +300,14 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 .details .list-skill li{
   margin-right:6px;
   color:#999;
-  font-size:2rem;
+  font-size:1.8rem;
 }
 .details .list-skill li:after{
   content:'/';
   display:inline-block;
   margin-left:6px;
   color:#999;
-  font-size:2rem;
+  font-size:1.8rem;
 }
 .details .list-skill li:last-child{
   margin-right:0;
@@ -315,13 +316,17 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   content:'';
   font-size:0;
 }
+.details .intro-desc {
+  position:relative;
+}
 .details .intro-desc p{
   margin-bottom:22px;
-  font-size:2.2rem;
-  line-height:35px;
+  font-size:2rem;
+  line-height:32px;
 }
-
-
+.details .intro-desc .text-link{
+  bottom:-20px;
+}
 
 .details-content {
   padding-top:200px;
@@ -331,7 +336,8 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 }
 .content-desc p {
   margin-top:30px;
-  font-size:2.2rem;
+  font-size:2rem;
+  line-height:32px;
 }
 
 /* 목록 other-project-link */
