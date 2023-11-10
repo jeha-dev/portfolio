@@ -14,6 +14,11 @@ let fn = (function() {
       fn.popupClose();
 		},
 
+    // other list page별 제어
+    hideOtherList : function(){
+      
+    },
+
     // scroll animation
     scrollAnimation : function(){
 
