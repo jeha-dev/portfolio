@@ -9,14 +9,22 @@ let fn = (function() {
 	return {
 		//공통
 		common : function(){
+      fn.hideOtherList();
 			fn.scrollAnimation();
       fn.popupOpen();
       fn.popupClose();
 		},
 
-    // other list page별 제어
+    // other list 페이지별로 제어
     hideOtherList : function(){
-      
+      let sectionWrapID = $(".section-wrap").attr("id");
+      $(".other-project-link").find(".list-other li").each(function(){
+        if($(this).find("a").attr("id") == sectionWrapID){
+          $(this).closest("li").css("display","none");
+        }else {
+          $(this).closest("li").css("display","block");
+        }
+      });
     },
 
     // scroll animation
@@ -114,7 +122,5 @@ let fn = (function() {
 
 $(window).on("load", function(){
 	fn.common();
-  // $(".menu_icon").addClass("active");
-  // $(".closeBtn").addClass("active");
 });
 
