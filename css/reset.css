@@ -40,8 +40,7 @@
     font-style:normal;
     font-weight:800;
     src:url("../font/Pretendard-ExtraBold.eot");
-    src:url("../font/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"),
-        url("../font/Pretendard-ExtraBold.woff2") format("woff2"),
+    src:url("../font/Pretendard-ExtraBold.woff2") format("woff2"),
         url("../font/Pretendard-ExtraBold.woff") format("woff");
 }
 /* 웹폰트 - Syne */
