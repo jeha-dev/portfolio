@@ -41,7 +41,7 @@ section, .section-wrap {
   z-index:10;
 }
 .main_header {
-  min-width:147rem;
+  min-width:35rem;
   max-width:147rem;
   height:60px;
   margin:0 auto;
@@ -57,6 +57,15 @@ section, .section-wrap {
   font-size:1.6rem;
   font-weight:400;
 }
+.link-email::before{
+  content:'';
+  display:none;
+  width:2.4rem;
+  height:2.4rem;
+  background:url('../img/icon/ico_mail.svg') no-repeat center bottom / 3rem;
+  vertical-align:middle;
+}
+
 /* footer */
 .footer {
   width:100%;
@@ -478,3 +487,46 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   border-radius:50%;
   background:rgba(3,3,3,0.16) url("../img/icon/close.png") no-repeat center / 18px;
 }
+
+/* responsive */
+@media (max-width: 350px) {
+}
+@media (max-width: 720px) {
+  .main_header {
+    height:50px;
+    margin:0 auto;
+    padding:16px 6px 0;
+  }
+  .main_header .logo a {
+    font-size:1.7rem;
+  }
+  .main_header .link-email {
+    font-size:0;
+  }
+  .link-email::before{
+    content:'';
+    display:inline-block;
+  }
+
+  /* section-bg */
+.section-bg {
+  top:200px;
+  max-width:100%;
+  min-width:35rem;
+}
+.section-bg.active{
+  top:150px;
+}
+.section-title{
+  font-size:1.8rem;
+}
+.section-title-desc{
+  font-size:3.4rem;
+}
+  
+}
+/* @media (min-width: 1470px) {
+  body {
+    background:blue;
+  }
+} */
