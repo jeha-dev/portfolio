@@ -237,6 +237,7 @@
   width:29rem;
   height:19.4rem;
   background:url('./../img/bg_quote.svg') no-repeat center;
+  z-index:-1;
 }
 .profile-txt-box p{
   margin-bottom:40px;
