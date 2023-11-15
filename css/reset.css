@@ -43,31 +43,8 @@
     src:url("../font/Pretendard-ExtraBold.woff2") format("woff2"),
         url("../font/Pretendard-ExtraBold.woff") format("woff");
 }
-/* 웹폰트 - Syne */
-@font-face{
-    font-family: 'Syne', sans-serif;
-    font-style:normal;
-    font-weight:400;
-    src:url("../font/Syne-Regular.eot");
-    src:url("../font/Syne-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../font/Syne-Regular.woff") format("woff");
-}
-@font-face{
-    font-family: 'Syne', sans-serif;
-    font-style:normal;
-    font-weight:500;
-    src:url("../font/Syne-Medium.eot");
-    src:url("../font/Syne-Medium.eot?#iefix") format("embedded-opentype"),
-        url("../font/Syne-Medium.woff") format("woff");
-}
-@font-face{
-    font-family: 'Syne', sans-serif;
-    font-style:normal;
-    font-weight:700;
-    src:url("../font/Syne-Black.eot");
-    src:url("../font/Syne-Black.eot?#iefix") format("embedded-opentype"),
-        url("../font/Syne-Black.woff") format("woff");
-}
+/* 웹폰트 -  */
+
 
 
 html,body,div,p,iframe,frameset, h1,h2,h3,h4,h5,h6, strong,span,b,em,var,label,legend, ul,ol,li,dl,dt,dd,

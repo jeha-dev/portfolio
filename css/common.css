@@ -46,7 +46,7 @@ section, .section-wrap {
   max-width:147rem;
   height:60px;
   margin:0 auto;
-  padding:22px 6px 0;
+  padding-top:22px;
   border-bottom:0.2rem solid #777;
   transition:all 0.4s ease;
 }
@@ -496,7 +496,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   .main_header {
     height:50px;
     margin:0 auto;
-    padding:16px 6px 0;
+    padding-top:16px;
   }
   .main_header .logo a {
     font-size:1.7rem;
@@ -525,6 +525,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   textarea,
   input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
     font-size:1.3rem;
+    font-weight:400;
     border-bottom:0.2rem solid #3e3e3e;
   }
   input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
