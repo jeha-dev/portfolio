@@ -514,10 +514,20 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
     min-width:35rem;
   }
   .section-title{
-    font-size:3vw;
+    font-size:2.4rem;
   }
   .section-title-desc{
-    font-size:6vw;
+    font-size:5rem;
+  }
+
+  /* form */
+  textarea,
+  input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
+    font-size:1.3rem;
+    border-bottom:0.2rem solid #3e3e3e;
+  }
+  input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
+    margin-bottom:8px;
   }
   
 }
