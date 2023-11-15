@@ -254,6 +254,9 @@
 .profile-wrap .image-box{
   border-radius:30px;
 }
+.profile-wrap .image-box img{
+  width:100%;
+}
 .profile-txt-box {
   position:relative;
   width:calc(100% - 552px);
@@ -291,14 +294,14 @@
   max-width:100%;
   height:100%;
   margin:0 auto;
-  padding-top:200px;
-  padding-bottom:100px;
   background:linear-gradient( transparent, #FFF6E4);
   text-align:center;
   z-index:0;
 }
 .contact .contact-wrap{
   position:relative;
+  padding-top:200px;
+  padding-bottom:100px;
   overflow:hidden;
 }
 .contact .contact-wrap:before{
@@ -434,23 +437,74 @@
   align-items:flex-start;
   margin-top:12px;
 }
-
 .profile-wrap{
   flex-direction:column;
   flex-wrap:nowrap;
+  justify-content:center;
   max-width:100%;
   min-width:35rem;
   padding-left:20px;
   padding-right:20px;
 }
+.profile-wrap:before{
+  width:20rem;
+  height:20rem;
+  left:-10%;
+  bottom:-10%;
+}
+.profile-wrap:after{
+  width:30rem;
+  height:30rem;
+  left:-30%;
+  bottom:-20%;
+}
+.profile-wrap .image-box {
+  width:100%;
+  margin-bottom:50px;
+}
 .profile-txt-box{
   width:100%;
-  padding-left:0;
+  padding-top:100px;
+  padding-left:30px;
 }
+.profile-txt-box:before {
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:20rem;
+  height:15.4rem;
+  background:url('./../img/bg_quote.svg') no-repeat -20px 10px / 100%;
+  z-index:-1;
+}
+.profile-txt-box p{
+  margin-bottom:20px;
+  font-size:2rem;
+  line-height:28px;
+}
+.profile .btn{
+  bottom:-5%;
+  right:20px;
+}
+
 /* contact */
 .contact {
   min-width:35rem;
+}
+.contact .contact-wrap{
   padding-top:200px;
+  padding-bottom:120px;
+}
+.contact .contact-wrap:before{
+  content:'';
+  display:block;
+  position:absolute;
+  right:-5%;
+  bottom:5%;
+  width:24rem;
+  height:24rem;
+  z-index:1;
 }
 .contact-title {
   margin-bottom:24px;

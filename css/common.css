@@ -509,15 +509,15 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   }
 
   /* section-bg */
-  /* .section-bg {
+  .section-bg {
     max-width:100%;
     min-width:35rem;
   }
   .section-title{
-    font-size:1.8rem;
+    font-size:3vw;
   }
   .section-title-desc{
-    font-size:3.4rem;
-  } */
+    font-size:6vw;
+  }
   
 }
