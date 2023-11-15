@@ -1,52 +1,5 @@
 @charset "utf-8";
 
-/**
- * --------------------------------
- * reset CSS
- * creator : leejeha
- * --------------------------------
-*/
-
-/* 웹폰트 - NotoSans */
-
-@font-face{
-    font-family: 'Pretendard';
-    font-style:normal;
-    font-weight:300;
-    src:url("../font/Pretendard-Light.eot");
-    src:url("../font/Pretendard-Light.eot?#iefix") format("embedded-opentype"),
-        url("../font/Pretendard-Light.woff2") format("woff2"),
-        url("../font/Pretendard-Light.woff") format("woff");
-}
-@font-face{
-    font-family: 'Pretendard';
-    font-style:normal;
-    font-weight:400;
-    src:url("../font/Pretendard-Regular.eot");
-    src:url("../font/Pretendard-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../font/Pretendard-Regular.woff2") format("woff2"),
-        url("../font/Pretendard-Regular.woff") format("woff");
-}
-@font-face{
-    font-family: 'Pretendard';
-    font-style:normal;
-    font-weight:600;
-    src:url("../font/Pretendard-SemiBold.eot");
-    src:url("../font/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"),
-        url("../font/Pretendard-SemiBold.woff") format("woff");
-}
-@font-face{
-    font-family: 'Pretendard';
-    font-style:normal;
-    font-weight:800;
-    src:url("../font/Pretendard-ExtraBold.eot");
-    src:url("../font/Pretendard-ExtraBold.woff2") format("woff2"),
-        url("../font/Pretendard-ExtraBold.woff") format("woff");
-}
-/* 웹폰트 -  */
-
-
-
 html,body,div,p,iframe,frameset, h1,h2,h3,h4,h5,h6, strong,span,b,em,var,label,legend, ul,ol,li,dl,dt,dd,
 table,thead,tbody,tfoot,tr,th,td,caption, form,fieldset,input,textarea, sub,sup,img,a,del,button,pre,
 header,footer,section,article,aside,figure,figcaption{padding:0;margin:0;}
