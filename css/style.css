@@ -271,8 +271,7 @@
   left:65px;
   width:29rem;
   height:19.4rem;
-  background:url('./../img/bg_quote.svg') no-repeat;
-  background-position:center center;
+  background:url('./../img/icon/bg_quote.png') no-repeat center / 100%;
   z-index:-1;
 }
 .profile-txt-box p{
@@ -408,6 +407,7 @@
 .project{
   padding-left:20px;
   padding-right:20px;
+  overflow: hidden;
 }
 .project:before {
   content:'';
@@ -432,6 +432,10 @@
   margin-right:0%;
   margin-bottom:80px;
 }
+.list-project li:last-child{
+  margin-bottom:0;
+}
+
 .project-title-box {
   display:flex;
   flex-direction:column;
@@ -476,9 +480,7 @@
   left:0;
   width:20rem;
   height:15.4rem;
-  background:url('./../img/bg_quote.svg') no-repeat;
   background-position:-20px 10px;
-  background-size:100%;
   z-index:-1;
 }
 .profile-txt-box p{
