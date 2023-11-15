@@ -13,7 +13,7 @@
 .mg-bottom{margin-bottom:10px;}
 .pdd-top{padding-top:10px;}
 .pdd-bottom{padding-bottom:10px;}
-.flex{display:flex;flex-wrap: nowrap;flex-direction:row;justify-content:space-between;align-items:baseline;}
+.flex{display:flex;flex-wrap: nowrap;flex-direction:row;justify-content:space-between;align-items:center;}
 
 /* font */
 .syne{font-family: 'Syne', sans-serif;}
@@ -62,7 +62,7 @@ section, .section-wrap {
   display:none;
   width:2.4rem;
   height:2.4rem;
-  background:url('../img/icon/ico_mail.svg') no-repeat center bottom / 3rem;
+  background:url('../img/icon/ico_mail_black.svg') no-repeat bottom / 2.6rem;
   vertical-align:middle;
 }
 
@@ -89,18 +89,18 @@ section, .section-wrap {
 .section-bg {
   visibility:hidden;
   position:fixed;
-  top:300px;
+  top:0px;
   display:flex;
   flex-direction:column;
   width:100%;
   opacity:0;
-  transition:all 0.4s;
+  transition:all 0.3s;
   z-index:0;
 }
 .section-bg.active{
   visibility:visible;
   opacity:0.3;
-  top:250px;
+  top:100px;
 }
 .section-bg strong{
   display:block;
@@ -509,24 +509,15 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   }
 
   /* section-bg */
-.section-bg {
-  top:200px;
-  max-width:100%;
-  min-width:35rem;
-}
-.section-bg.active{
-  top:150px;
-}
-.section-title{
-  font-size:1.8rem;
-}
-.section-title-desc{
-  font-size:3.4rem;
-}
+  /* .section-bg {
+    max-width:100%;
+    min-width:35rem;
+  }
+  .section-title{
+    font-size:1.8rem;
+  }
+  .section-title-desc{
+    font-size:3.4rem;
+  } */
   
 }
-/* @media (min-width: 1470px) {
-  body {
-    background:blue;
-  }
-} */

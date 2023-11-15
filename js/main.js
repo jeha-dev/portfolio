@@ -43,8 +43,8 @@ let fn = (function() {
         
         // scroll event common
         if( scrTop > headerHt){
-          secbgAniEvent();
           aniEvent();
+          secbgAniEvent();
           btnHome.addClass("active");
         }
 
@@ -69,23 +69,6 @@ let fn = (function() {
         }
       });
 
-      function secbgAniEvent(){
-        $(".content").each(function(){
-          let scrTop = $(window).scrollTop();
-          let secOffTop = $(this).offset().top;
-
-          if(scrTop >= secOffTop - 280){
-            $(this).find(".section-bg").addClass("active");
-          }else if(scrTop < secOffTop + 650){
-            $(this).find(".section-bg").removeClass("active");
-          }
-
-          if(scrTop > secOffTop + 600){
-            $(this).find(".section-bg").removeClass("active");
-          }
-        });
-      }
-
       function aniEvent(){
         $(".box-ani").each(function(){
           let winHt = $(window).height();
@@ -94,6 +77,24 @@ let fn = (function() {
 
           if(winTop > elOffTop + 300){
             $(this).addClass("aniload");
+          }
+        });
+      }
+
+      function secbgAniEvent(){
+
+        $(".content").each(function(){
+          let scrTop = $(window).scrollTop();
+
+          if(scrTop >= $(this).offset().top){
+            $(this).find(".section-bg").addClass("active");
+          }
+
+          if(scrTop < $(this).offset().top){
+            // console.log("section 높이 지남");
+            $(this).find(".section-bg").removeClass("active");
+          }else if(scrTop >= ( $(this).next("section").offset().top )- 300){
+            $(this).find(".section-bg").removeClass("active");
           }
         });
       }
