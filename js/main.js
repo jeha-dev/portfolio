@@ -75,7 +75,7 @@ let fn = (function() {
           let winTop =  $(window).scrollTop() + winHt;
           let elOffTop = $(this).offset().top;
 
-          if(winTop > elOffTop + 300){
+          if(winTop >= elOffTop + 360){
             $(this).addClass("aniload");
           }
         });

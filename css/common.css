@@ -94,7 +94,7 @@ section, .section-wrap {
   flex-direction:column;
   width:100%;
   opacity:0;
-  transition:all 0.3s;
+  transition:all 0.28s;
   z-index:0;
 }
 .section-bg.active{

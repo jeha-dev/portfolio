@@ -164,7 +164,7 @@
 .project-container {
   position:relative;
   max-width:128rem;
-  padding-top:260px;
+  padding-top:360px;
 }
 .list-project{
   position:relative;
@@ -209,7 +209,6 @@
   flex-direction:column;
   justify-content:center;
   padding-bottom:250px;
-  overflow:hidden;
 }
 .profile-wrap {
   display:flex;
@@ -287,24 +286,27 @@
 }
 
 /* contact */
-.contact {
-  position:relative;
+.contact{
   min-width:128rem;
   max-width:100%;
+  height:100%;
   margin:0 auto;
   padding-top:200px;
   padding-bottom:100px;
   background:linear-gradient( transparent, #FFF6E4);
   text-align:center;
-  overflow:hidden;
   z-index:0;
 }
-.contact:before{
+.contact .contact-wrap{
+  position:relative;
+  overflow:hidden;
+}
+.contact .contact-wrap:before{
   content:'';
   display:block;
   position:absolute;
   right:-10%;
-  bottom:-10%;
+  bottom:10%;
   width:40rem;
   height:40rem;
   background-color:rgba(232, 214, 214, 0.5);
@@ -331,11 +333,13 @@
   font-size:8rem;
 }
 .form-area {
+  position:relative;
   display:flex;
   flex-direction:column;
   justify-content:center;
   max-width:128rem;
   margin:0 auto;
+  z-index:1;
 }
 .form-area ul {
   margin-bottom:30px;
@@ -446,9 +450,7 @@
 /* contact */
 .contact {
   min-width:35rem;
-  padding-top:150px;
-  padding-left:20px;
-  padding-right:20px;
+  padding-top:200px;
 }
 .contact-title {
   margin-bottom:24px;
@@ -465,6 +467,8 @@
 }
 .form-area {
   max-width:100%;
+  padding-left:20px;
+  padding-right:20px;
 }
 .form-area ul {
   margin-bottom:30px;
