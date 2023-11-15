@@ -37,6 +37,7 @@ section, .section-wrap {
   top:0;
   left:0;
   background-color:rgba(256,256,256, 12%);
+  -webkit-backdrop-filter: blur(2rem);
   backdrop-filter: blur(2rem);
   z-index:10;
 }
