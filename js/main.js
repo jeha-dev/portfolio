@@ -30,7 +30,6 @@ let fn = (function() {
     // scroll animation
     scrollAnimation : function(){
 
-      secbgAniEvent();
       aniEvent();
 
       $(document).scroll(function(){
@@ -44,7 +43,6 @@ let fn = (function() {
         // scroll event common
         if( scrTop > headerHt){
           aniEvent();
-          secbgAniEvent();
           btnHome.addClass("active");
         }
 
@@ -52,21 +50,7 @@ let fn = (function() {
         if(scrTop == 0 || scrTop == scrBottom){
           btnHome.removeClass("active");
         }
-        
-        // details-intro 
-        let deIntroHt = $('.details-intro').height();
-        if(scrTop < (deIntroHt / 3)*2){
-          $(".details-desc").removeClass("absolute");
-          $(".details-desc").addClass("fixed");
-        }else {
-          $(".details-desc").addClass("absolute");
-        }
-        if(scrTop < deIntroHt){
-          $(".details-desc").addClass("fixed");
-        }
-        if(scrTop == 0){
-          $(".details-desc").removeClass("fixed");
-        }
+
       });
 
       function aniEvent(){
@@ -75,26 +59,8 @@ let fn = (function() {
           let winTop =  $(window).scrollTop() + winHt;
           let elOffTop = $(this).offset().top;
 
-          if(winTop >= elOffTop + 300){
+          if(winTop >= elOffTop){
             $(this).addClass("aniload");
-          }
-        });
-      }
-
-      function secbgAniEvent(){
-
-        $(".content").each(function(){
-          let scrTop = $(window).scrollTop();
-
-          if(scrTop >= $(this).offset().top){
-            $(this).find(".section-bg").addClass("active");
-          }
-
-          if(scrTop < $(this).offset().top){
-            // console.log("section 높이 지남");
-            $(this).find(".section-bg").removeClass("active");
-          }else if(scrTop >= ( $(this).next("section").offset().top )- 300){
-            $(this).find(".section-bg").removeClass("active");
           }
         });
       }

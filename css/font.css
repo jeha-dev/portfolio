@@ -1,3 +1,4 @@
+/* Pretendard */
 @font-face {
   font-family: 'Pretendard-Light'; 
     font-style: normal;
@@ -18,4 +19,18 @@
     font-weight: 800;
     font-display:swap;
     src: url(/font/Pretendard-ExtraBold.woff2) format("woff2");
+}
+
+/* Raleway */
+@font-face{
+  font-family: 'Raleway';
+  font-style:normal;
+  font-weight:300;
+  src: url(/font/Raleway-Light.woff2) format("woff2");
+}
+@font-face{
+  font-family: 'Raleway';
+  font-style:normal;
+  font-weight:800;
+  src: url(/font/Raleway-ExtraBold.woff2) format("woff2");
 }
