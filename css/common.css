@@ -51,7 +51,7 @@ section, .section-wrap {
 }
 .main_header .link-email {
   font-size:1.6rem;
-  font-weight:400;
+  font-weight:300;
 }
 .link-email::before{
   content:'';
@@ -124,7 +124,7 @@ module : button, form, thumbnail, listproject, details-module, popup
   background:rgba(256,256,256);
   color:#555;
   font-size:1.4rem;
-  font-weight:400;
+  font-weight:300;
   text-align:center;
   vertical-align:middle;
   border:0.1rem solid #ccc;
@@ -287,12 +287,12 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   margin-bottom:6px;
   color:#999;
   font-size:2rem;
-  font-weight:400;
+  font-weight:300;
 }
 .details .project-title{
   margin-bottom:18px;
   font-size:6rem;
-  font-weight:700;
+  font-weight:800;
 }
 .details .skill-detail{
   margin-bottom:50px;
@@ -520,7 +520,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   textarea,
   input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
     font-size:1.3rem;
-    font-weight:400;
+    font-weight:300;
     border-bottom:0.2rem solid #3e3e3e;
   }
   input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
