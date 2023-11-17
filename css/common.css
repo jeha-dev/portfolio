@@ -17,7 +17,8 @@
 .wrapper{
   word-break: keep-all;
 }
-section, .section-wrap {
+section, 
+.section-wrap {
   position:relative;
 }
 .section-wrap.details .contact:before{
@@ -160,10 +161,12 @@ module : button, form, thumbnail, listproject, details-module, popup
   line-height:36px;
   background-color:#fff;
   color:#111;
+  font-family:'Pretendard';
   font-weight:500;
   border-width:0.2rem;
   border-color:#2e2e2e;
   transition:bottom ease-in-out 0.5s;
+  z-index:100;
 }
 .btn.home.active{
   bottom:-10%;
@@ -177,7 +180,8 @@ module : button, form, thumbnail, listproject, details-module, popup
   text-align:left;
   color:rgb(249, 152, 78);
   font-size:1.6rem;
-  font-weight:600;
+  font-family:'Pretendard';
+  font-weight:500;
   text-decoration:underline;
 }
 
@@ -237,6 +241,8 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 }
 .details-intro {
   padding-top:120px;
+  padding-bottom:20px;
+  overflow:hidden;
 }
 .details-module {
   position:relative;
@@ -294,7 +300,6 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   width: 57.14%;
   margin-left:24px;
 }
-
 .details .article-title{
   margin-bottom:6px;
   color:#999;
@@ -305,6 +310,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   margin-bottom:18px;
   font-size:6rem;
   font-weight:800;
+  font-family:'Pretendard';
 }
 .details .skill-detail{
   margin-bottom:50px;
@@ -347,7 +353,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 }
 
 .details-content {
-  padding-top:200px;
+  padding-top:180px;
 }
 .content-desc {
   width:100%;
@@ -364,7 +370,8 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   flex-direction:column;
   justify-content:center;
   max-width:147rem;
-  margin:120px auto 0;
+  margin:0 auto;
+  padding-top:120px;
 }
 .other-project-link .link-title{
   display:block;
@@ -383,6 +390,8 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 .other-project-link .list-other li a {
   position:relative;
   font-size:2rem;
+  font-family:'Pretendard';
+  font-weight:500;
   z-index:0;
 }
 .other-project-link .list-other li a::before{
@@ -497,52 +506,6 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 }
 
 /* responsive */
-@media (max-width: 720px) {
-  .main_header {
-    min-width:100%;
-    max-width:100%;
-    height:50px;
-    margin:0 auto;
-    padding-top:16px;
-  }
-  .main_header .logo a {
-    font-size:1.7rem;
-  }
-  .main_header .link-email {
-    font-size:0;
-  }
-  .link-email::before{
-    content:'';
-    display:inline-block;
-  }
-  .footer .link-wrap a {
-    margin-left:16px;
-  }
-
-  /* section-bg */
-  .section-bg {
-    max-width:100%;
-    min-width:35rem;
-    margin-bottom:30px;
-  }
-  .section-title{
-    font-size:2.4rem;
-  }
-  .section-title-desc{
-    font-size:4.8rem;
-  }
-
-  /* form */
-  textarea,
-  input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
-    font-size:1.3rem;
-    font-weight:300;
-    border-bottom:0.2rem solid #3e3e3e;
-  }
-  input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
-    margin-bottom:8px;
-  }
-}
 
 @media (max-width: 1469px) {
   .section-title {
@@ -554,7 +517,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
     padding-left:20px;
     padding-right:20px;
   }
-  .col-2-lg {
+  .col-2-lg, .col-2-square {
     align-items:center;
   }
   .project-image{
@@ -600,3 +563,133 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
     background-color:transparent;
   }
 }
+
+@media (max-width: 720px) {
+  /* layout */
+  .main_header {
+    min-width:100%;
+    max-width:100%;
+    height:50px;
+    margin:0 auto;
+    padding-top:16px;
+  }
+  .main_header .logo a {
+    font-size:1.7rem;
+  }
+  .main_header .link-email {
+    font-size:0;
+  }
+  .link-email::before{
+    content:'';
+    display:inline-block;
+  }
+  .footer {
+    padding-left:8px;
+    padding-right:8px;
+  }
+  .footer .link-wrap a {
+    margin-left:16px;
+    font-size:1.2rem;
+  }
+
+  /* section-bg */
+  .section-bg {
+    max-width:100%;
+    min-width:35rem;
+    margin-bottom:30px;
+  }
+  .section-title{
+    font-size:2.4rem;
+  }
+  .section-title-desc{
+    font-size:4.8rem;
+  }
+
+  /* module */
+  .btn.home {
+    width:9rem;
+    bottom:20px;
+  }
+  .text-link {
+    bottom:-5%;
+  }
+
+  /* form */
+  textarea,
+  input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
+    font-size:1.3rem;
+    font-weight:300;
+    border-bottom:0.2rem solid #3e3e3e;
+  }
+  input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
+    margin-bottom:8px;
+  }
+
+  /* details-module */
+  
+  .details-intro {
+    padding-top:90px;
+  }
+  .col-2-lg, .col-2-square {
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .project-image, .details-desc {
+    width:100%;
+  }
+  .details-desc {
+    margin-left:0;
+    padding-top:40px;
+  }
+  .details .project-title {
+    margin-bottom:16px;
+  }
+  .details .skill-detail {
+    margin-bottom:28px;
+  }
+  .details .list-skill,
+  .intro-desc p {
+    font-family:'Pretendard';
+  }
+  .details .intro-desc p, .content-desc p {
+    font-size:1.6rem;
+    line-height:24px;
+  }
+  .details-content {
+    padding-top:160px;
+    padding-bottom:50px;
+  }
+  .details-module {
+    max-width:100%;
+  }
+  .details-module .row{
+    flex-direction:column;
+    justify-content:flex-start;
+    margin-bottom:0;
+  }
+  .row .project-image {
+    width:100%;
+    margin-bottom:16px;
+  }
+  .row .project-image:nth-of-type(2) {
+    width:100%;
+    margin-left:0;
+  }
+  .content-desc p {
+    margin-top:12px;
+  }
+  .other-project-link {
+    padding-top:65px;
+  }
+  .other-project-link .link-title {
+    font-size:2.4rem;
+  }
+  .other-project-link .list-other li {
+    padding-left:0;
+    padding-right:0;
+  }
+  .other-project-link .list-other li a {
+    font-size:1.6rem;
+  }
+}
+
