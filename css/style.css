@@ -135,6 +135,7 @@
   position:relative;
   flex-wrap:wrap;
   justify-content:center;
+  align-items:flex-start;
   z-index:3;
 }
 .list-project li{
@@ -238,18 +239,6 @@
   font-weight:800;
   font-family:'Raleway';
 }
-
-/* .profile-txt-box:before {
-  content:'';
-  display:block;
-  position:absolute;
-  top:0;
-  left:65px;
-  width:29rem;
-  height:19.4rem;
-  background:url('./../img/icon/bg_quote.png') no-repeat center / 100%;
-  z-index:-1;
-} */
 .profile-txt-box p{
   margin-bottom:22px;
   font-size:2rem;
@@ -348,6 +337,111 @@
 }
 
 /* responsive */
+@media (max-width: 1469px) {
+  /* intro */
+  .title-module-inner {
+    max-width:100%;
+    padding-top:300px;
+  }
+  .title-module-inner strong {
+    font-size:14vw;
+  }
+  .title-module-inner .desc-wrap {
+    width:62%;
+  }
+
+  /* project */
+  .project {
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .list-project li {
+    width:48%;
+    margin-bottom:80px;
+  }
+
+  /* profile */
+  .profile{
+    padding-bottom:100px;
+    z-index:9;
+  }
+  .profile-wrap{
+    max-width:100%;
+    min-width:35rem;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .profile-wrap:before{
+    width:30rem;
+    height:30rem;
+    left:-10%;
+    bottom:-10%;
+  }
+  .profile-wrap:after{
+    width:38rem;
+    height:38rem;
+    left:-30%;
+    bottom:-20%;
+  }
+  .profile-wrap .image-box {
+    width:44.444%;
+  }
+  .profile-txt-box{
+    width:55%;
+    padding-top:20px;
+    padding-left:3%;
+  }
+  .profile-txt-box p{
+    margin-bottom:18px;
+  }
+  .profile .btn{
+    position:static;
+    margin:60px auto 10px;
+  }
+
+  /* contact */
+  .contact{
+    min-width:35rem;
+    z-index:10;
+  }
+  .contact .contact-wrap{
+    padding-top:100px;
+    padding-bottom:80px;
+  }
+  .contact .contact-wrap:before{
+    width:32rem;
+    height:32rem;
+  }
+  .contact-title {
+    margin-bottom:36px;
+    font-size:4.2rem;
+  }
+  .contact-title-desc {
+    margin-bottom:78px;
+    font-size:1.8rem;
+    line-height:28px;
+  }
+  .form-area {
+    max-width:100%;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .form-area ul {
+    margin-bottom:18px;
+  }
+  .form-area ul.row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+  .form-area .row li {
+    width:calc(50% - 50px);
+  }
+  .form-area .btn {
+    margin:40px auto;
+  }
+}
 
 @media (max-width: 720px) {
  
@@ -372,14 +466,16 @@
   font-size:14vw;
 }
 .title-module-inner .title-sub{
-  margin-bottom:6px;
-  font-size:3rem;
+  margin-bottom:4px;
+  font-size:2.4rem;
 }
 .title-module-inner .desc-wrap{
-  margin:40px auto 0;
+  width:60%;
+  margin:60px auto 0;
 }
 .desc-wrap .title-desc{
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  line-height:24px;
 }
 
 /* project */
@@ -394,7 +490,7 @@
 }
 .project-container {
   max-width:100%;
-  padding-top:300px;
+  padding-top:30px;
 }
 .list-project{
   position:relative;
@@ -414,12 +510,16 @@
 .list-project li:last-child{
   margin-bottom:0;
 }
-
 .project-title-box {
   display:flex;
   flex-direction:column;
   align-items:flex-start;
   margin-top:12px;
+}
+
+/* profile */
+.profile {
+  padding-bottom:50px;
 }
 .profile-wrap{
   flex-direction:column;
@@ -427,6 +527,7 @@
   justify-content:center;
   max-width:100%;
   min-width:35rem;
+  padding-top:180px;
   padding-left:20px;
   padding-right:20px;
 }
@@ -444,27 +545,23 @@
 }
 .profile-wrap .image-box {
   width:100%;
-  margin-bottom:50px;
+  margin-bottom:0px;
 }
 .profile-txt-box{
   width:100%;
-  padding-top:90px;
+  padding-top:40px;
   padding-left:30px;
 }
-.profile-txt-box:before {
-  content:'';
-  display:block;
-  position:absolute;
-  top:0;
-  left:0;
-  width:20rem;
-  height:15.4rem;
-  background-position:-20px 10px;
-  z-index:-1;
+
+.profile-title {
+  margin-bottom:20px;
+}
+.profile-title strong {
+  font-size:3rem;
 }
 .profile-txt-box p{
   margin-bottom:20px;
-  font-size:1.8rem;
+  font-size:1.7rem;
   line-height:26px;
 }
 .profile .btn{
@@ -477,8 +574,7 @@
   min-width:35rem;
 }
 .contact .contact-wrap{
-  padding-top:200px;
-  padding-bottom:80px;
+  padding:200px 20px 80px;
 }
 .contact .contact-wrap:before{
   content:'';
@@ -492,10 +588,11 @@
 }
 .contact-title {
   margin-bottom:24px;
-  font-size:3.2rem;
+  font-size:3rem;
+  letter-spacing:-0.07rem;
 }
 .contact-title-desc {
-  margin-bottom:68px;
+  margin-bottom:48px;
   font-size:1.6rem;
   line-height:28px;
 }
@@ -521,14 +618,10 @@
   width:100%;
 }
 .form-area .btn {
-  margin:40px auto;
+  margin:30px auto 20px;
+  font-size:1.6rem;
 }
 }
-/* @media (min-width: 1470px) {
-  body {
-    background:blue;
-  }
-} */
 
 
 
