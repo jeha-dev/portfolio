@@ -49,7 +49,7 @@ let fn = (function() {
         // btnHome remove
         if(scrTop == 0){
           btnHome.css("bottom","18px");
-        }else if (scrTop >= (clientHt - winHt) - (footerHt + 300) ){
+        }else if (scrTop >= (clientHt - winHt) - (footerHt + 300 ) ){
           btnHome.css("bottom","80px");
         }
 
