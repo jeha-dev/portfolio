@@ -13,6 +13,24 @@
 /* font */
 .syne{font-family: 'Syne', sans-serif;}
 
+/* loading */
+.load-bg {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,.5);
+  text-align:center;
+  z-index:999;
+}
+.load-bg img {
+  z-index:1000;
+}
+
 /* layout > wrapper, section-wrap, header, footer, sidebars, lnb, .content, .section-bg */
 .wrapper{
   word-break: keep-all;
