@@ -20,138 +20,140 @@
     <script src="./../js/jquery-3.4.1.min.js"></script>
     <script src="./../js/jquery-migrate-1.4.1.min.js"></script>
     <script src="./../js/main.js"></script>
-    <script async>
-      $(document).ready(function(){
-        $("#loading").hide();
-      });
-    </script>
+    <script>
+      window.onload = function(){
+       $("#loading").hide();
+      }
+     </script>
   </head>
   <body>
     <div id="loading" class="load-bg">
-      <img src="loading.gif" alt="loading" width="100" height="100">
+      <img src="../img/loading.gif" alt="loading" width="100" height="100">
     </div>
-    <!-- header_container// -->
-    <section class="header_container">
-      <header class="main_header">
-        <div class="flex">
-          <h1 class="logo">
-            <a href="/" class="">LEEJEHA PORTFOLIO</a>
-          </h1>
-          <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
-        </div>
-      </header>
-    </section>
-    <!-- //header_container -->
-
-    <main id="kjbank" class="section-wrap details">
-      
-      <section class="details-intro">
-        <div class="details-module">
-          <div class="col-2-square">
-            <div class="project-image box-ani left-right">
-              <img src="../img/con1/project_kjbank.png" alt="담깅인트로">
-            </div>
-            <div class="details-desc box-ani right-left tran02"><!-- fiexd 주기 -->
-              <em class="article-title">Details</em>
-              <h2 class="project-title">광주은행 UMS 솔루션 구축</h2>
-              <div class="skill-detail">
-                <ul class="list-skill">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>jQuery</li>
-                  <li>JAVA</li>
-                </ul>
+    <div id="wrap">
+      <!-- header_container// -->
+      <section class="header_container">
+        <header class="main_header">
+          <div class="flex">
+            <h1 class="logo">
+              <a href="/" class="">LEEJEHA PORTFOLIO</a>
+            </h1>
+            <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
+          </div>
+        </header>
+      </section>
+      <!-- //header_container -->
+  
+      <main id="kjbank" class="section-wrap details">
+        
+        <section class="details-intro">
+          <div class="details-module">
+            <div class="col-2-square">
+              <div class="project-image box-ani left-right">
+                <img src="../img/con1/project_kjbank.png" alt="담깅인트로">
               </div>
-              <div class="intro-desc">
-                <p>UMS는 관리자를 위한 통합 메시징 시스템으로 이메일발송, 
-                  실시간 자동응답 서비스, SMS, 모바일 푸시 알림 등 총 4가지 서비스로 구성되어 있는 솔루션입니다.
-                  은행을 대상으로 한 프로젝트인 만큼 웹표준과 IE 등의 브라우저 및 버전 호환성 등에 특히 신경쓰며 마크업 하였습니다. 
-                  구축부터 운영까지 염두에 두었고, 예외 케이스를 고려하여 어떤 상황에서도 틀어짐이 적도록 UI를 개발하였습니다.
-                </p>
+              <div class="details-desc box-ani right-left tran02"><!-- fiexd 주기 -->
+                <em class="article-title">Details</em>
+                <h2 class="project-title">광주은행 UMS 솔루션 구축</h2>
+                <div class="skill-detail">
+                  <ul class="list-skill">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>jQuery</li>
+                    <li>JAVA</li>
+                  </ul>
+                </div>
+                <div class="intro-desc">
+                  <p>UMS는 관리자를 위한 통합 메시징 시스템으로 이메일발송, 
+                    실시간 자동응답 서비스, SMS, 모바일 푸시 알림 등 총 4가지 서비스로 구성되어 있는 솔루션입니다.
+                    은행을 대상으로 한 프로젝트인 만큼 웹표준과 IE 등의 브라우저 및 버전 호환성 등에 특히 신경쓰며 마크업 하였습니다. 
+                    구축부터 운영까지 염두에 두었고, 예외 케이스를 고려하여 어떤 상황에서도 틀어짐이 적도록 UI를 개발하였습니다.
+                  </p>
+                  <p>
+                    기획자, PM과의 활발한 커뮤니케이션을 통해 즉각적으로 요구사항을 파악하여 애자일 방식에 나름의 질서를 더해 업무를 수행하였습니다.
+                    또한 2인 체제로 협업하며 서로 고민되는 부분에 대해 지식을 공유하였기에, 보다 일관성있고 경제성 있는 코드를 작성할 수 있었습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //details-intro -->
+  
+        <section class="details-content">
+          <div class="details-module">
+            <div class="row">
+              <div class="project-image box-ani top-bottom tran02">
+                <img src="../img/detail/KJ_graph.png" alt="그래프">
+              </div>
+              <div class="project-image box-ani bottom-top tran04">
+                <img src="../img/detail/KJ_ums_scroll.png" alt="스크롤">
+              </div>
+              <div class="content-desc box-ani">
                 <p>
-                  기획자, PM과의 활발한 커뮤니케이션을 통해 즉각적으로 요구사항을 파악하여 애자일 방식에 나름의 질서를 더해 업무를 수행하였습니다.
-                  또한 2인 체제로 협업하며 서로 고민되는 부분에 대해 지식을 공유하였기에, 보다 일관성있고 경제성 있는 코드를 작성할 수 있었습니다.
+                  그래프를 활용한 대시보드 개발을 위해 ECHARTS 플러그인을 활용하였습니다.
+                  공통요소와 서비스별 예외요소를 나누는데 중점을 두어 CSS를 분리하였고, 레이아웃에 대해서는
+                  보수적으로 접근하되 레거시를 지양하며 코드를 작성하였습니다.
+                  페이지마다 스크롤양을 최소화하였기 때문에 각 요소에 scroll-bar를 형성해야 했습니다. 브라우저 별로 호환되도록 설정하였고
+                  스크롤 생성 시 레이아웃에 위화감이 없도록 대응하여 완성도를 높였습니다.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- //details-intro -->
-
-      <section class="details-content">
-        <div class="details-module">
-          <div class="row">
-            <div class="project-image box-ani top-bottom tran02">
-              <img src="../img/detail/KJ_graph.png" alt="그래프">
-            </div>
-            <div class="project-image box-ani bottom-top tran04">
-              <img src="../img/detail/KJ_ums_scroll.png" alt="스크롤">
-            </div>
-            <div class="content-desc box-ani">
-              <p>
-                그래프를 활용한 대시보드 개발을 위해 ECHARTS 플러그인을 활용하였습니다.
-                공통요소와 서비스별 예외요소를 나누는데 중점을 두어 CSS를 분리하였고, 레이아웃에 대해서는
-                보수적으로 접근하되 레거시를 지양하며 코드를 작성하였습니다.
-                페이지마다 스크롤양을 최소화하였기 때문에 각 요소에 scroll-bar를 형성해야 했습니다. 브라우저 별로 호환되도록 설정하였고
-                스크롤 생성 시 레이아웃에 위화감이 없도록 대응하여 완성도를 높였습니다.
-              </p>
-            </div>
+        </section>
+  
+        <section class="other-project-link">
+          <strong class="link-title ">What's next?</strong>
+          <ul class="list-other">
+            <li>
+              <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
+            </li>
+            <li>
+              <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
+            </li>
+            <li>
+              <a href="mylab.html" id="mylab">마이랩 유지보수</a>
+            </li>
+            <li>
+              <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
+            </li>
+            <li>
+              <a href="email.html" id="kjEmail">이메일템플릿</a>
+            </li>
+          </ul>
+        </section>
+  
+        <!-- contact// -->
+        <section id="contact" class="contact">
+          <div class="contact-wrap">
+            <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
+            <p class="contact-title-desc box-ani tran02 bottom-top">
+              경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
+              멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
+              언제든지 메일 주세요 :>
+            </p>
+            <strong class="text-email">
+              leejeha.dev@gmail.com
+            </strong>
+          </div>
+        </section>
+        <!-- //contact -->
+      </main>
+  
+      <!-- footer// -->
+      <footer class="footer">
+        <div class="flex">
+          <p>2021 @ LEEJEHA</p>
+          <div class="link-wrap">
+            <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
+            <a href="https://github.com/jeha-dev" target="_blank">github</a>
           </div>
         </div>
-      </section>
-
-      <section class="other-project-link">
-        <strong class="link-title ">What's next?</strong>
-        <ul class="list-other">
-          <li>
-            <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
-          </li>
-          <li>
-            <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
-          </li>
-          <li>
-            <a href="mylab.html" id="mylab">마이랩 유지보수</a>
-          </li>
-          <li>
-            <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
-          </li>
-          <li>
-            <a href="email.html" id="kjEmail">이메일템플릿</a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- contact// -->
-      <section id="contact" class="contact">
-        <div class="contact-wrap">
-          <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
-          <p class="contact-title-desc box-ani tran02 bottom-top">
-            경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
-            멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
-            언제든지 메일 주세요 :>
-          </p>
-          <strong class="text-email">
-            leejeha.dev@gmail.com
-          </strong>
-        </div>
-      </section>
-      <!-- //contact -->
-    </main>
-
-    <!-- footer// -->
-    <footer class="footer">
-      <div class="flex">
-        <p>2021 @ LEEJEHA</p>
-        <div class="link-wrap">
-          <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
-          <a href="https://github.com/jeha-dev" target="_blank">github</a>
-        </div>
-      </div>
-    </footer>
-    <!-- //footer -->
-
-    <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+      </footer>
+      <!-- //footer -->
+  
+      <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+    </div>
   </body>
 
 </html>

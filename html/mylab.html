@@ -20,135 +20,137 @@
     <script src="./../js/jquery-3.4.1.min.js"></script>
     <script src="./../js/jquery-migrate-1.4.1.min.js"></script>
     <script src="./../js/main.js"></script>
-    <script async>
-      $(document).ready(function(){
-        $("#loading").hide();
-      });
-    </script>
+    <script>
+      window.onload = function(){
+       $("#loading").hide();
+      }
+     </script>
   </head>
   <body>
     <div id="loading" class="load-bg">
-      <img src="loading.gif" alt="loading" width="100" height="100">
+      <img src="../img/loading.gif" alt="loading" width="100" height="100">
     </div>
-    <!-- header_container// -->
-    <section class="header_container">
-      <header class="main_header">
-        <div class="flex">
-          <h1 class="logo">
-            <a href="/" class="">LEEJEHA PORTFOLIO</a>
-          </h1>
-          <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
-        </div>
-      </header>
-    </section>
-    <!-- //header_container -->
-
-    <main id="mylab" class="section-wrap details">
-      
-      <section class="details-intro">
-        <div class="details-module">
-          <div class="col-2-square">
-            <div class="project-image box-ani left-right">
-              <img src="../img/con1/project_mylab.png" alt="담깅인트로">
-            </div>
-            <div class="details-desc box-ani right-left tran02"><!-- fiexd 주기 -->
-              <em class="article-title">Details</em>
-              <h2 class="project-title">한국암웨이 마이랩 유지보수</h2>
-              <div class="skill-detail">
-                <ul class="list-skill">
-                  <li>SCSS</li>
-                  <li>Vue</li>
-                  <li>github</li>
-                  <li>AWS</li>
-                </ul>
+    <div id="wrap">
+      <!-- header_container// -->
+      <section class="header_container">
+        <header class="main_header">
+          <div class="flex">
+            <h1 class="logo">
+              <a href="/" class="">LEEJEHA PORTFOLIO</a>
+            </h1>
+            <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
+          </div>
+        </header>
+      </section>
+      <!-- //header_container -->
+  
+      <main id="mylab" class="section-wrap details">
+        
+        <section class="details-intro">
+          <div class="details-module">
+            <div class="col-2-square">
+              <div class="project-image box-ani left-right">
+                <img src="../img/con1/project_mylab.png" alt="담깅인트로">
               </div>
-              <div class="intro-desc">
+              <div class="details-desc box-ani right-left tran02"><!-- fiexd 주기 -->
+                <em class="article-title">Details</em>
+                <h2 class="project-title">한국암웨이 마이랩 유지보수</h2>
+                <div class="skill-detail">
+                  <ul class="list-skill">
+                    <li>SCSS</li>
+                    <li>Vue</li>
+                    <li>github</li>
+                    <li>AWS</li>
+                  </ul>
+                </div>
+                <div class="intro-desc">
+                  <p>
+                    마이크로바이옴 건강분석 솔루션을 소개하고 검사 진행 과정을 리포팅하는 서비스입니다.
+                    <span style="display:none;">" 좀더 디벨롭 필요 : 어떤 환경에서 어떤 기술로 개발했어? 가 빠진듯"  </span>
+                    전체 사용자 6만명인 UI 페이지 전체에 대한 마크업 및 스타일 수정이 주요 업무였습니다.
+                    애자일로 전달되는 요건을 맞추기 위해 고객사와 적극적으로 소통하며 명확히 분석하였고, 
+                    그 결과 좋은 평가를 받으며 완료할 수 있었습니다.
+                  </p>
+                  <a href="https://mylab.amway.co.kr/login"class="text-link">마이랩 by 뉴트리라이트</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //details-intro -->
+  
+        <section class="details-content">
+          <div class="details-module">
+            <div class="row">
+              <div class="project-image box-ani top-bottom tran02">
+                <img src="../img/detail/mylab_mob.png" alt="마이랩 모바일">
+              </div>
+              <div class="project-image box-ani bottom-top tran04">
+                <img src="../img/detail/mylab_pc.png" alt="마이랩 PC">
+              </div>
+              <div class="content-desc">
                 <p>
-                  마이크로바이옴 건강분석 솔루션을 소개하고 검사 진행 과정을 리포팅하는 서비스입니다.
-                  <span style="display:none;">" 좀더 디벨롭 필요 : 어떤 환경에서 어떤 기술로 개발했어? 가 빠진듯"  </span>
-                  전체 사용자 6만명인 UI 페이지 전체에 대한 마크업 및 스타일 수정이 주요 업무였습니다.
-                  애자일로 전달되는 요건을 맞추기 위해 고객사와 적극적으로 소통하며 명확히 분석하였고, 
-                  그 결과 좋은 평가를 받으며 완료할 수 있었습니다.
+                  페이지마다 공통되는 디자인을 분석해 컴포넌트별로 나누어 작업하였습니다. 
+                  대면 인수인계가 쉽지 않았던 si 프로젝트였기 때문에 다음 작업자를 고려하여, 
+                  재사용성을 높이고 곳곳에 주석으로 부연설명을 두어 더욱 신경썼습니다.
                 </p>
-                <a href="https://mylab.amway.co.kr/login"class="text-link">마이랩 by 뉴트리라이트</a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- //details-intro -->
-
-      <section class="details-content">
-        <div class="details-module">
-          <div class="row">
-            <div class="project-image box-ani top-bottom tran02">
-              <img src="../img/detail/mylab_mob.png" alt="마이랩 모바일">
-            </div>
-            <div class="project-image box-ani bottom-top tran04">
-              <img src="../img/detail/mylab_pc.png" alt="마이랩 PC">
-            </div>
-            <div class="content-desc">
-              <p>
-                페이지마다 공통되는 디자인을 분석해 컴포넌트별로 나누어 작업하였습니다. 
-                대면 인수인계가 쉽지 않았던 si 프로젝트였기 때문에 다음 작업자를 고려하여, 
-                재사용성을 높이고 곳곳에 주석으로 부연설명을 두어 더욱 신경썼습니다.
-              </p>
-            </div>
+        </section>
+  
+        <section class="other-project-link">
+          <strong class="link-title ">What's next?</strong>
+          <ul class="list-other">
+            <li>
+              <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
+            </li>
+            <li>
+              <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
+            </li>
+            <li>
+              <a href="mylab.html" id="mylab">마이랩 유지보수</a>
+            </li>
+            <li>
+              <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
+            </li>
+            <li>
+              <a href="email.html" id="kjEmail">이메일템플릿</a>
+            </li>
+          </ul>
+        </section>
+  
+        <!-- contact// -->
+        <section id="contact" class="contact">
+          <div class="contact-wrap">
+            <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
+            <p class="contact-title-desc box-ani tran02 bottom-top">
+              경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
+              멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
+              언제든지 메일 주세요 :>
+            </p>
+            <strong class="text-email">
+              leejeha.dev@gmail.com
+            </strong>
+          </div>
+        </section>
+        <!-- //contact -->
+      </main>
+  
+      <!-- footer// -->
+      <footer class="footer">
+        <div class="flex">
+          <p>2021 @ LEEJEHA</p>
+          <div class="link-wrap">
+            <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
+            <a href="https://github.com/jeha-dev" target="_blank">github</a>
           </div>
         </div>
-      </section>
-
-      <section class="other-project-link">
-        <strong class="link-title ">What's next?</strong>
-        <ul class="list-other">
-          <li>
-            <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
-          </li>
-          <li>
-            <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
-          </li>
-          <li>
-            <a href="mylab.html" id="mylab">마이랩 유지보수</a>
-          </li>
-          <li>
-            <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
-          </li>
-          <li>
-            <a href="email.html" id="kjEmail">이메일템플릿</a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- contact// -->
-      <section id="contact" class="contact">
-        <div class="contact-wrap">
-          <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
-          <p class="contact-title-desc box-ani tran02 bottom-top">
-            경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
-            멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
-            언제든지 메일 주세요 :>
-          </p>
-          <strong class="text-email">
-            leejeha.dev@gmail.com
-          </strong>
-        </div>
-      </section>
-      <!-- //contact -->
-    </main>
-
-    <!-- footer// -->
-    <footer class="footer">
-      <div class="flex">
-        <p>2021 @ LEEJEHA</p>
-        <div class="link-wrap">
-          <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
-          <a href="https://github.com/jeha-dev" target="_blank">github</a>
-        </div>
-      </div>
-    </footer>
-    <!-- //footer -->
-
-    <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+      </footer>
+      <!-- //footer -->
+  
+      <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+    </div>
   </body>
 
 </html>

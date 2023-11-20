@@ -20,145 +20,147 @@
     <script src="./../js/jquery-3.4.1.min.js"></script>
     <script src="./../js/jquery-migrate-1.4.1.min.js"></script>
     <script src="./../js/main.js"></script>
-    <script async>
-      $(document).ready(function(){
-        $("#loading").hide();
-      });
-    </script>
+    <script>
+      window.onload = function(){
+       $("#loading").hide();
+      }
+     </script>
   </head>
   <body>
     <div id="loading" class="load-bg">
-      <img src="loading.gif" alt="loading" width="100" height="100">
+      <img src="../img/loading.gif" alt="loading" width="100" height="100">
     </div>
-    <!-- header_container// -->
-    <section class="header_container">
-      <header class="main_header">
+    <div id="wrap">
+      <!-- header_container// -->
+      <section class="header_container">
+        <header class="main_header">
+          <div class="flex">
+            <h1 class="logo">
+              <a href="/" class="">LEEJEHA PORTFOLIO</a>
+            </h1>
+            <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
+          </div>
+        </header>
+      </section>
+      <!-- //header_container -->
+  
+      <main id="kjEmail" class="section-wrap details">
+        
+        <section class="details-intro">
+          <div class="details-module">
+            <div class="col-2-square">
+              <div class="project-image box-ani left-right">
+                <img src="../img/con1/project_email.png" alt="담깅인트로">
+              </div>
+              <div class="details-desc box-ani right-left tran02"><!-- fiexd 주기 -->
+                <em class="article-title">Details</em>
+                <h2 class="project-title">이메일 템플릿 개선</h2>
+                <div class="skill-detail">
+                  <ul class="list-skill">
+                    <li>Email</li>
+                    <li>CSS</li>
+                    <li>javascript</li>
+                  </ul>
+                </div>
+                <div class="intro-desc">
+                  <p>
+                    광주은행 UMS와 함께 진행되었던 이메일템플릿 개선 프로젝트는
+                    기존의 가독성이 낮았던 템플릿에서 벗어나 UMS와 비슷한 무드를 유지하는 방향으로 설계되었어요.
+                    디자이너 등 UMS 담당팀에서 함께 기획단계부터 고민하며 심플하고도 명확한 전달이 가능한 UI를 만들 수 있었습니다.
+                  </p>
+                  <p>
+                    해당 업무의 경우 히스토리 관리와 접근성이 중요합니다.
+                    기존의 zip 파일 전송 방식 보다는 한눈에 볼 수 있는 index 사이트에 업로드하는 방안을 추천하였습니다만, 보안상의 이유로 
+                    현업과 직접 메신저나 전화를 활용한 방식으로 진행되었어요. 마크업에 익숙하지 않은 담당자의 입장에서 한 단계 더 생각하며 소통하려 노력했습니다. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //details-intro -->
+  
+        <section class="details-content">
+          <div class="details-module">
+            <div class="row">
+              <div class="project-image full box-ani top-bottom">
+                <img src="../img/detail/email_details_code.gif" alt="쇼핑몰 상세영상">
+              </div>
+              <div class="content-desc box-ani">
+                <p>
+                  하위 호환성 및 outlook 플랫폼을 고려하여 이메일 템플릿의 경우 table coding을 활용하였습니다. 
+                  첨부파일의 경우 html5를 사용하되, 클릭 이벤트나 기타 동적 요소가 필요할 경우 플러그인이나 프레임웍의 사용 없이 vanilla js로 추가 하였습니다.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="project-image box-ani top-bottom tran02">
+                <img src="../img/detail/email_tem.png" alt="이메일템플릿">
+              </div>
+              <div class="project-image box-ani bottom-top tran04">
+                <img src="../img/detail/email_guide.png" alt="이메일 가이드">
+              </div>
+              <div class="content-desc box-ani">
+                <p>구글메일앱, 네이버앱, 아웃룩, 사파리 등 웹/앱의 구분없이 약 9종의 플랫폼에서 진행하였습니다. 모바일의 경우 iOS, Android 별로
+                  font의 adjust를 맞추기 위해 다양한 디바이스별로 꼼꼼히 테스트하였습니다. 현업의 개발자나 다음 담당자를 위해 가이드를 작성해서 함께 공유했어요.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="other-project-link">
+          <strong class="link-title ">What's next?</strong>
+          <ul class="list-other">
+            <li>
+              <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
+            </li>
+            <li>
+              <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
+            </li>
+            <li>
+              <a href="mylab.html" id="mylab">마이랩 유지보수</a>
+            </li>
+            <li>
+              <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
+            </li>
+            <li>
+              <a href="email.html" id="kjEmail">이메일템플릿</a>
+            </li>
+          </ul>
+        </section>
+  
+        <!-- contact// -->
+        <section id="contact" class="contact">
+          <div class="contact-wrap">
+            <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
+            <p class="contact-title-desc box-ani tran02 bottom-top">
+              경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
+              멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
+              언제든지 메일 주세요 :>
+            </p>
+            <strong class="text-email">
+              leejeha.dev@gmail.com
+            </strong>
+          </div>
+        </section>
+        <!-- //contact -->
+      </main>
+  
+      <!-- footer// -->
+      <footer class="footer">
         <div class="flex">
-          <h1 class="logo">
-            <a href="/" class="">LEEJEHA PORTFOLIO</a>
-          </h1>
-          <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
-        </div>
-      </header>
-    </section>
-    <!-- //header_container -->
-
-    <main id="kjEmail" class="section-wrap details">
-      
-      <section class="details-intro">
-        <div class="details-module">
-          <div class="col-2-square">
-            <div class="project-image box-ani left-right">
-              <img src="../img/con1/project_email.png" alt="담깅인트로">
-            </div>
-            <div class="details-desc box-ani right-left tran02"><!-- fiexd 주기 -->
-              <em class="article-title">Details</em>
-              <h2 class="project-title">이메일 템플릿 개선</h2>
-              <div class="skill-detail">
-                <ul class="list-skill">
-                  <li>Email</li>
-                  <li>CSS</li>
-                  <li>javascript</li>
-                </ul>
-              </div>
-              <div class="intro-desc">
-                <p>
-                  광주은행 UMS와 함께 진행되었던 이메일템플릿 개선 프로젝트는
-                  기존의 가독성이 낮았던 템플릿에서 벗어나 UMS와 비슷한 무드를 유지하는 방향으로 설계되었어요.
-                  디자이너 등 UMS 담당팀에서 함께 기획단계부터 고민하며 심플하고도 명확한 전달이 가능한 UI를 만들 수 있었습니다.
-                </p>
-                <p>
-                  해당 업무의 경우 히스토리 관리와 접근성이 중요합니다.
-                  기존의 zip 파일 전송 방식 보다는 한눈에 볼 수 있는 index 사이트에 업로드하는 방안을 추천하였습니다만, 보안상의 이유로 
-                  현업과 직접 메신저나 전화를 활용한 방식으로 진행되었어요. 마크업에 익숙하지 않은 담당자의 입장에서 한 단계 더 생각하며 소통하려 노력했습니다. 
-                </p>
-              </div>
-            </div>
+          <p>2021 @ LEEJEHA</p>
+          <div class="link-wrap">
+            <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
+            <a href="https://github.com/jeha-dev" target="_blank">github</a>
           </div>
         </div>
-      </section>
-      <!-- //details-intro -->
-
-      <section class="details-content">
-        <div class="details-module">
-          <div class="row">
-            <div class="project-image full box-ani top-bottom">
-              <img src="../img/detail/email_details_code.gif" alt="쇼핑몰 상세영상">
-            </div>
-            <div class="content-desc box-ani">
-              <p>
-                하위 호환성 및 outlook 플랫폼을 고려하여 이메일 템플릿의 경우 table coding을 활용하였습니다. 
-                첨부파일의 경우 html5를 사용하되, 클릭 이벤트나 기타 동적 요소가 필요할 경우 플러그인이나 프레임웍의 사용 없이 vanilla js로 추가 하였습니다.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="project-image box-ani top-bottom tran02">
-              <img src="../img/detail/email_tem.png" alt="이메일템플릿">
-            </div>
-            <div class="project-image box-ani bottom-top tran04">
-              <img src="../img/detail/email_guide.png" alt="이메일 가이드">
-            </div>
-            <div class="content-desc box-ani">
-              <p>구글메일앱, 네이버앱, 아웃룩, 사파리 등 웹/앱의 구분없이 약 9종의 플랫폼에서 진행하였습니다. 모바일의 경우 iOS, Android 별로
-                font의 adjust를 맞추기 위해 다양한 디바이스별로 꼼꼼히 테스트하였습니다. 현업의 개발자나 다음 담당자를 위해 가이드를 작성해서 함께 공유했어요.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="other-project-link">
-        <strong class="link-title ">What's next?</strong>
-        <ul class="list-other">
-          <li>
-            <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
-          </li>
-          <li>
-            <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
-          </li>
-          <li>
-            <a href="mylab.html" id="mylab">마이랩 유지보수</a>
-          </li>
-          <li>
-            <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
-          </li>
-          <li>
-            <a href="email.html" id="kjEmail">이메일템플릿</a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- contact// -->
-      <section id="contact" class="contact">
-        <div class="contact-wrap">
-          <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
-          <p class="contact-title-desc box-ani tran02 bottom-top">
-            경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
-            멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
-            언제든지 메일 주세요 :>
-          </p>
-          <strong class="text-email">
-            leejeha.dev@gmail.com
-          </strong>
-        </div>
-      </section>
-      <!-- //contact -->
-    </main>
-
-    <!-- footer// -->
-    <footer class="footer">
-      <div class="flex">
-        <p>2021 @ LEEJEHA</p>
-        <div class="link-wrap">
-          <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
-          <a href="https://github.com/jeha-dev" target="_blank">github</a>
-        </div>
-      </div>
-    </footer>
-    <!-- //footer -->
-
-    <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+      </footer>
+      <!-- //footer -->
+  
+      <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+    </div>
   </body>
 
 </html>

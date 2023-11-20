@@ -20,142 +20,144 @@
     <script src="./../js/jquery-3.4.1.min.js"></script>
     <script src="./../js/jquery-migrate-1.4.1.min.js"></script>
     <script src="./../js/main.js"></script>
-    <script async>
-      $(document).ready(function(){
-        $("#loading").hide();
-      });
+    <script>
+     window.onload = function(){
+      $("#loading").hide();
+     }
     </script>
   </head>
   <body>
     <div id="loading" class="load-bg">
-      <img src="loading.gif" alt="loading" width="100" height="100">
+      <img src="../../img/loading.gif" alt="loading" width="100" height="100">
     </div>
-    <!-- header_container// -->
-    <section class="header_container">
-      <header class="main_header">
+    <div id="wrap">
+      <!-- header_container// -->
+      <section class="header_container">
+        <header class="main_header">
+          <div class="flex">
+            <h1 class="logo">
+              <a href="/" class="">LEEJEHA PORTFOLIO</a>
+            </h1>
+            <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
+          </div>
+        </header>
+      </section>
+      <!-- //header_container -->
+  
+      <main id="damgging" class="section-wrap details">
+        
+        <section class="details-intro">
+          <div class="details-module">
+            <div class="col-2-lg">
+              <div class="project-image box-ani">
+                <img src="../img/con1/project_dam.png" alt="담깅인트로">
+              </div>
+              <div class="details-desc box-ani bottom-top"><!-- fiexd 주기 -->
+                <em class="article-title">Details</em>
+                <h2 class="project-title">플로깅 어시스턴트 앱 담깅</h2>
+                <div class="skill-detail">
+                  <ul class="list-skill">
+                    <li>모바일</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                  </ul>
+                </div>
+                <div class="intro-desc">
+                  <p>
+                    goorm x SeSAC x 서울경제진흥원에서 주관한 해커톤인 새싹톤에 퍼블리셔로 참가하여
+                    도시환경 및 건강증진 주제의 플로깅 어시스턴트 앱 “담깅”의 UI를 개발하였습니다.
+                    React 환경 내에서 마크업을 진행하였으며, FE와의 협업과 형상관리를 위해 github를 활용하였습니다.
+                  </p>
+                  <p>
+                    담깅은 실시간으로 동선과 걸음수 및 이동거리를 파악하여 개인 혹은 팀 마다 플로깅 챌린지를 진행하는 서비스에요.
+                    한달이라는 길지 않은 기간 내에 기획, 디자인, 개발을 수행하기 위하여 모든 팀원이 열린 토론을 하며
+                    상호 간에 아이디어를 공유하였습니다. 
+                    특히 기획자 및 FE와 깊이 있는 회의을 통해 완성도 높은 UI와 효율적인 코드를 작성하였습니다.
+                    모두가 한 마음으로 노력하여 장려상(서울경제진흥원상)을 받는 긍정적인 결과를 얻을 수 있었어요.
+                  </p>
+                  <a href="https://leejams.github.io/TechnomadFront/" class="text-link">담깅 구경하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //details-intro -->
+        
+        <section class="details-content">
+          <div class="details-module">
+            <div class="row">
+              <div class="project-image box-ani top-bottom tran04">
+                <img src="../img/detail/dam_pre.png" alt="새싹톤 발표">
+              </div>
+              <div class="project-image box-ani bottom-top tran06">
+                <img src="../img/detail/dam_detail.png" alt="담깅ui">
+              </div>
+              <div class="content-desc">
+                <p>
+                  기획단계부터 해커톤 발표의 순간까지 참여한 프로젝트입니다. 
+                  퍼블리셔에게 주어진 3일이라는 실작업 기간동안 어떻게 하면 더 빠르게 프로토타입을 구현할 수 있을 지 고민이 많았습니다. 
+                  디자이너와 의견을 교환하며 탁구치듯 협업했어요. 컴포넌트별 마크업 개발을 통해 타임리미트 퀘스트를 깨듯 업무를 수행했고, 
+                  결과적으로 운 좋게 수상까지 한만큼 더욱 애정을 갖고 있는 프로젝트입니다.
+                </p>
+              </div>
+            </div>
+            <a href="https://sesacthon-apply.goorm.io/?utm_source=allforyoung&utm_medium=affiliate&utm_campaign=sasacthon" class="text-link">서울의 미래를 바꾸는
+              새싹톤</a>
+          </div>
+        </section>
+  
+        <section class="other-project-link">
+          <strong class="link-title ">What's next?</strong>
+          <ul class="list-other">
+            <li>
+              <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
+            </li>
+            <li>
+              <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
+            </li>
+            <li>
+              <a href="mylab.html" id="mylab">마이랩 유지보수</a>
+            </li>
+            <li>
+              <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
+            </li>
+            <li>
+              <a href="email.html" id="kjEmail">이메일템플릿</a>
+            </li>
+          </ul>
+        </section>
+  
+        <!-- contact// -->
+        <section id="contact" class="contact">
+          <div class="contact-wrap">
+            <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
+            <p class="contact-title-desc box-ani tran02 bottom-top">
+              경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
+              멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
+              언제든지 메일 주세요 :>
+            </p>
+            <strong class="text-email">
+              leejeha.dev@gmail.com
+            </strong>
+          </div>
+        </section>
+        <!-- //contact -->
+      </main>
+  
+      <!-- footer// -->
+      <footer class="footer">
         <div class="flex">
-          <h1 class="logo">
-            <a href="/" class="">LEEJEHA PORTFOLIO</a>
-          </h1>
-          <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
-        </div>
-      </header>
-    </section>
-    <!-- //header_container -->
-
-    <main id="damgging" class="section-wrap details">
-      
-      <section class="details-intro">
-        <div class="details-module">
-          <div class="col-2-lg">
-            <div class="project-image box-ani">
-              <img src="../img/con1/project_dam.png" alt="담깅인트로">
-            </div>
-            <div class="details-desc box-ani bottom-top"><!-- fiexd 주기 -->
-              <em class="article-title">Details</em>
-              <h2 class="project-title">플로깅 어시스턴트 앱 담깅</h2>
-              <div class="skill-detail">
-                <ul class="list-skill">
-                  <li>모바일</li>
-                  <li>CSS</li>
-                  <li>React</li>
-                </ul>
-              </div>
-              <div class="intro-desc">
-                <p>
-                  goorm x SeSAC x 서울경제진흥원에서 주관한 해커톤인 새싹톤에 퍼블리셔로 참가하여
-                  도시환경 및 건강증진 주제의 플로깅 어시스턴트 앱 “담깅”의 UI를 개발하였습니다.
-                  React 환경 내에서 마크업을 진행하였으며, FE와의 협업과 형상관리를 위해 github를 활용하였습니다.
-                </p>
-                <p>
-                  담깅은 실시간으로 동선과 걸음수 및 이동거리를 파악하여 개인 혹은 팀 마다 플로깅 챌린지를 진행하는 서비스에요.
-                  한달이라는 길지 않은 기간 내에 기획, 디자인, 개발을 수행하기 위하여 모든 팀원이 열린 토론을 하며
-                  상호 간에 아이디어를 공유하였습니다. 
-                  특히 기획자 및 FE와 깊이 있는 회의을 통해 완성도 높은 UI와 효율적인 코드를 작성하였습니다.
-                  모두가 한 마음으로 노력하여 장려상(서울경제진흥원상)을 받는 긍정적인 결과를 얻을 수 있었어요.
-                </p>
-                <a href="https://leejams.github.io/TechnomadFront/" class="text-link">담깅 구경하기</a>
-              </div>
-            </div>
+          <p>2021 @ LEEJEHA</p>
+          <div class="link-wrap">
+            <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
+            <a href="https://github.com/jeha-dev" target="_blank">github</a>
           </div>
         </div>
-      </section>
-      <!-- //details-intro -->
-      
-      <section class="details-content">
-        <div class="details-module">
-          <div class="row">
-            <div class="project-image box-ani top-bottom tran04">
-              <img src="../img/detail/dam_pre.png" alt="새싹톤 발표">
-            </div>
-            <div class="project-image box-ani bottom-top tran06">
-              <img src="../img/detail/dam_detail.png" alt="담깅ui">
-            </div>
-            <div class="content-desc">
-              <p>
-                기획단계부터 해커톤 발표의 순간까지 참여한 프로젝트입니다. 
-                퍼블리셔에게 주어진 3일이라는 실작업 기간동안 어떻게 하면 더 빠르게 프로토타입을 구현할 수 있을 지 고민이 많았습니다. 
-                디자이너와 의견을 교환하며 탁구치듯 협업했어요. 컴포넌트별 마크업 개발을 통해 타임리미트 퀘스트를 깨듯 업무를 수행했고, 
-                결과적으로 운 좋게 수상까지 한만큼 더욱 애정을 갖고 있는 프로젝트입니다.
-              </p>
-            </div>
-          </div>
-          <a href="https://sesacthon-apply.goorm.io/?utm_source=allforyoung&utm_medium=affiliate&utm_campaign=sasacthon" class="text-link">서울의 미래를 바꾸는
-            새싹톤</a>
-        </div>
-      </section>
-
-      <section class="other-project-link">
-        <strong class="link-title ">What's next?</strong>
-        <ul class="list-other">
-          <li>
-            <a href="damgging.html" id="damgging">플로깅 어시스턴트 앱 담깅</a>
-          </li>
-          <li>
-            <a href="ezen.html" id="ezen">이젠클라우드 솔루션 UI 개발</a>
-          </li>
-          <li>
-            <a href="mylab.html" id="mylab">마이랩 유지보수</a>
-          </li>
-          <li>
-            <a href="ums.html" id="kjbank">광주은행 UMS 솔루션</a>
-          </li>
-          <li>
-            <a href="email.html" id="kjEmail">이메일템플릿</a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- contact// -->
-      <section id="contact" class="contact">
-        <div class="contact-wrap">
-          <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
-          <p class="contact-title-desc box-ani tran02 bottom-top">
-            경험과 인성을 갖춘 퍼블리셔를 찾고 계신다면<br />
-            멋진 일을 함께 하고 싶은 사람이다 생각된다면<br />
-            언제든지 메일 주세요 :>
-          </p>
-          <strong class="text-email">
-            leejeha.dev@gmail.com
-          </strong>
-        </div>
-      </section>
-      <!-- //contact -->
-    </main>
-
-    <!-- footer// -->
-    <footer class="footer">
-      <div class="flex">
-        <p>2021 @ LEEJEHA</p>
-        <div class="link-wrap">
-          <a href="https://instagram.com/moo2_1208?igshid=MzMyNGUyNmU2YQ==" target="_blank">instargram</a>
-          <a href="https://github.com/jeha-dev" target="_blank">github</a>
-        </div>
-      </div>
-    </footer>
-    <!-- //footer -->
-
-    <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+      </footer>
+      <!-- //footer -->
+  
+      <a href="/" class="btn home "><&nbsp;&nbsp;HOME</a>
+    </div>
   </body>
 
 </html>
