@@ -168,9 +168,6 @@ module : button, form, thumbnail, listproject, details-module, popup
   transition:bottom ease-in-out 0.5s;
   z-index:100;
 }
-.btn.home.active{
-  bottom:-10%;
-}
 
 /* text-link */
 .text-link {
@@ -608,7 +605,10 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   /* module */
   .btn.home {
     width:9rem;
-    bottom:20px;
+    bottom:18px;
+    left:unset;
+    right:20px;
+    transform:none;
   }
   .text-link {
     bottom:-5%;

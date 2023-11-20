@@ -36,19 +36,21 @@ let fn = (function() {
         let scrTop = $(window).scrollTop();
         let headerHt = $(".header_container").height();
         let btnHome = $(".btn.home");
-        let clientHt = $(document).innerHeight();
+        let clientHt = $(document).outerHeight();
         let winHt = $(window).height();
-        let scrBottom = clientHt - winHt;
+        let footerHt = $(".footer").outerHeight();
         
         // scroll event common
         if( scrTop > headerHt){
           aniEvent();
-          btnHome.addClass("active");
+          btnHome.css("bottom","-10%");
         }
 
         // btnHome remove
-        if(scrTop == 0 || scrTop == scrBottom){
-          btnHome.removeClass("active");
+        if(scrTop == 0){
+          btnHome.css("bottom","18px");
+        }else if (scrTop >= (clientHt - winHt) - (footerHt + 300) ){
+          btnHome.css("bottom","80px");
         }
 
       });
