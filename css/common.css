@@ -33,7 +33,6 @@
 
 /* layout > wrap, section-wrap, header, footer, sidebars, lnb, .content, .section-bg */
 .wrap{
-  visibility:hidden;
   word-break: keep-all;
 }
 section, 
