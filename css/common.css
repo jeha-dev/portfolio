@@ -324,6 +324,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   margin-right:6px;
   color:#999;
   font-size:1.8rem;
+  font-family:'Pretendard';
 }
 .details .list-skill li:after{
   content:'/';
@@ -345,12 +346,12 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 .details .intro-desc p{
   margin-bottom:22px;
   font-size:2rem;
+  font-family:'Pretendard';
   line-height:32px;
 }
 .details .intro-desc .text-link{
   bottom:-20px;
 }
-
 .details-content {
   padding-top:180px;
 }
@@ -360,6 +361,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 .content-desc p {
   margin-top:30px;
   font-size:2rem;
+  font-family:'Pretendard';
   line-height:32px;
 }
 
@@ -665,7 +667,8 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
   .intro-desc p {
     font-family:'Pretendard';
   }
-  .details .intro-desc p, .content-desc p {
+  .details .intro-desc p, 
+  .content-desc p {
     font-size:1.6rem;
     line-height:24px;
   }
