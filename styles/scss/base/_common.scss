@@ -1,0 +1,280 @@
+
+// CSS Easing : Quad == GSAP Power1
+$power1in: cubic-bezier(0.11, 0, 0.5, 0);
+$power1out: cubic-bezier(0.5, 1, 0.89, 1);
+$power1inOut: cubic-bezier(0.45, 0, 0.55, 1);
+
+// CSS Easing : Cubic == GSAP Power2
+$power2in: cubic-bezier(0.32, 0, 0.67, 0);
+$power2out: cubic-bezier(0.33, 1, 0.68, 1);
+$power2inOut: cubic-bezier(0.65, 0, 0.35, 1);
+
+// CSS Easing : Quart == GSAP Power3
+$power3in: cubic-bezier(0.5, 0, 0.75, 0);
+$power3out: cubic-bezier(0.25, 1, 0.5, 1);
+$power3inOut: cubic-bezier(0.76, 0, 0.24, 1);
+
+// CSS Easing : Quint == GSAP Power4
+$power4in: cubic-bezier(0.64, 0, 0.78, 0);
+$power4out: cubic-bezier(0.22, 1, 0.36, 1);
+$power4inOut: cubic-bezier(0.83, 0, 0.17, 1);
+
+$main-color-white_01: #ffffff;
+$main-color-black_01: #000000;
+$main-color-gray_01: #f6f6f6;
+$main-color-gray_03: #a0a0a0;
+$main-color-gray_04: #eeeeee;
+$main-color-gray_05: #cbcbcb;
+
+$point-color-blue: #3617ce;
+$point-color-red: #ff0000;
+
+@mixin tuniverse-Headline {
+    font-family: "T Universe Sans TTF";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1px;
+}
+@mixin tuniverse-Title_01 {
+    font-family: "T Universe Sans TTF";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+@mixin tuniverse-Title_02 {
+    font-family: "T Universe Sans TTF";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0;
+}
+@mixin tuniverse-Title_03 {
+    font-family: "T Universe Sans TTF";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: -1px;
+}
+@mixin tuniverse-Title_04 {
+    font-family: "T Universe Sans TTF";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+    letter-spacing: -1px;
+}
+// 240401 추가
+@mixin tuniverse-Title_05 {
+    font-family: "T Universe Sans TTF";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px; /* 100% */
+    letter-spacing: -1px;
+}
+@mixin tuniverse-ETC_Badge {
+    font-family: "T Universe Sans TTF";
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: -0.3px;
+}
+@mixin tuniverse-ETC_Badge_02 {
+    font-family: "T Universe Sans TTF";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: -0.3px;
+}
+@mixin tuniverse-ETC_Benefits {
+    font-family: "T Universe Sans TTF";
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 90px; /* 128.571% */
+    letter-spacing: -4px;
+}
+@mixin tuniverse-ETC_Benefits_02 {
+    font-family: "T Universe Sans TTF";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px; /* 140% */
+    letter-spacing: -4px;
+}
+@mixin pretendard-Title_01 {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-Title_02 {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-Title_03 {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-Title_04 {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1px;
+}
+//240401 추가
+@mixin pretendard-Title_05 {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-Body_03_bold {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-Body_03_med {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-Body_04_bold {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+}
+@mixin pretendard-Body_04_med {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-Body_04_reg {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+}
+@mixin pretendard-Body_05_reg {
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+}
+@mixin pretendard-Body_05_bold {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+}
+@mixin pretendard-Body_05_med {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+}
+@mixin pretendard-Body_05_stroke {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+    text-decoration: line-through;
+}
+@mixin pretendard-Body_05_underline {
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+    text-decoration: underline;
+}
+// 20230919 추가
+@mixin pretendard-Body_06_reg {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+}
+// 20240411 추가
+@mixin pretendard-Body_06_med {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+}
+
+@mixin pretendard-ETC_Badge_med {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: -1px;
+}
+@mixin pretendard-ETC_Badge_med_02 {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: -0.5px;
+}
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin hiddenLine($lineNum: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lineNum;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+@mixin fixed {
+    position: fixed;
+    width: 100%;
+    max-width: var(--maxDeviceWidth);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin ico {
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0;
+    vertical-align: middle;
+}

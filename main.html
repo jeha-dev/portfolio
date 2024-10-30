@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="IE=EDGE">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Author" content="이제하leejeha">
-    <meta name="keywords" content="웹퍼블리싱 , web publishing , 반응형 웹, 반응형 , 이제하의 포트폴리오 , 웹 퍼블리셔 , 경력 웹 퍼블리셔 , 포트폴리오 , 웹 퍼블리싱 포트폴리오, 웹 퍼블리셔 포트폴리오 , UI , UX">
-    <meta name="description" content="웹퍼블리셔 이제하의 포트폴리오입니다.누구나 직관적으로 알 수 있는 UI를 만드는 데 관심이 많아요.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no" />
     <title>LeeJeha portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <meta name="description" content="이제하의 포트폴리오" />
+    <meta property="og:title" content="LeeJeha portfolio" />
+    <meta property="og:description" content="이제하의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./styles/css/common.css" />
+    <link rel="stylesheet" href="./styles/css/guide.css" />
     <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery-migrate-1.4.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="./styles/css/common.css" />
     <script>
-      window.onload = function(){
-       $("#loading").hide();
-      }
+      // window.onload = function(){
+      //  $("#loading").hide();
+      // }
      </script>
   </head>
   <body>
-    <div id="loading" class="load-bg">
+    <div class="popup loading" data-type="custom-loading">
       <img src="../img/loading.gif" alt="loading" width="100" height="100">
     </div>
-    <div id="wrap">
-      <!-- header_container// -->
-      <section class="header_container">
-        <header class="main_header">
-          <div class="flex">
-            <h1 class="logo">
-              <a href="/" class="">LEEJEHA PORTFOLIO</a>
-            </h1>
-            <a href="mailto:leejeha.dev@gmail.com" class="link-email">leejeha.dev@gmail.com</a>
+    <div class="container main">
+      <!-- fixed_aside// -->
+      <div class="sticky-ui">
+        <div class="header-main">
+          <div class="ui-container">
+            <div class="ui-wrap">
+                <div class="txt-title">LEEJEHA PORTFOLIO</div>
+                <button class="btn-email">
+                  <span class="ico"></span>
+                </button>
+                <button type="button" class="btn-small btn-changemode">
+                  <span class="ico">change mode</span>
+                </button>
+            </div>
           </div>
-        </header>
-      </section>
-      <!-- //header_container -->
+          <div class="mb-menu-tabs">
+            <button type="button" class="tab">HOME</button>
+            <button type="button" class="tab">WORKS</button>
+            <button type="button" class="tab">ABOUT</button>
+            <button type="button" class="tab">CONTACT</button>
+          </div>
+          <!-- <div class="mb-menu-layer" style="display: flex; pointer-events: none;">
+            <div class="bg" style="opacity: 0;"></div>
+            <a class="logo" href="/"><span>LEEJEHA</span></a> 
+            <button class="button-close-layer">CLOSE</button>
+            <div class="inner" style="opacity: 0;">
+              <div class="link-container">
+                <a href="/home/">HOME</a> 
+                <a href="/works/">WORKS</a> 
+                <a href="/about/" class="link-contact">ABOUT</a>
+                <a href="/contact/" class="link-contact select">CONTACT</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="fixed-menu fixed-left">
+          <span class="fixed-menu-title">EXPLORER</span>
+          <div class="tabs">
+            <button type="button" class="tab">HOME</button>
+            <button type="button" class="tab">WORKS</button>
+            <button type="button" class="tab">ABOUT</button>
+            <button type="button" class="tab">CONTACT</button>
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn-small">
+              <span class="ico">about</span>
+            </button>
+            <button type="button" class="btn-small btn-changemode">
+              <span class="ico">change mode</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
   
-      <main class="section-wrap">
-        <!-- <section class="prologue">
-          <button type="button" class="btn_prologue">leejeha<br/>Explorer</button>
-        </section> -->
-        <!-- intro// -->
+      <!-- <main class="section-wrap">
         <section class="intro">
-          <!-- <span class="animation_pomulseon ">explore</span> -->
           <div class="title-module">
             <div class="title-module-inner">
               <p class="title-main">
-                <!-- <span class="title-sub ">As you want,</span> -->
                 <span class="title-sub">as you think</span>
                 <strong class="">leejeha</strong><br />
               </p>
@@ -71,9 +102,6 @@
             <div class="ani-wave"></div>
           </div>
         </section>
-        <!-- //intro -->
-  
-        <!-- project// -->
         <section id="project" class="content project">
           <div class="title-wrap box-ani top-bottom">
             <strong class="content-title">PROJECT</strong>
@@ -94,33 +122,6 @@
                     <p class="desc">모바일</p>
                   </div>
                 </div>
-                
-                <!-- <div class="poplayer pop_desc">
-                  <div class="popcont">
-                    <div class="thumb-box">
-                      <img src="../portfolio/img/con1/port_damgging_pop.png" alt="이젠클라우드">
-                    </div>
-                    <dl class="port_detail">
-                      <dt class="title">[해커톤]담깅 - 플로깅 프로젝트 웹사이트 구축</dt>
-                      <dd>
-                        <strong class="unit_name">환경 및 담당업무</strong>
-                        <span class="unit_cont">React / 마크업(퍼블리싱)</span>
-                      </dd>
-                      <dd>
-                        <strong class="unit_name">사용 언어</strong>
-                        <span class="urignit_cont">HTML5 / CSS3</span>
-                      </dd>
-                      <dd>
-                        <span class="desc">
-                          사이트에 대한 간단한 설명 및 담당했던 업무를 상세히 입력한다.
-                        </span>
-                      </dd>
-                    </dl>
-                  </div>
-                  <button type="button" class="btn_popclose">
-                    <span class="hidden">닫기</span>
-                  </button>
-                </div> -->
               </li>
               <li>
                 <div class="project-wrap">
@@ -135,27 +136,6 @@
                     <p class="desc">기획 / 반응형웹</p>
                   </div>
                 </div>
-                <!-- <div class="poplayer pop_desc">
-                  <div class="popcont">
-                    <div class="thumb-box">
-                      <img src="../portfolio/img/con1/port_ezen_pop.png" alt="이젠클라우드">
-                    </div>
-                    <dl class="port_detail">
-                      <dt class="title">[이젠클라우드]엔더스 자사 솔루션 구축 프로젝트</dt>
-                      <dd>
-                        <span class="unit_cont">HTML5 / CSS3 / jQuery</span>
-                      </dd>
-                      <dd>
-                        <span class="desc">
-                          사이트에 대한 간단한 설명 및 담당했던 업무를 상세히 입력한다.
-                        </span>
-                      </dd>
-                    </dl>
-                  </div>
-                  <button type="button" class="btn_popclose">
-                    <span class="hidden">닫기</span>
-                  </button>
-                </div> -->
               </li>
               <li>
                 <div class="project-wrap">
@@ -170,32 +150,7 @@
                     <p class="desc">반응형웹</p>
                   </div>
                 </div>
-                <!-- <div class="poplayer pop_desc">
-                  <div class="popcont">
-                    <div class="thumb-box">
-                      <img src="../portfolio/img/con1/port_mylab_pop.png" alt="마이랩">
-                    </div>
-                    <dl class="port_detail">
-                      <dt class="title">한국암웨이 마이랩 솔루션 - 스타일 및 레이아웃 유지보수</dt>
-                      <dd>
-                        <strong class="unit_name">환경 및 담당업무</strong>
-                        <span class="unit_cont">VUE.js / 마크업(퍼블리싱)</span>
-                      </dd>
-                      <dd>
-                        <strong class="unit_name">사용 언어</strong>
-                        <span class="unit_cont">SCSS</span>
-                      </dd>
-                      <dd>
-                        <span class="desc">
-                          사이트에 대한 간단한 설명 및 담당했던 업무를 상세히 입력한다.
-                        </span>
-                      </dd>
-                    </dl>
-                  </div>
-                  <button type="button" class="btn_popclose">
-                    <span class="hidden">닫기</span>
-                  </button>
-                </div> -->
+                
               </li>
               <li>
                 <div class="project-wrap">
@@ -210,32 +165,6 @@
                     <p class="desc">PC web</p>
                   </div>
                 </div>
-                <!-- <div class="poplayer pop_desc">
-                  <div class="popcont">
-                    <div class="thumb-box">
-                      <img src="../portfolio/img/con1/port_ums_kj.png" alt="광주은행 UMS">
-                    </div>
-                    <dl class="port_detail">
-                      <dt class="title">광주은행 UMS 관리자 서비스 구축 및 개선 프로젝트</dt>
-                      <dd>
-                        <strong class="unit_name">환경 및 담당업무</strong>
-                        <span class="unit_cont">JAVA / 마크업(퍼블리싱)</span>
-                      </dd>
-                      <dd>
-                        <strong class="unit_name">사용 언어</strong>
-                        <span class="unit_cont">HTML5 / CSS3 / jQuery</span>
-                      </dd>
-                      <dd>
-                        <span class="desc">
-                          사이트에 대한 간단한 설명 및 담당했던 업무를 상세히 입력한다.
-                        </span>
-                      </dd>
-                    </dl>
-                  </div>
-                  <button type="button" class="btn_popclose">
-                    <span class="hidden">닫기</span>
-                  </button>
-                </div> -->
               </li>
               <li>
                 <div class="project-wrap">
@@ -280,9 +209,7 @@
             </ul>
           </div>
         </section>
-        <!-- //project -->
-  
-        <!-- profile// -->
+
         <section id="profile" class="content profile">
           <div class="profile-wrap">
             <div class="image-box box-ani bottom-top tran02">
@@ -314,8 +241,6 @@
             <a href="https://panoramic-vertebra-c48.notion.site/4df01962bee345e4b0b6b75c0b12daf1?pvs=4" class="btn big box-ani">더 알아보기</a>
           </div>
         </section>
-        <!-- //profile -->
-        <!-- contact// -->
         <section id="contact" class="contact">
           <div class="contact-wrap">
             <h2 class="contact-title  box-ani bottom-top">Always Waiting for You</h2>
@@ -353,12 +278,10 @@
   
           </div>
   
-        </section>
-        <!-- //contact -->
+        </section> -->
       </main>
   
-      <!-- footer// -->
-      <footer class="footer">
+      <!-- <footer class="footer">
         <div class="flex">
           <p>2021 @ LEEJEHA</p>
           <div class="link-wrap">
@@ -367,8 +290,33 @@
           </div>
         </div>
         
-      </footer>
-      <!-- //footer -->
+      </footer> -->
     </div>
+    <script src="./scripts/lib/gsap.min.js"></script>
+    <script src="./scripts/common.js"></script>
+    <!-- <script>
+        window.onload = () => {
+
+            const button = document.querySelector('.btn-toggle-text');
+            const toggleContents = gsap.utils.toArray('.tab-content');
+            button.addEventListener('click', () => {
+                button.setAttribute('data-index', button.getAttribute('data-index') == 0 ? 1 : 0)
+                toggleClass(toggleContents, button.getAttribute('data-index'))
+            })
+
+            const url = new URL(window.location.href);
+            const urlParams = url.searchParams;
+            const _id = urlParams.get('type');
+
+            if (_id && _id === 'newssp') {
+                button.setAttribute('data-index', 1)
+                toggleClass(toggleContents, 1)
+            } else {
+                toggleClass(toggleContents, button.getAttribute('data-index'))
+            }
+
+
+        }
+    </script> -->
   </body>
 </html>
