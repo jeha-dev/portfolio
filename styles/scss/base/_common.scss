@@ -29,122 +29,27 @@ $main-color-gray_05: #cbcbcb;
 $point-color-blue: #3617ce;
 $point-color-red: #ff0000;
 
-@mixin tuniverse-Headline {
-    font-family: "T Universe Sans TTF";
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -1px;
-}
-@mixin tuniverse-Title_01 {
-    font-family: "T Universe Sans TTF";
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: -1px;
-}
-@mixin tuniverse-Title_02 {
-    font-family: "T Universe Sans TTF";
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0;
-}
-@mixin tuniverse-Title_03 {
-    font-family: "T Universe Sans TTF";
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px; /* 111.111% */
-    letter-spacing: -1px;
-}
-@mixin tuniverse-Title_04 {
-    font-family: "T Universe Sans TTF";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px; /* 120% */
-    letter-spacing: -1px;
-}
-// 240401 추가
-@mixin tuniverse-Title_05 {
-    font-family: "T Universe Sans TTF";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px; /* 100% */
-    letter-spacing: -1px;
-}
-@mixin tuniverse-ETC_Badge {
-    font-family: "T Universe Sans TTF";
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 11px;
-    letter-spacing: -0.3px;
-}
-@mixin tuniverse-ETC_Badge_02 {
-    font-family: "T Universe Sans TTF";
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 11px;
-    letter-spacing: -0.3px;
-}
-@mixin tuniverse-ETC_Benefits {
-    font-family: "T Universe Sans TTF";
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 90px; /* 128.571% */
-    letter-spacing: -4px;
-}
-@mixin tuniverse-ETC_Benefits_02 {
-    font-family: "T Universe Sans TTF";
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 70px; /* 140% */
-    letter-spacing: -4px;
-}
 @mixin pretendard-Title_01 {
     font-family: "Pretendard";
-    font-weight: 500;
+    font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 32px;
     letter-spacing: -1px;
 }
 @mixin pretendard-Title_02 {
     font-family: "Pretendard";
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -1px;
 }
-@mixin pretendard-Title_03 {
-    font-family: "Pretendard";
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -1px;
-}
-@mixin pretendard-Title_04 {
-    font-family: "Pretendard";
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -1px;
-}
-//240401 추가
-@mixin pretendard-Title_05 {
-    font-family: "Pretendard";
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: -1px;
-}
-@mixin pretendard-Body_03_bold {
-    font-family: "Pretendard";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -1px;
-}
+// @mixin pretendard-Body_03_bold {
+//     font-family: "Pretendard";
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 20px;
+//     letter-spacing: -1px;
+// }
 @mixin pretendard-Body_03_med {
     font-family: "Pretendard";
     font-weight: 500;
@@ -181,28 +86,14 @@ $point-color-red: #ff0000;
     line-height: 14px;
     letter-spacing: -0.5px;
 }
-@mixin pretendard-Body_05_bold {
-    font-family: "Pretendard";
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: -0.5px;
-}
-@mixin pretendard-Body_05_med {
-    font-family: "Pretendard";
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: -0.5px;
-}
-@mixin pretendard-Body_05_stroke {
-    font-family: "Pretendard";
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: -0.5px;
-    text-decoration: line-through;
-}
+// @mixin pretendard-Body_05_stroke {
+//     font-family: "Pretendard";
+//     font-weight: 500;
+//     font-size: 12px;
+//     line-height: 14px;
+//     letter-spacing: -0.5px;
+//     text-decoration: line-through;
+// }
 @mixin pretendard-Body_05_underline {
     font-family: "Pretendard";
     font-size: 12px;
@@ -211,45 +102,11 @@ $point-color-red: #ff0000;
     letter-spacing: -0.5px;
     text-decoration: underline;
 }
-// 20230919 추가
-@mixin pretendard-Body_06_reg {
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    letter-spacing: -0.5px;
-}
-// 20240411 추가
-@mixin pretendard-Body_06_med {
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 18px;
-    letter-spacing: -0.5px;
-}
-
-@mixin pretendard-ETC_Badge_med {
-    font-family: "Pretendard";
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 11px;
-    letter-spacing: -1px;
-}
-@mixin pretendard-ETC_Badge_med_02 {
-    font-family: "Pretendard";
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 11px;
-    letter-spacing: -0.5px;
-}
 @mixin flexRow {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 @mixin flexColumn {
     display: flex;
     flex-direction: column;

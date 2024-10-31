@@ -9,8 +9,6 @@
     <meta property="og:title" content="LeeJeha portfolio" />
     <meta property="og:description" content="이제하의 포트폴리오" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="./styles/css/common.css" />
-    <link rel="stylesheet" href="./styles/css/guide.css" />
     <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -24,28 +22,28 @@
   </head>
   <body>
     <div class="popup loading" data-type="custom-loading">
-      <img src="../img/loading.gif" alt="loading" width="100" height="100">
+      <!-- <img src="../img/loading.gif" alt="loading" width="100" height="100"> -->
     </div>
-    <div class="container main">
+    <div class="container">
       <!-- fixed_aside// -->
       <div class="sticky-ui">
-        <div class="header-main">
+        <div class="header">
           <div class="ui-container">
             <div class="ui-wrap">
                 <div class="txt-title">LEEJEHA PORTFOLIO</div>
                 <button class="btn-email">
                   <span class="ico"></span>
                 </button>
-                <button type="button" class="btn-small btn-changemode">
+                <button type="button" class="mb-btn-small btn-changemode">
                   <span class="ico">change mode</span>
                 </button>
             </div>
-          </div>
-          <div class="mb-menu-tabs">
-            <button type="button" class="tab">HOME</button>
-            <button type="button" class="tab">WORKS</button>
-            <button type="button" class="tab">ABOUT</button>
-            <button type="button" class="tab">CONTACT</button>
+            <div class="mb-menu-tabs" style="display: none;">
+              <button type="button" class="tab">HOME</button>
+              <button type="button" class="tab">WORKS</button>
+              <button type="button" class="tab">ABOUT</button>
+              <button type="button" class="tab">CONTACT</button>
+            </div>
           </div>
           <!-- <div class="mb-menu-layer" style="display: flex; pointer-events: none;">
             <div class="bg" style="opacity: 0;"></div>
@@ -79,7 +77,12 @@
           </div>
         </div>
       </div>
-      
+      <div class="content-wrap">
+        <div class="content cont-home"><h1>안녕하세요 이제하의 포트폴리오 입니다.</h1></div>
+        <div class="content cont-works"><h1>Here is my works.</h1></div>
+        <div class="content cont-about"><h1>안녕하세요 웹퍼블리셔 이제하입니다.</h1></div>
+        <div class="content cont-contact"><h1>Contact Me.</h1></div>
+      </div>
   
       <!-- <main class="section-wrap">
         <section class="intro">

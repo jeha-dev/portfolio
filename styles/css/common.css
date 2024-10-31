@@ -65,31 +65,6 @@ input {
 }
 
 @font-face {
-  font-family: "T Universe Sans TTF";
-  src: url(../../styles/fonts/T-Universe-Sans-TTF/fwt/TUniverseSansTTF-cMd.ttf) format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "T Universe Sans TTF";
-  src: url(../../styles/fonts/T-Universe-Sans-TTF/fwt/TUniverseSansTTF-dBd.ttf) format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 100;
-  src: url(../../styles/fonts/Pretendard/Pretendard-Thin.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 200;
-  src: url(../../styles/fonts/Pretendard/Pretendard-ExtraLight.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 300;
-  src: url(../../styles/fonts/Pretendard/Pretendard-Light.woff) format("woff");
-}
-@font-face {
   font-family: "Pretendard";
   font-weight: 400;
   src: url(../../styles/fonts/Pretendard/Pretendard-Regular.woff) format("woff");
@@ -101,11 +76,6 @@ input {
 }
 @font-face {
   font-family: "Pretendard";
-  font-weight: 600;
-  src: url(../../styles/fonts/Pretendard/Pretendard-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
   font-weight: 700;
   src: url(../../styles/fonts/Pretendard/Pretendard-Bold.woff) format("woff");
 }
@@ -114,8 +84,95 @@ input {
   font-weight: 800;
   src: url(../../styles/fonts/Pretendard/Pretendard-ExtraBold.woff) format("woff");
 }
-@font-face {
+.header {
+  position: fixed;
+  width: 100%;
+  max-width: var(--maxDeviceWidth);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: var(--maxDeviceWidth) !important;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 800;
+}
+.header .ui-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+}
+.header .ui-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.header .ui-wrap.ui-single {
+  margin-left: auto;
+}
+@supports not (inset: 0) {
+  .header .ui-wrap > button:not(:first-child) {
+    margin-left: 12px;
+  }
+}
+.header button,
+.header a {
+  position: relative;
+  font-size: 0;
+}
+.header button .ico,
+.header a .ico {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+.header button.btn-email .ico,
+.header a.btn-email .ico {
+  background-image: url("../../../img/icon/ico_mail_black.svg");
+}
+.header button.btn-changemode .ico,
+.header a.btn-changemode .ico {
+  display: none;
+}
+.header button.btn-txt,
+.header a.btn-txt {
   font-family: "Pretendard";
-  font-weight: 900;
-  src: url(../../styles/fonts/Pretendard/Pretendard-Black.woff) format("woff");
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #3617ce;
+  width: 90px;
+  padding-right: 6px;
+  text-align: right;
+}
+.header .txt-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 20px;
+  width: 130px;
+  margin: auto;
+  margin-right: auto;
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  text-align: center;
+  overflow: hidden;
+}
+
+@keyframes blur {
+  from {
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    -webkit-backdrop-filter: blur(20px);
+  }
 }/*# sourceMappingURL=common.css.map */

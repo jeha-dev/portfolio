@@ -1,0 +1,78 @@
+@import '../base/common';
+
+.header {
+    @include fixed;
+    width: 100%;
+    max-width: var(--maxDeviceWidth) !important;
+    top: 0;
+    background-color: $main-color-white_01;
+    z-index: 800;
+
+    .ui-container {
+        position: relative;
+        @include flexRow;
+        justify-content: space-between;
+        width: 100%;
+        padding: 18px;
+    }
+    .ui-wrap {
+        @include flexRow;
+        gap: 12px;
+        &.ui-single {
+            margin-left: auto;
+        }
+    }
+    @supports not(inset:0){
+        .ui-wrap {
+            > button:not(:first-child){margin-left:12px;}
+        }
+    }
+
+    button,
+    a {
+        position: relative;
+        font-size: 0;
+        .ico {
+            display:block;
+            width: 28px;
+            height: 28px;
+        }
+        &.btn-email{
+            .ico{
+                background-image: url('../../../img/icon/ico_mail_black.svg');
+            }
+        }
+        &.btn-changemode .ico {
+            display:none;
+        }
+        &.btn-txt {
+            @include pretendard-Body_04_bold;
+            color: $point-color-blue;
+            width: 90px;
+            padding-right: 6px;
+            text-align: right;
+        }
+    }
+
+    .txt-title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-height: 20px;
+        width: 130px;
+        margin: auto;
+        margin-right: auto;
+        @include pretendard-Body_03_med;
+        text-align: center;
+        overflow: hidden;
+    }
+}
+@keyframes blur {
+    from {
+        -webkit-backdrop-filter: blur(0px);
+    }
+  
+    to {
+        -webkit-backdrop-filter: blur(20px);
+    }
+}
