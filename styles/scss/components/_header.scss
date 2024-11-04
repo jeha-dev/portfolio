@@ -1,26 +1,27 @@
-@import '../base/common';
+@import '../base/mixin';
 
 .header {
-    @include fixed;
     width: 100%;
     max-width: var(--maxDeviceWidth) !important;
     top: 0;
     background-color: $main-color-white_01;
+    border-bottom: 2px solid #000000;
     z-index: 800;
-
+    
     .ui-container {
         position: relative;
-        @include flexRow;
-        justify-content: space-between;
+        @include flexColumn;
         width: 100%;
-        padding: 18px;
+        padding:8px 18px;
+        box-sizing: border-box;
     }
     .ui-wrap {
         @include flexRow;
+        flex-direction: row-reverse;
         gap: 12px;
-        &.ui-single {
-            margin-left: auto;
-        }
+        // &.ui-single {
+        //     margin-left: auto;
+        // }
     }
     @supports not(inset:0){
         .ui-wrap {
@@ -32,34 +33,35 @@
     a {
         position: relative;
         font-size: 0;
+        cursor: pointer;
         .ico {
-            display:block;
-            width: 28px;
-            height: 28px;
+            @include ico;
+            width: 24px;
+            height: 24px;
         }
         &.btn-email{
             .ico{
-                background-image: url('../../../img/icon/ico_mail_black.svg');
+                background-image: url('../../img/icon/ico_mail_black.svg');
             }
         }
         &.btn-changemode .ico {
             display:none;
         }
-        &.btn-txt {
-            @include pretendard-Body_04_bold;
-            color: $point-color-blue;
-            width: 90px;
-            padding-right: 6px;
-            text-align: right;
-        }
+        // &.btn-txt {
+        //     @include pretendard-Body_04_bold;
+        //     color: $point-color-blue;
+        //     width: 90px;
+        //     padding-right: 6px;
+        //     text-align: right;
+        // }
     }
 
     .txt-title {
         position: absolute;
         left: 0;
         right: 0;
+        max-width:188px;
         max-height: 20px;
-        width: 130px;
         margin: auto;
         margin-right: auto;
         @include pretendard-Body_03_med;
@@ -74,5 +76,91 @@
   
     to {
         -webkit-backdrop-filter: blur(20px);
+    }
+}
+
+.sticky-ui {
+    @include fixed;
+    max-width: var(--maxDeviceWidth);
+    top: 0;
+    z-index: 1000;
+}
+.fixed-menu {
+    position:fixed;
+    left:0;
+    top:40px;
+    width:182px;
+    height:calc(var(--vh) - 40px);
+    border-right:2px solid $main-color-black_01;
+    .ico {
+        @include ico;
+    }
+    &.fixed-left{
+        @include flexColumn;
+        justify-content: space-between;
+        .ui-wrap {
+            @include flexColumn;
+            gap:10px;
+            padding-top:18px;
+            padding-left:18px;
+        }
+        .menu-title {
+            @include pretendard-Body_03_med;
+            color: $main-color-black_01;
+            .ico {
+                width:16px;
+                height:16px;
+                margin-right:4px;
+                background-image: url('../../img/icon/arrow.svg');
+            }
+        }
+        .tabs {
+            @include flexColumn;
+            gap:6px;
+            .tab {
+                text-align:left;
+                padding-top:4px;
+                padding-bottom:4px;
+                padding-left:22px;
+                cursor: pointer;
+            }
+        }
+        .btn-row {
+            @include flexRow;
+            justify-content:center;
+            align-items:center;
+            padding:10px 0 10px;
+            gap:50px;
+            border-top:1px solid $main-color-gray_04;
+            .btn-small {
+                &:first-of-type {
+                    position:relative;
+                    &::after {
+                        content:'';
+                        display:block;
+                        position:absolute;
+                        top:50%;
+                        margin-top:-6px;
+                        right:-25px;
+                        width:1px;
+                        height:12px;
+                        background-color:$main-color-gray_03;
+                        opacity:0.3;
+                    }
+                }
+                .ico {
+                    @include ico;
+                    width: 26px;
+                    height:26px;
+                    opacity:0.5;
+                    &.about {
+                        background-image: url(../../img/icon/ico_about.svg);
+                    }
+                    &.changemode {
+                        background-image: url(../../img/icon/ico_setting.svg);
+                    }
+                }
+            }
+        }
     }
 }

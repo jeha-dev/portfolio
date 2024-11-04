@@ -1,0 +1,62 @@
+@import '../base/mixin';
+
+:root {
+    --vh: 100vh;
+    --maxDeviceWidth: 100vw;
+}
+.content-wrap {
+    position: relative;
+    max-width:calc(var(--maxDeviceWidth) - 182px);
+    height: calc(var(--vh) - 42px);
+    margin-left: auto;
+    padding-top:40px;
+    .cont-home {
+        position:relative;
+        height:100%;
+        @include flexColumn;
+        justify-content:center;
+        align-items:center;
+        padding:0 20px;
+        .title-bg {
+            display: block;
+            position: absolute;
+            top: clamp(80px, 7.46vw, 7.46vw);
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 21vw;
+            width: 100%;
+            color: $main-color-gray_02;
+            text-align: center;
+            z-index: -1;
+            font-weight: 800;
+            line-height: 300px;
+            // @supports (-webkit-backdrop-filter: blur(20px)) {
+            //     -webkit-animation: blur 0.1s forwards;
+            // }
+            // @supports (backdrop-filter: blur(20px)) {
+            //     backdrop-filter: blur(20px);
+            // }
+            filter: blur(7px);
+            -webkit-filter: blur(7px);
+        }
+        .title-home {
+            @include pretendard-Title_01;
+            font-size:92px;
+            line-height:102px;
+            color:$main-color-black_01;
+            text-align:center;
+            margin-bottom:32px;
+            & + .txt-title {
+                @include pretendard-Title_02;
+                color:$main-color-black_01;
+                text-align:center;
+            }
+        }
+        .clock {
+            position:absolute;
+            bottom:18px;
+            left:50%;
+            transform:translate(-50%);
+        }
+    }
+}

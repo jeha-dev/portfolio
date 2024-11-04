@@ -21,7 +21,8 @@ $power4inOut: cubic-bezier(0.83, 0, 0.17, 1);
 
 $main-color-white_01: #ffffff;
 $main-color-black_01: #000000;
-$main-color-gray_01: #f6f6f6;
+$main-color-gray_01: #f9f9f9;
+$main-color-gray_02: #f6f6f6;
 $main-color-gray_03: #a0a0a0;
 $main-color-gray_04: #eeeeee;
 $main-color-gray_05: #cbcbcb;
@@ -31,17 +32,17 @@ $point-color-red: #ff0000;
 
 @mixin pretendard-Title_01 {
     font-family: "Pretendard";
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: -1px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.5px;
 }
 @mixin pretendard-Title_02 {
     font-family: "Pretendard";
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -1px;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
 }
 // @mixin pretendard-Body_03_bold {
 //     font-family: "Pretendard";
@@ -55,7 +56,7 @@ $point-color-red: #ff0000;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 @mixin pretendard-Body_04_bold {
     font-family: "Pretendard";
