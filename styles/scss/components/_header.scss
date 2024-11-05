@@ -1,13 +1,22 @@
 @import '../base/mixin';
 
 .header {
+    position:relative;
     width: 100%;
     max-width: var(--maxDeviceWidth) !important;
     top: 0;
     background-color: $main-color-white_01;
-    border-bottom: 2px solid #000000;
     z-index: 800;
-    
+    &:after {
+        content:'';
+        display:block;
+        width:50%;
+        height:2px;
+        background-color:$main-color-black_01;
+        position:absolute;
+        bottom:0;
+        left: 0;
+    }
     .ui-container {
         position: relative;
         @include flexColumn;
@@ -17,11 +26,9 @@
     }
     .ui-wrap {
         @include flexRow;
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: 12px;
-        // &.ui-single {
-        //     margin-left: auto;
-        // }
+        justify-content:space-between;
     }
     @supports not(inset:0){
         .ui-wrap {
@@ -57,13 +64,8 @@
     }
 
     .txt-title {
-        position: absolute;
-        left: 0;
-        right: 0;
         max-width:188px;
         max-height: 20px;
-        margin: auto;
-        margin-right: auto;
         @include pretendard-Body_03_med;
         text-align: center;
         overflow: hidden;
@@ -91,7 +93,17 @@
     top:40px;
     width:182px;
     height:calc(var(--vh) - 40px);
-    border-right:2px solid $main-color-black_01;
+    &:after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 50%;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
     .ico {
         @include ico;
     }

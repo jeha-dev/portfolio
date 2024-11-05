@@ -1,1 +1,43 @@
 @import '../base/mixin';
+
+.btn-main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    width: calc(100% - 30px);
+    padding: 10px 14px;
+    margin: 0 auto;
+    background-color: $main-color-gray_03;
+    transform: scale(1);
+    transition: transform 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+    overflow: hidden;
+    &.bg-black {
+        background-color:$main-color-black_01;
+        border:1px solid $main-color-black_01;
+    }
+    &.bg-black-reverse {
+        background-color:$main-color-white_01;
+        border:1px solid $main-color-black_01;
+        span {
+            color:$main-color-black_01;
+        }
+    }
+    span {
+        color:$main-color-white_01;
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        text-overflow: ellipsis;
+        text-align: center;
+        @include pretendard-Body_04_reg;
+    }
+}
+.btn-row {
+    @include flexRow;
+    width:calc(100% - 40px);
+    a, button {flex:1;}
+}

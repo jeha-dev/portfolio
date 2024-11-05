@@ -64,6 +64,10 @@ input {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "Pretendard";
   font-weight: 400;
@@ -85,12 +89,22 @@ input {
   src: url(../../styles/fonts/Pretendard-ExtraBold.woff) format("woff");
 }
 .header {
+  position: relative;
   width: 100%;
   max-width: var(--maxDeviceWidth) !important;
   top: 0;
   background-color: #ffffff;
-  border-bottom: 2px solid #000000;
   z-index: 800;
+}
+.header:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .header .ui-container {
   position: relative;
@@ -104,8 +118,9 @@ input {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: 12px;
+  justify-content: space-between;
 }
 @supports not (inset: 0) {
   .header .ui-wrap > button:not(:first-child) {
@@ -137,13 +152,8 @@ input {
   display: none;
 }
 .header .txt-title {
-  position: absolute;
-  left: 0;
-  right: 0;
   max-width: 188px;
   max-height: 20px;
-  margin: auto;
-  margin-right: auto;
   font-family: "Pretendard";
   font-weight: 500;
   font-size: 16px;
@@ -179,7 +189,16 @@ input {
   top: 40px;
   width: 182px;
   height: calc(var(--vh) - 40px);
-  border-right: 2px solid #000000;
+}
+.fixed-menu:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .fixed-menu .ico {
   display: inline-block;
@@ -282,28 +301,14 @@ input {
 }
 .content-wrap .cont-home {
   position: relative;
+  max-width: 720px;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-}
-.content-wrap .cont-home .title-bg {
-  display: block;
-  position: absolute;
-  top: clamp(80px, 7.46vw, 7.46vw);
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 21vw;
-  width: 100%;
-  color: #f6f6f6;
-  text-align: center;
-  z-index: -1;
-  font-weight: 800;
-  line-height: 300px;
-  filter: blur(7px);
-  -webkit-filter: blur(7px);
 }
 .content-wrap .cont-home .title-home {
   font-family: "Pretendard";
@@ -326,9 +331,70 @@ input {
   color: #000000;
   text-align: center;
 }
-.content-wrap .cont-home .clock {
+.content-wrap .cont-home .btn-row {
+  margin-top: 40px;
+  max-width: calc(100% - 240px);
+}
+.content-wrap .cont-home .bottom-txt {
+  font-family: "Pretendard";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.5px;
   position: absolute;
-  bottom: 18px;
   left: 50%;
-  transform: translate(-50%);
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.btn-main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: calc(100% - 30px);
+  padding: 10px 14px;
+  margin: 0 auto;
+  background-color: #a0a0a0;
+  transform: scale(1);
+  transition: transform 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+  overflow: hidden;
+}
+.btn-main.bg-black {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+.btn-main.bg-black-reverse {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.btn-main.bg-black-reverse span {
+  color: #000000;
+}
+.btn-main span {
+  color: #ffffff;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(100% - 40px);
+}
+.btn-row a, .btn-row button {
+  flex: 1;
 }/*# sourceMappingURL=common.css.map */
